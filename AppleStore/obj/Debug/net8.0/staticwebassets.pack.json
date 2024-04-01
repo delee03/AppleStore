@@ -77,12 +77,48 @@
       "PackagePath": "staticwebassets\\fonts\\slick.woff"
     },
     {
+      "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\AirPodsMax.png",
+      "PackagePath": "staticwebassets\\img\\AirPodsMax.png"
+    },
+    {
+      "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\AirPodsPro.png",
+      "PackagePath": "staticwebassets\\img\\AirPodsPro.png"
+    },
+    {
+      "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\AppleLogo.png",
+      "PackagePath": "staticwebassets\\img\\AppleLogo.png"
+    },
+    {
+      "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\Iphone15_1.png",
+      "PackagePath": "staticwebassets\\img\\Iphone15_1.png"
+    },
+    {
       "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\hotdeal.png",
       "PackagePath": "staticwebassets\\img\\hotdeal.png"
     },
     {
+      "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\iPadAir.png",
+      "PackagePath": "staticwebassets\\img\\iPadAir.png"
+    },
+    {
+      "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\iphone11.png",
+      "PackagePath": "staticwebassets\\img\\iphone11.png"
+    },
+    {
+      "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\iphone15_2.png",
+      "PackagePath": "staticwebassets\\img\\iphone15_2.png"
+    },
+    {
       "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\logo.png",
       "PackagePath": "staticwebassets\\img\\logo.png"
+    },
+    {
+      "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\mac1.png",
+      "PackagePath": "staticwebassets\\img\\mac1.png"
+    },
+    {
+      "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\mac2.png",
+      "PackagePath": "staticwebassets\\img\\mac2.png"
     },
     {
       "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\product01.png",
@@ -131,6 +167,10 @@
     {
       "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\shop03.png",
       "PackagePath": "staticwebassets\\img\\shop03.png"
+    },
+    {
+      "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\xsmax.png",
+      "PackagePath": "staticwebassets\\img\\xsmax.png"
     },
     {
       "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\js\\bootstrap.min.js",
