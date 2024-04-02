@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gcadCtZysFxf+ISP6Pv1JZqe7T7tfNI/Wd9xwQRmgGq5M+oSEyVrUUpiSk2bKmoF+vxSW2P9WpaR2ndltkWX1Q==",
+  "dgSpecHash": "SNPoH6eW/sjEmy3JQr9IWz5Kw46n1lKlEk1qX+6nkZRkkzGy/KD0wrlRdflVMNjxMn9lLSB+faGhUdeS7OUt7Q==",
   "success": true,
-  "projectFilePath": "D:\\Subject\\LTWEB\\AppleStore\\AppleStore\\AppleStore.csproj",
+  "projectFilePath": "D:\\AppleStore\\AppleStore\\AppleStore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ACER\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
