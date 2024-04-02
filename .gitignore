@@ -84,7 +84,8 @@ ipch/
 # Visual Studio profiler
 *.psess
 *.vsp
-*.vspx
+*
+px
 *.sap
 
 # TFS 2012 Local Workspace
@@ -243,3 +244,5 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+
+.iceberg/static/icon 
