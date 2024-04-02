@@ -14,11 +14,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< Updated upstream
       "projectUniqueName": "E:\\Web_VS\\AppleStore\\AppleStore\\AppleStore.csproj",
       "projectName": "AppleStore",
       "projectPath": "E:\\Web_VS\\AppleStore\\AppleStore\\AppleStore.csproj",
       "packagesPath": "C:\\Users\\MSI GAMING\\.nuget\\packages\\",
       "outputPath": "E:\\Web_VS\\AppleStore\\AppleStore\\obj\\",
+=======
+      "projectUniqueName": "E:\\WEB_TS\\AppleStore\\AppleStore\\AppleStore.csproj",
+      "projectName": "AppleStore",
+      "projectPath": "E:\\WEB_TS\\AppleStore\\AppleStore\\AppleStore.csproj",
+      "packagesPath": "C:\\Users\\MSI GAMING\\.nuget\\packages\\",
+      "outputPath": "E:\\WEB_TS\\AppleStore\\AppleStore\\obj\\",
+>>>>>>> Stashed changes
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

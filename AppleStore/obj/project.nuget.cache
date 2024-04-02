@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< Updated upstream
   "dgSpecHash": "CpDpTwja3GdE3uCLgijFImvz9d5jioz2eUkazwE8oMkQv2u01agtJ46HfJkFLdUYLLUP6u2bbefYqLPWmWL0Hw==",
   "success": true,
   "projectFilePath": "E:\\Web_VS\\AppleStore\\AppleStore\\AppleStore.csproj",
+=======
+  "dgSpecHash": "doQI2enDM5JOxPeuRSEiMhH34MPHdqD7YGooohH5FgK7tHWfMmQXuNfD5lq+DvGKu//XLxennX0dHedbPX35cQ==",
+  "success": true,
+  "projectFilePath": "E:\\WEB_TS\\AppleStore\\AppleStore\\AppleStore.csproj",
+>>>>>>> Stashed changes
   "expectedPackageFiles": [],
   "logs": []
 }
