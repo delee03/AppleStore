@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Web_VS\\AppleStore\\AppleStore\\AppleStore.csproj": {}
+    "D:\\Web_Vs\\AppleStore\\AppleStore\\AppleStore.csproj": {}
   },
   "projects": {
-    "D:\\Web_VS\\AppleStore\\AppleStore\\AppleStore.csproj": {
+    "D:\\Web_Vs\\AppleStore\\AppleStore\\AppleStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Web_VS\\AppleStore\\AppleStore\\AppleStore.csproj",
+        "projectUniqueName": "D:\\Web_Vs\\AppleStore\\AppleStore\\AppleStore.csproj",
         "projectName": "AppleStore",
-        "projectPath": "D:\\Web_VS\\AppleStore\\AppleStore\\AppleStore.csproj",
+        "projectPath": "D:\\Web_Vs\\AppleStore\\AppleStore\\AppleStore.csproj",
         "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
         "outputPath": "D:\\Web_Vs\\AppleStore\\AppleStore\\obj\\",
         "projectStyle": "PackageReference",
@@ -45,6 +45,22 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[8.0.2, )"
