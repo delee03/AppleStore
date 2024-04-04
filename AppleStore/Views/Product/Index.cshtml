@@ -1,69 +1,64 @@
 ﻿@model IEnumerable<AppleStore.Models.Product>
 
 @{
-    ViewData["Title"] = "Index";
+	ViewData["Title"] = "Index";
 }
 
-<h2>Index</h2>
 
-<p style="text-align: right">
-    <a asp-action="Add" class="btn"><i class="fa-solid fa-file-circle-plus"></i> Thêm sản phẩm</a>
-</p>
-<table class="table" >
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ImageUrl)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Price)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Description)
-            </th>
+	<!-- Section -->
+	<div class="section">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
 
-            <th>
-                @Html.DisplayNameFor(model => model.Category)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr >
-                <td>
-                    @Html.DisplayFor(modelItem => item.Name)
-                </td>
-                <td>
-                    <img src="@item.ImageUrl" alt="ProductImage" max-width="80px" height="100px" />
-                </td>
+				<div class="col-md-12">
+					<div class="section-title text-center">
+						<h3 class="title">Our Products</h3>
+					</div>
+				</div>
+				<p style="text-align: right">
+					<a asp-action="Add" class="primary-btn"><i class="fa-solid fa-file-circle-plus"></i> Thêm sản phẩm</a>
+				</p>
+				@foreach(var item in Model)
+				{
+					<!-- product -->
+					<div style="margin-bottom:140px" class="col-md-3 col-xs-6">
+						<div class="product">
+							<div class="product-img">
+								<img src="@item.ImageUrl" alt="productImage">
+								<div class="product-label">
+									<span class="sale">-30%</span>
+								</div>
+							</div>
+							<div class="product-body">
+								<p class="product-category">@item.Category.Name</p>
+								<h3 class="product-name"><a href="#">@item.Name</a></h3>
+								<h4 class="product-price">@item.Price<del class="product-old-price">$980.00</del></h4>
+								<div class="product-rating">
+								</div>
+								<div class="product-btns">
+									<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
+									<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
+									<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+								</div>
+							</div>
+							<div class="add-to-cart">
+								<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+								
+								<a asp-action="Update" asp-route-id="@item.Id" class="primary-btn">Edit</a>
+								<a asp-action="Detail" asp-route-id="@item.Id" class="primary-btn">Details</a>
+								<a asp-action="Delete" asp-route-id="@item.Id" class="primary-btn">Delete</a>
+							</div>
+						</div>
+					</div>
+					<!-- /product -->
+				}				
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+	</div>
+	<!-- /Section -->
+	
 
-                <td>
-                    @Html.DisplayFor(modelItem => item.Price)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Description)
-                </td>
-
-                <td>
-                    @Html.DisplayFor(modelItem => item.Category.Name)
-                </td>
-                <td style="text-align: right">
-
-                 
-                    
-                    <a asp-action="Update" asp-route-id="@item.Id" class="btn">Edit</a>
-
-                    <a asp-action="Detail" asp-route-id="@item.Id" class="btn">Details</a>
-                    <a  asp-action="Delete" asp-route-id="@item.Id" class="btn">Delete</a>
-                    }
-                </td>
-               
-            </tr>
-        }
-    </tbody>
-</table>

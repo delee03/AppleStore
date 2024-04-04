@@ -78,7 +78,7 @@ namespace AppleStore.Controllers
             return View(product);
         }
         //Show the product update form
-        /*  [Authorize(Roles = "Admin")]*/
+       
         public async Task<IActionResult> Update(int id)
         {
             var product = await _productRepository.GetByIdAsync(id);

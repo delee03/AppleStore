@@ -1,13 +1,9 @@
 ﻿@model AppleStore.Models.Product
 
-@{
-    ViewData["Title"] = "Add";
-}
-<style>
-    body {
-        margin: 20px 40px 20px;
-    }
-</style>
+
+
+
+
 
 <h2>Add</h2>
 
@@ -54,9 +50,14 @@
 </div>
 
 <div>
-    <a asp-action="Index" class="primay-btn">Back to List</a>
+    <a asp-action="Index" class="btn-action">Back to List</a>
 </div>
 
+	
+
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }
+

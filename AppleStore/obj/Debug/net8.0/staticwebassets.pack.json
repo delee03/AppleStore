@@ -93,12 +93,44 @@
       "PackagePath": "staticwebassets\\img\\Iphone15_1.png"
     },
     {
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\acer.webp",
+      "PackagePath": "staticwebassets\\img\\acer.webp"
+    },
+    {
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\download.jpg",
+      "PackagePath": "staticwebassets\\img\\download.jpg"
+    },
+    {
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\hongip.webp",
+      "PackagePath": "staticwebassets\\img\\hongip.webp"
+    },
+    {
       "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\hotdeal.png",
       "PackagePath": "staticwebassets\\img\\hotdeal.png"
     },
     {
       "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\iPadAir.png",
       "PackagePath": "staticwebassets\\img\\iPadAir.png"
+    },
+    {
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\images.jpg",
+      "PackagePath": "staticwebassets\\img\\images.jpg"
+    },
+    {
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip14.avif",
+      "PackagePath": "staticwebassets\\img\\ip14.avif"
+    },
+    {
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip14tim.jpg",
+      "PackagePath": "staticwebassets\\img\\ip14tim.jpg"
+    },
+    {
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip15hong.webp",
+      "PackagePath": "staticwebassets\\img\\ip15hong.webp"
+    },
+    {
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip15xam.webp",
+      "PackagePath": "staticwebassets\\img\\ip15xam.webp"
     },
     {
       "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\iphone11.png",
