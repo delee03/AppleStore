@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Web_VS\\AppleStore\\AppleStore\\AppleStore.csproj": {}
+    "D:\\Web_Vs\\AppleStore\\AppleStore\\AppleStore.csproj": {}
   },
   "projects": {
-    "D:\\Web_VS\\AppleStore\\AppleStore\\AppleStore.csproj": {
+    "D:\\Web_Vs\\AppleStore\\AppleStore\\AppleStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Web_VS\\AppleStore\\AppleStore\\AppleStore.csproj",
+        "projectUniqueName": "D:\\Web_Vs\\AppleStore\\AppleStore\\AppleStore.csproj",
         "projectName": "AppleStore",
-        "projectPath": "D:\\Web_VS\\AppleStore\\AppleStore\\AppleStore.csproj",
-        "packagesPath": "C:\\Users\\bhvie\\.nuget\\packages\\",
-        "outputPath": "D:\\Web_VS\\AppleStore\\AppleStore\\obj\\",
+        "projectPath": "D:\\Web_Vs\\AppleStore\\AppleStore\\AppleStore.csproj",
+        "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
+        "outputPath": "D:\\Web_Vs\\AppleStore\\AppleStore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\bhvie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
