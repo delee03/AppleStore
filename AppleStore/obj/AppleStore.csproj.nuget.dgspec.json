@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Web_Vs\\AppleStore\\AppleStore\\AppleStore.csproj": {}
+    "D:\\Web_VS\\AppleStore\\AppleStore\\AppleStore.csproj": {}
   },
   "projects": {
-    "D:\\Web_Vs\\AppleStore\\AppleStore\\AppleStore.csproj": {
+    "D:\\Web_VS\\AppleStore\\AppleStore\\AppleStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Web_Vs\\AppleStore\\AppleStore\\AppleStore.csproj",
+        "projectUniqueName": "D:\\Web_VS\\AppleStore\\AppleStore\\AppleStore.csproj",
         "projectName": "AppleStore",
-        "projectPath": "D:\\Web_Vs\\AppleStore\\AppleStore\\AppleStore.csproj",
-        "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-        "outputPath": "D:\\Web_Vs\\AppleStore\\AppleStore\\obj\\",
+        "projectPath": "D:\\Web_VS\\AppleStore\\AppleStore\\AppleStore.csproj",
+        "packagesPath": "C:\\Users\\bhvie\\.nuget\\packages\\",
+        "outputPath": "D:\\Web_VS\\AppleStore\\AppleStore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bhvie\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -45,6 +45,20 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[8.0.2, )"

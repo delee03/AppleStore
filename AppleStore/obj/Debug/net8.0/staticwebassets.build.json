@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1pUgQNFT/CjOkP1S8r9gDZIZky3GjgtcqEa8gewwxgg=",
+  "Hash": "RsHQJck3RUJrBBsUUw3SbxgsMG9z4dTduEkFTbNuYfI=",
   "Source": "AppleStore",
   "BasePath": "_content/AppleStore",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "AppleStore\\wwwroot",
       "Source": "AppleStore",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AppleStore.styles.css",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AppleStore.styles.css",
       "SourceId": "AppleStore",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "AppleStore.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Web_Vs\\AppleStore\\AppleStore\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AppleStore.styles.css"
+      "OriginalItemSpec": "D:\\Web_VS\\AppleStore\\AppleStore\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AppleStore.styles.css"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AppleStore.bundle.scp.css",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AppleStore.bundle.scp.css",
       "SourceId": "AppleStore",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "AppleStore.bundle.scp.css",
       "AssetKind": "All",
@@ -52,7 +52,7 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Web_Vs\\AppleStore\\AppleStore\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AppleStore.bundle.scp.css"
+      "OriginalItemSpec": "D:\\Web_VS\\AppleStore\\AppleStore\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AppleStore.bundle.scp.css"
     },
     {
       "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\Admin\\assets\\css\\material-dashboard.css",
@@ -6157,7 +6157,7 @@
       "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\css\\bootstrap.min.css",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "css/bootstrap.min.css",
       "AssetKind": "All",
@@ -6173,10 +6173,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\css\\font-awesome.min.css",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\css\\font-awesome.min.css",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "css/font-awesome.min.css",
       "AssetKind": "All",
@@ -6192,10 +6192,10 @@
       "OriginalItemSpec": "wwwroot\\css\\font-awesome.min.css"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\css\\nouislider.min.css",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\css\\nouislider.min.css",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "css/nouislider.min.css",
       "AssetKind": "All",
@@ -6211,10 +6211,10 @@
       "OriginalItemSpec": "wwwroot\\css\\nouislider.min.css"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\css\\site.css",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\css\\site.css",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -6230,10 +6230,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\css\\slick.css",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\css\\slick.css",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "css/slick.css",
       "AssetKind": "All",
@@ -6249,10 +6249,10 @@
       "OriginalItemSpec": "wwwroot\\css\\slick.css"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\css\\slick-theme.css",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\css\\slick-theme.css",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "css/slick-theme.css",
       "AssetKind": "All",
@@ -6268,10 +6268,10 @@
       "OriginalItemSpec": "wwwroot\\css\\slick-theme.css"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\css\\style.css",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\css\\style.css",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "css/style.css",
       "AssetKind": "All",
@@ -6287,10 +6287,10 @@
       "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\favicon.ico",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\favicon.ico",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -6306,10 +6306,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\fonts\\FontAwesome.otf",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\fonts\\FontAwesome.otf",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "fonts/FontAwesome.otf",
       "AssetKind": "All",
@@ -6325,10 +6325,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\FontAwesome.otf"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\fonts\\fontawesome-webfont.eot",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\fonts\\fontawesome-webfont.eot",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "fonts/fontawesome-webfont.eot",
       "AssetKind": "All",
@@ -6344,10 +6344,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\fontawesome-webfont.eot"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\fonts\\fontawesome-webfont.svg",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\fonts\\fontawesome-webfont.svg",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "fonts/fontawesome-webfont.svg",
       "AssetKind": "All",
@@ -6363,10 +6363,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\fontawesome-webfont.svg"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\fonts\\fontawesome-webfont.ttf",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\fonts\\fontawesome-webfont.ttf",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "fonts/fontawesome-webfont.ttf",
       "AssetKind": "All",
@@ -6382,10 +6382,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\fontawesome-webfont.ttf"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\fonts\\fontawesome-webfont.woff",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\fonts\\fontawesome-webfont.woff",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "fonts/fontawesome-webfont.woff",
       "AssetKind": "All",
@@ -6401,10 +6401,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\fontawesome-webfont.woff"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\fonts\\fontawesome-webfont.woff2",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\fonts\\fontawesome-webfont.woff2",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "fonts/fontawesome-webfont.woff2",
       "AssetKind": "All",
@@ -6420,10 +6420,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\fontawesome-webfont.woff2"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\fonts\\slick.eot",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\fonts\\slick.eot",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "fonts/slick.eot",
       "AssetKind": "All",
@@ -6439,10 +6439,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\slick.eot"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\fonts\\slick.svg",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\fonts\\slick.svg",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "fonts/slick.svg",
       "AssetKind": "All",
@@ -6458,10 +6458,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\slick.svg"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\fonts\\slick.ttf",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\fonts\\slick.ttf",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "fonts/slick.ttf",
       "AssetKind": "All",
@@ -6477,10 +6477,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\slick.ttf"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\fonts\\slick.woff",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\fonts\\slick.woff",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "fonts/slick.woff",
       "AssetKind": "All",
@@ -6496,29 +6496,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\slick.woff"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\acer.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\AirPodsMax.png",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
-      "BasePath": "_content/AppleStore",
-      "RelativePath": "img/acer.webp",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\acer.webp"
-    },
-    {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\AirPodsMax.png",
-      "SourceId": "AppleStore",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/AirPodsMax.png",
       "AssetKind": "All",
@@ -6534,10 +6515,10 @@
       "OriginalItemSpec": "wwwroot\\img\\AirPodsMax.png"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\AirPodsPro.png",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\AirPodsPro.png",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/AirPodsPro.png",
       "AssetKind": "All",
@@ -6553,10 +6534,10 @@
       "OriginalItemSpec": "wwwroot\\img\\AirPodsPro.png"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\AppleLogo.png",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\AppleLogo.png",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/AppleLogo.png",
       "AssetKind": "All",
@@ -6572,48 +6553,10 @@
       "OriginalItemSpec": "wwwroot\\img\\AppleLogo.png"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\download.jpg",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\hotdeal.png",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
-      "BasePath": "_content/AppleStore",
-      "RelativePath": "img/download.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\download.jpg"
-    },
-    {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\hongip.webp",
-      "SourceId": "AppleStore",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
-      "BasePath": "_content/AppleStore",
-      "RelativePath": "img/hongip.webp",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\hongip.webp"
-    },
-    {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\hotdeal.png",
-      "SourceId": "AppleStore",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/hotdeal.png",
       "AssetKind": "All",
@@ -6629,12 +6572,12 @@
       "OriginalItemSpec": "wwwroot\\img\\hotdeal.png"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\images.jpg",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip14detail.jpg",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
-      "RelativePath": "img/images.jpg",
+      "RelativePath": "img/ip14detail.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -6645,15 +6588,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\images.jpg"
+      "OriginalItemSpec": "wwwroot\\img\\ip14detail.jpg"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip14.avif",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip14main.jpg",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
-      "RelativePath": "img/ip14.avif",
+      "RelativePath": "img/ip14main.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -6664,70 +6607,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\ip14.avif"
+      "OriginalItemSpec": "wwwroot\\img\\ip14main.jpg"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip14tim.jpg",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\iPadAir.png",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
-      "BasePath": "_content/AppleStore",
-      "RelativePath": "img/ip14tim.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\ip14tim.jpg"
-    },
-    {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip15hong.webp",
-      "SourceId": "AppleStore",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
-      "BasePath": "_content/AppleStore",
-      "RelativePath": "img/ip15hong.webp",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\ip15hong.webp"
-    },
-    {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip15xam.webp",
-      "SourceId": "AppleStore",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
-      "BasePath": "_content/AppleStore",
-      "RelativePath": "img/ip15xam.webp",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\ip15xam.webp"
-    },
-    {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\iPadAir.png",
-      "SourceId": "AppleStore",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/iPadAir.png",
       "AssetKind": "All",
@@ -6743,10 +6629,10 @@
       "OriginalItemSpec": "wwwroot\\img\\iPadAir.png"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\iphone11.png",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\iphone11.png",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/iphone11.png",
       "AssetKind": "All",
@@ -6762,10 +6648,10 @@
       "OriginalItemSpec": "wwwroot\\img\\iphone11.png"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\Iphone15_1.png",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\Iphone15_1.png",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/Iphone15_1.png",
       "AssetKind": "All",
@@ -6781,10 +6667,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Iphone15_1.png"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\iphone15_2.png",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\iphone15_2.png",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/iphone15_2.png",
       "AssetKind": "All",
@@ -6800,10 +6686,10 @@
       "OriginalItemSpec": "wwwroot\\img\\iphone15_2.png"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\logo.png",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\logo.png",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/logo.png",
       "AssetKind": "All",
@@ -6819,10 +6705,10 @@
       "OriginalItemSpec": "wwwroot\\img\\logo.png"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\mac1.png",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\mac1.png",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/mac1.png",
       "AssetKind": "All",
@@ -6838,10 +6724,10 @@
       "OriginalItemSpec": "wwwroot\\img\\mac1.png"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\mac2.png",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\mac2.png",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/mac2.png",
       "AssetKind": "All",
@@ -6857,10 +6743,86 @@
       "OriginalItemSpec": "wwwroot\\img\\mac2.png"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\product01.png",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\macm1canh.png",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
+      "BasePath": "_content/AppleStore",
+      "RelativePath": "img/macm1canh.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\macm1canh.png"
+    },
+    {
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\macm1full.png",
+      "SourceId": "AppleStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
+      "BasePath": "_content/AppleStore",
+      "RelativePath": "img/macm1full.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\macm1full.png"
+    },
+    {
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\macm1full-removebg-preview.png",
+      "SourceId": "AppleStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
+      "BasePath": "_content/AppleStore",
+      "RelativePath": "img/macm1full-removebg-preview.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\macm1full-removebg-preview.png"
+    },
+    {
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\macm1lung.png",
+      "SourceId": "AppleStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
+      "BasePath": "_content/AppleStore",
+      "RelativePath": "img/macm1lung.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\macm1lung.png"
+    },
+    {
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\product01.png",
+      "SourceId": "AppleStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/product01.png",
       "AssetKind": "All",
@@ -6876,10 +6838,10 @@
       "OriginalItemSpec": "wwwroot\\img\\product01.png"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\product02.png",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\product02.png",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/product02.png",
       "AssetKind": "All",
@@ -6895,10 +6857,10 @@
       "OriginalItemSpec": "wwwroot\\img\\product02.png"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\product03.png",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\product03.png",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/product03.png",
       "AssetKind": "All",
@@ -6914,10 +6876,10 @@
       "OriginalItemSpec": "wwwroot\\img\\product03.png"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\product04.png",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\product04.png",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/product04.png",
       "AssetKind": "All",
@@ -6933,10 +6895,10 @@
       "OriginalItemSpec": "wwwroot\\img\\product04.png"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\product05.png",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\product05.png",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/product05.png",
       "AssetKind": "All",
@@ -6952,10 +6914,10 @@
       "OriginalItemSpec": "wwwroot\\img\\product05.png"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\product06.png",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\product06.png",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/product06.png",
       "AssetKind": "All",
@@ -6971,10 +6933,10 @@
       "OriginalItemSpec": "wwwroot\\img\\product06.png"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\product07.png",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\product07.png",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/product07.png",
       "AssetKind": "All",
@@ -6990,10 +6952,10 @@
       "OriginalItemSpec": "wwwroot\\img\\product07.png"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\product08.png",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\product08.png",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/product08.png",
       "AssetKind": "All",
@@ -7009,10 +6971,10 @@
       "OriginalItemSpec": "wwwroot\\img\\product08.png"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\product09.png",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\product09.png",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/product09.png",
       "AssetKind": "All",
@@ -7028,10 +6990,10 @@
       "OriginalItemSpec": "wwwroot\\img\\product09.png"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\shop01.png",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\shop01.png",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/shop01.png",
       "AssetKind": "All",
@@ -7047,10 +7009,10 @@
       "OriginalItemSpec": "wwwroot\\img\\shop01.png"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\shop02.png",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\shop02.png",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/shop02.png",
       "AssetKind": "All",
@@ -7066,10 +7028,10 @@
       "OriginalItemSpec": "wwwroot\\img\\shop02.png"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\shop03.png",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\shop03.png",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/shop03.png",
       "AssetKind": "All",
@@ -7085,10 +7047,10 @@
       "OriginalItemSpec": "wwwroot\\img\\shop03.png"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\xsmax.png",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\xsmax.png",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/xsmax.png",
       "AssetKind": "All",
@@ -7104,10 +7066,10 @@
       "OriginalItemSpec": "wwwroot\\img\\xsmax.png"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\js\\bootstrap.min.js",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\js\\bootstrap.min.js",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "js/bootstrap.min.js",
       "AssetKind": "All",
@@ -7123,10 +7085,10 @@
       "OriginalItemSpec": "wwwroot\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\js\\jquery.min.js",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\js\\jquery.min.js",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "js/jquery.min.js",
       "AssetKind": "All",
@@ -7142,10 +7104,10 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery.min.js"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\js\\jquery.zoom.min.js",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\js\\jquery.zoom.min.js",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "js/jquery.zoom.min.js",
       "AssetKind": "All",
@@ -7161,10 +7123,10 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery.zoom.min.js"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\js\\main.js",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\js\\main.js",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "js/main.js",
       "AssetKind": "All",
@@ -7180,10 +7142,10 @@
       "OriginalItemSpec": "wwwroot\\js\\main.js"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\js\\nouislider.min.js",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\js\\nouislider.min.js",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "js/nouislider.min.js",
       "AssetKind": "All",
@@ -7199,10 +7161,10 @@
       "OriginalItemSpec": "wwwroot\\js\\nouislider.min.js"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\js\\site.js",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\js\\site.js",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -7218,10 +7180,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\js\\slick.min.js",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\js\\slick.min.js",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "js/slick.min.js",
       "AssetKind": "All",
@@ -7237,10 +7199,10 @@
       "OriginalItemSpec": "wwwroot\\js\\slick.min.js"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -7256,10 +7218,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -7275,10 +7237,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -7294,10 +7256,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -7313,10 +7275,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -7332,10 +7294,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -7351,10 +7313,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -7370,10 +7332,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -7389,10 +7351,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -7408,10 +7370,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -7427,10 +7389,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -7446,10 +7408,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -7465,10 +7427,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -7484,10 +7446,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -7503,10 +7465,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -7522,10 +7484,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -7541,10 +7503,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -7560,10 +7522,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -7579,10 +7541,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -7598,10 +7560,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -7617,10 +7579,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -7636,10 +7598,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -7655,10 +7617,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -7674,10 +7636,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -7693,10 +7655,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -7712,10 +7674,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -7731,10 +7693,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -7750,10 +7712,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -7769,10 +7731,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -7788,10 +7750,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -7807,10 +7769,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -7826,10 +7788,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -7845,10 +7807,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -7864,10 +7826,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -7883,10 +7845,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -7902,10 +7864,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -7921,10 +7883,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -7940,10 +7902,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -7959,10 +7921,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -7978,10 +7940,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -7997,10 +7959,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -8016,10 +7978,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -8035,10 +7997,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -8054,10 +8016,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -8073,10 +8035,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -8092,10 +8054,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -8111,10 +8073,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -8130,10 +8092,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -8149,10 +8111,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -8168,10 +8130,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -8187,10 +8149,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -8206,10 +8168,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -8225,10 +8187,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -8244,10 +8206,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -8263,10 +8225,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -8282,10 +8244,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -8301,10 +8263,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
