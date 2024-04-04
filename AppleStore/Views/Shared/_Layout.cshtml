@@ -15,6 +15,11 @@
 	<!-- Bootstrap -->
 	<link type="text/css" rel="stylesheet" href="~/css/bootstrap.min.css" />
 
+	
+	<!-- Bootstrap icons-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+		  rel="stylesheet" />
+
 	<!-- Slick -->
 	<link type="text/css" rel="stylesheet" href="~/css/slick.css" />
 	<link type="text/css" rel="stylesheet" href="~/css/slick-theme.css" />
@@ -44,7 +49,7 @@
 				<ul class="header-links pull-left">
 					<li><a href="tel:+840931034852" rel="noopener" target="_blank"><i class="fa fa-phone"></i> (+84)0931034852</a></li>
 					<li><a href="mailto:phamphat20033vn@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope-o"></i> phamphat20033vn@gmail.com</a></li>
-					<li><a href="#" rel="noopener" target="_blank"><i class="fa fa-map-marker"></i> HUTECH,  TPHCM, Viet Nam</a></li>
+					<li><a href="#" rel="noopener" target="_blank"><i class="fa fa-map-marker"></i> HUTECH,  TPHCM, VIET NAM</a></li>
 				</ul>
 				<ul class="header-links pull-right">
 					<li><a href="#"><i class="fa fa-dollar"></i> USD</a></li>
@@ -63,7 +68,7 @@
 					<div class="col-md-3">
 						<div class="header-logo">
 							<a href="/home" class="logo">
-								<img src="./img/Applelogo.png" alt="">
+								<img src="~/img/Applelogo.png" alt="">
 							</a>
 						</div>
 					</div>
@@ -106,7 +111,7 @@
 									<div class="cart-list">
 										<div class="product-widget">
 											<div class="product-img">
-												<img src="./img/product01.png" alt="">
+												<img src="~/img/product01.png" alt="">
 											</div>
 											<div class="product-body">
 												<h3 class="product-name"><a href="#">product name goes here</a></h3>
@@ -117,7 +122,7 @@
 
 										<div class="product-widget">
 											<div class="product-img">
-												<img src="./img/product02.png" alt="">
+												<img src="~/img/product02.png" alt="">
 											</div>
 											<div class="product-body">
 												<h3 class="product-name"><a href="#">product name goes here</a></h3>
@@ -260,9 +265,9 @@
 							<h3 class="footer-title">About Us</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
 							<ul class="footer-links">
-								<li><a href="#"><i class="fa fa-map-marker"></i>1734 Stonecoal Road</a></li>
-								<li><a href="#"><i class="fa fa-phone"></i>+021-95-51-84</a></li>
-								<li><a href="#"><i class="fa fa-envelope-o"></i>email@email.com</a></li>
+								<li><a href="tel:+840931034852" rel="noopener" target="_blank"><i class="fa fa-phone"></i> (+84)0931034852</a></li>
+								<li><a href="mailto:phamphat20033vn@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope-o"></i> phamphat20033vn@gmail.com</a></li>
+								<li><a href="#" rel="noopener" target="_blank"><i class="fa fa-map-marker"></i> HUTECH,  TPHCM, VIET NAM</a></li>
 							</ul>
 						</div>
 					</div>
@@ -342,13 +347,13 @@
 	</footer>
 	<!-- /FOOTER -->
 	<!-- jQuery Plugins -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/slick.min.js"></script>
-	<script src="js/nouislider.min.js"></script>
-	<script src="js/jquery.zoom.min.js"></script>
-	<script src="js/main.js"></script> 
-    <script src="~/js/site.js" asp-append-version="true"></script>
+	<script src="~/js/jquery.min.js"></script>
+	<script src="~/js/bootstrap.min.js"></script>
+	<script src="~/js/slick.min.js"></script>
+	<script src="~/js/nouislider.min.js"></script>
+	<script src="~/js/jquery.zoom.min.js"></script>
+	<script src="~/js/main.js"></script>
+	<script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

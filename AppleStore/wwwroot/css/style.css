@@ -1205,6 +1205,10 @@ textarea.input {
   font-size: 14px;
 }
 
+img.product-preview.slick-slide.slick-current.slick-active.slick-center {
+    border-radius: 5px;
+}
+
 /*=========================================================
 	07 -> PRODUCTS PAGE
 ===========================================================*/
@@ -1526,6 +1530,7 @@ textarea.input {
 }
 
 .product-details .product-options .input-select {
+  margin-left: 3px;
   width: 90px;
 }
 
@@ -1581,8 +1586,9 @@ textarea.input {
 }
 
 .product-details .add-to-cart .qty-label .input-number {
-  width: 90px;
-  display: inline-block;
+    display: inline-block;
+    margin-left: 4px;
+    width: 90px;
 }
 
 .product-details .product-btns li {
