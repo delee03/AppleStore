@@ -1,11 +1,19 @@
 is_global = true
 build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AppleStore
 build_property.RootNamespace = AppleStore
@@ -17,6 +25,42 @@ build_property.SupportLocalizedComponentNames =
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = D:\Web_VS\AppleStore\AppleStore
 build_property._RazorSourceGeneratorDebug = 
+
+[D:/Web_VS/AppleStore/AppleStore/Views/Admin/billing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cYmlsbGluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Web_VS/AppleStore/AppleStore/Views/Admin/dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cZGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Web_VS/AppleStore/AppleStore/Views/Admin/notifications.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cbm90aWZpY2F0aW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Web_VS/AppleStore/AppleStore/Views/Admin/profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5ccHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Web_VS/AppleStore/AppleStore/Views/Admin/rtl.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5ccnRsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Web_VS/AppleStore/AppleStore/Views/Admin/signin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cc2lnbmluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Web_VS/AppleStore/AppleStore/Views/Admin/signup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cc2lnbnVwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Web_VS/AppleStore/AppleStore/Views/Admin/tables.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cdGFibGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Web_VS/AppleStore/AppleStore/Views/Admin/virtual-reality.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cdmlydHVhbC1yZWFsaXR5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Web_VS/AppleStore/AppleStore/Views/Blank/Blank.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxhbmtcQmxhbmsuY3NodG1s
@@ -40,6 +84,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Web_VS/AppleStore/AppleStore/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Web_VS/AppleStore/AppleStore/Views/Shared/_LayoutAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Web_VS/AppleStore/AppleStore/Views/Shared/_ValidationScriptsPartial.cshtml]
