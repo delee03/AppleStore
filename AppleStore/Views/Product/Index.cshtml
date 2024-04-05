@@ -23,7 +23,7 @@
 				@foreach(var item in Model)
 				{
 					<!-- product -->
-					<div style="margin-bottom:140px" class="col-md-3 col-xs-6">
+					<div style="margin-bottom:150px" class="col-md-3 col-xs-6">
 						<div class="product">
 							<div class="product-img">
 								<img src="@item.ImageUrl" alt="productImage">
@@ -33,7 +33,7 @@
 							</div>
 							<div class="product-body">
 								<p class="product-category">@item.Category.Name</p>
-								<h3 class="product-name"><a href="#">@item.Name</a></h3>
+							<h3 class="product-name"><a asp-action="Detail" asp-route-id="@item.Id">@item.Name</a></h3>
 								<h4 class="product-price">@item.Price<del class="product-old-price">$980.00</del></h4>
 								<div class="product-rating">
 								</div>
@@ -46,9 +46,9 @@
 							<div class="add-to-cart">
 								<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
 								
-								<a asp-action="Update" asp-route-id="@item.Id" class="primary-btn">Edit</a>
-								<a asp-action="Detail" asp-route-id="@item.Id" class="primary-btn">Details</a>
-								<a asp-action="Delete" asp-route-id="@item.Id" class="primary-btn">Delete</a>
+								<a asp-action="Update" asp-route-id="@item.Id" class="btn-action">Edit</a>
+								<a asp-action="Detail" asp-route-id="@item.Id" class="btn-action">Details</a>
+								<a asp-action="Delete" asp-route-id="@item.Id" class="btn-action">Delete</a>
 							</div>
 						</div>
 					</div>

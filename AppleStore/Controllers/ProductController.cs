@@ -77,76 +77,76 @@ namespace AppleStore.Controllers
             ViewBag.dsImage = _context.ProductImages.Where(x => x.ProductId == id).ToList();
             return View(product);
         }
-        //Show the product update form
-       
-        public async Task<IActionResult> Update(int id)
-        {
-            var product = await _productRepository.GetByIdAsync(id);
-            if (product == null)
-            {
-                return NotFound();
-            }
-            var categories = await _categoryRepository.GetAllAsync();
-            ViewBag.Categories = new SelectList(categories, "Id", "Name", product.CategoryId);
-            ViewBag.dsImage = _context.ProductImages.Where(x => x.ProductId == id).ToList();
-            return View(product);
-        }
+		//Show the product update form
 
-        // Quá trình cập nhật
-        [HttpPost]
-        public async Task<IActionResult> Update(Product product, int id, IFormFile imageUrl, List<IFormFile> imageUrls)
-        {
-            ModelState.Remove("ImageUrl");//Loại bỏ xác thực ModelState cho ImageUrl
-            if (id != product.Id)
-            {
-                return NotFound();
-            }
-            if (ModelState.IsValid)
-            {
-                var existingProduct = await _productRepository.GetByIdAsync(id);
-                //giả định có phương thức getbyidasync
-                //Giữ nguyên thông tin hình ảnh nếu không có hình mới đc tải lên
-                if (imageUrl == null && imageUrls == null)
-                {
-                    product.ImageUrl = existingProduct.ImageUrl;
-                    product.ImageUrls = existingProduct.ImageUrls;
-                }
-                else
-                {
-                    //lưu hình ảnh mới
-                    product.ImageUrl = await SaveImage(imageUrl);
-                    //     product.ImageUrls = await SaveListImage(imageUrls);
-                    /*  product.ImageUrls = new List<ProductImage>();
-                      foreach (var img in imageUrls)
-                      {
-                          ProductImage productImage = new ProductImage()
-                          {
-                              ProductId = product.Id,
-                              Url = await SaveImage(img)
-                          };
-                          product.ImageUrls.Add(productImage);
-                      }*/
+		public async Task<IActionResult> Update(int id)
+		{
+			var product = await _productRepository.GetByIdAsync(id);
+			if (product == null)
+			{
+				return NotFound();
+			}
+			var categories = await _categoryRepository.GetAllAsync();
+			ViewBag.Categories = new SelectList(categories, "Id", "Name", product.CategoryId);
+			ViewBag.dsImage = _context.ProductImages.Where(x => x.ProductId == id).ToList();
+			return View(product);
+		}
 
-                }
-                existingProduct.Name = product.Name;
-                existingProduct.Price = product.Price;
-                existingProduct.Description = product.Description;
-                existingProduct.CategoryId = product.CategoryId;
-                existingProduct.ImageUrl = product.ImageUrl;
-                existingProduct.ImageUrls = product.ImageUrls;
-                await _productRepository.UpdateAsync(existingProduct);
-                return RedirectToAction(nameof(Index));
+		// Quá trình cập nhật
+		[HttpPost]
+		public async Task<IActionResult> Update(Product product, int id, IFormFile imageUrl)
+		{
+			ModelState.Remove("ImageUrl");//Loại bỏ xác thực ModelState cho ImageUrl
+			if (id != product.Id)
+			{
+				return NotFound();
+			}
+			if (ModelState.IsValid)
+			{
+				var existingProduct = await _productRepository.GetByIdAsync(id);
+				//giả định có phương thức getbyidasync
+				//Giữ nguyên thông tin hình ảnh nếu không có hình mới đc tải lên
+				if (imageUrl == null)
+				{
+					product.ImageUrl = existingProduct.ImageUrl;
+					//product.ImageUrls = existingProduct.ImageUrls;
+				}
+				else
+				{
+					//lưu hình ảnh mới
+					product.ImageUrl = await SaveImage(imageUrl);
+					//     product.ImageUrls = await SaveListImage(imageUrls);
+					/*  product.ImageUrls = new List<ProductImage>();
+					  foreach (var img in imageUrls)
+					  {
+						  ProductImage productImage = new ProductImage()
+						  {
+							  ProductId = product.Id,
+							  Url = await SaveImage(img)
+						  };
+						  product.ImageUrls.Add(productImage);
+					  }*/
 
-            }
-            var categories = await _categoryRepository.GetAllAsync();
-            ViewBag.Categories = new SelectList(categories, "Id", "Name");
-            //ViewBag.dsImage = _context.ProductImages.Where(x => x.ProductId == id).ToList();
-            return View(product);
-        }
+				}
+				existingProduct.Name = product.Name;
+				existingProduct.Price = product.Price;
+				existingProduct.Description = product.Description;
+				existingProduct.CategoryId = product.CategoryId;
+				existingProduct.ImageUrl = product.ImageUrl;
+				existingProduct.ImageUrls = product.ImageUrls;
+				await _productRepository.UpdateAsync(existingProduct);
+				return RedirectToAction(nameof(Index));
 
-        // Show the product delete confirmation
-        /* [Authorize(Roles = "Admin")]*/
-        public async Task<IActionResult> Delete(int id)
+			}
+			var categories = await _categoryRepository.GetAllAsync();
+			ViewBag.Categories = new SelectList(categories, "Id", "Name");
+			//ViewBag.dsImage = _context.ProductImages.Where(x => x.ProductId == id).ToList();
+			return View(product);
+		}
+
+		// Show the product delete confirmation
+		/* [Authorize(Roles = "Admin")]*/
+		public async Task<IActionResult> Delete(int id)
         {
             var product = await _productRepository.GetByIdAsync(id);
             if (product == null)
@@ -163,19 +163,18 @@ namespace AppleStore.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+		private async Task<string> SaveImage(IFormFile image)
+		{
+			var savePath = Path.Combine("wwwroot/img", image.FileName);
+			//thay doi duong dan theo cau hinh cua bn
+			using (var fileStream = new FileStream(savePath, FileMode.Create))
+			{
+				await image.CopyToAsync(fileStream);
+			}
+			return "/img/" + image.FileName;
+			//tra ve duong dan tuong doi
+		}
 
-
-        private async Task<string> SaveImage(IFormFile image)
-        {
-            var savePath = Path.Combine("wwwroot/img", image.FileName);
-            //thay doi duong dan theo cau hinh cua bn
-            using (var fileStream = new FileStream(savePath, FileMode.Create))
-            {
-                await image.CopyToAsync(fileStream);
-            }
-            return "/img/" + image.FileName;
-            //tra ve duong dan tuong doi
-        }
 
         private async Task<List<string>> SaveListImage(List<FormFile> images)
         {

@@ -15,32 +15,34 @@
 			<!-- Product main img -->
 			<div class="col-md-5 col-md-push-2">
 				<div id="product-main-img">
-					@* @if (ViewBag.dsImage != null)
-					{
-						foreach (var img in ViewBag.dsImage)
-						{
-							<img class="m-1 product-preview" src="@img.Url" width="80" ; height="100px" />
-						}
-					} *@
+					
 
 					<div class="product-preview">
 						<img src="@Html.DisplayFor(model => model.ImageUrl)" alt="">
 					</div>
-					<div class="product-preview">
-						<img src="~/img/product01.png" alt="">
+
+					@if (ViewBag.dsImage != null)
+					{
+					foreach (var img in ViewBag.dsImage)
+					{
+					<img class="m-1 product-preview" src="@img.Url" width="80" ; height="100px" />
+					}
+					}
+				@* 	<div class="product-preview">
+						<img src="~/img/iPadAir.png" alt="">
 					</div>
 
 					<div class="product-preview">
-						<img src="~/img/product03.png" alt="">
+						<img src="~/img/iphone15_2.png" alt="">
 					</div>
 
 					<div class="product-preview">
-						<img src="~/img/product06.png" alt="">
-					</div>
+						<img src="~/img/iphone11.png" alt="">
+					</div> *@
 
-					<div class="product-preview">
+					@* <div class="product-preview">
 						<img src="~/img/product08.png" alt="">
-					</div>
+					</div> *@
 				</div>
 			</div>
 			<!-- /Product main img -->
@@ -54,21 +56,21 @@
 							<img class="product-preview" src="@img.Url" width="80" ; height="100px" />
 						}
 					} 
-					<div class="product-preview">
-						<img src="" alt="">
+				@* 	<div class="product-preview">
+						<img src="~/img/Iphone15_1.png" alt="">
 					</div>
 
 					<div class="product-preview">
-						<img src="~/img/product03.png" alt="">
+						<img src="~/img/iphone15_2.png" alt="">
 					</div>
 
 					<div class="product-preview">
-						<img src="~/img/product06.png" alt="">
+						<img src="~/img/iPadAir.png" alt="">
 					</div>
 
 					<div class="product-preview">
-						<img src="~/img/product08.png" alt="">
-					</div>
+						<img src="~/img/iphone11.png" alt="">
+					</div> *@
 				</div>
 			</div>
 			<!-- /Product thumb imgs -->
