@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OjPFvUxBgbo7b8elglcR6jcpQgDowC1oL4obxvt4x30=",
+  "Hash": "hAZ/DPw5iRieORPSKpbcz1AmeRxc+aRyLD5HIc42sos=",
   "Source": "AppleStore",
   "BasePath": "_content/AppleStore",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "AppleStore\\wwwroot",
       "Source": "AppleStore",
-      "ContentRoot": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "Pattern": "**"
     }
