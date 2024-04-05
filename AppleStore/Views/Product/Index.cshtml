@@ -11,7 +11,15 @@
 		<div class="container">
 			<!-- row -->
 			<div class="row">
-
+				<form asp-action="Index" method="get" class="form-check-inline">
+					<label>Title</label>
+					<input type="text" name="name" value="" />
+					<label>From</label>
+					<input type="number" name="Priceto" />
+					<label>To</label>
+					<input type="number" name="Pricefrom" />
+					<button class="primary-btn">Search</button>
+				</form>
 				<div class="col-md-12">
 					<div class="section-title text-center">
 						<h3 class="title">Our Products</h3>

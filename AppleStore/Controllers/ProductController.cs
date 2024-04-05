@@ -19,10 +19,31 @@ namespace AppleStore.Controllers
             _context = dbContext;
         }
 
-
-        public async Task<IActionResult> Index()
+        [HttpGet]
+        public async Task<IActionResult> Index(string name, decimal? Priceto, decimal? Pricefrom )
         {
             var products = await _productRepository.GetAllAsync();
+            if (!string.IsNullOrEmpty(name))
+            {
+                if (Priceto != null && Pricefrom != null)
+                {
+                    products = products.Where(x => x.Name.Contains(name) && x.Price >= Priceto && x.Price <= Pricefrom);
+
+                }
+                else
+                {
+                    products = products.Where(x => x.Name.Contains(name));
+
+                }
+            }
+            else
+            {
+                if (Priceto != null && Pricefrom != null)
+                {
+                    products = products.Where(x =>  x.Price >= Priceto && x.Price <= Pricefrom);
+
+                }
+            }
             return View(products);
         }
 
