@@ -1,15 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FUlONXMm90+gu2xiZ9ZRIw1/3lHgsaaREOu0mza8/yzynsPWTDRCPYcjigyI/UU0/+bVWXUk86HdaAriXFJQGA==",
+  "dgSpecHash": "qig7L2fOmwkMlYQEY8hixPCCmzZvfCsWV5fpm7Jiebf9SVmzv+JO+fi6hlhgIYC/HCUopOs9m+nlcDkZgM387g==",
   "success": true,
-  "projectFilePath": "D:\\WEB_VS\\AppleStore\\AppleStore\\AppleStore.csproj",
+  "projectFilePath": "D:\\Web_Vs\\AppleStore\\AppleStore\\AppleStore.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file D:\\WEB_VS\\AppleStore\\AppleStore\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

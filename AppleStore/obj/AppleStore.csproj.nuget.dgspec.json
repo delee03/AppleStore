@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\WEB_VS\\AppleStore\\AppleStore\\AppleStore.csproj": {}
+    "D:\\Web_Vs\\AppleStore\\AppleStore\\AppleStore.csproj": {}
   },
   "projects": {
-    "D:\\WEB_VS\\AppleStore\\AppleStore\\AppleStore.csproj": {
+    "D:\\Web_Vs\\AppleStore\\AppleStore\\AppleStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\WEB_VS\\AppleStore\\AppleStore\\AppleStore.csproj",
+        "projectUniqueName": "D:\\Web_Vs\\AppleStore\\AppleStore\\AppleStore.csproj",
         "projectName": "AppleStore",
-        "projectPath": "D:\\WEB_VS\\AppleStore\\AppleStore\\AppleStore.csproj",
+        "projectPath": "D:\\Web_Vs\\AppleStore\\AppleStore\\AppleStore.csproj",
         "packagesPath": "C:\\Users\\MSI GAMING\\.nuget\\packages\\",
-        "outputPath": "D:\\WEB_VS\\AppleStore\\AppleStore\\obj\\",
+        "outputPath": "D:\\Web_Vs\\AppleStore\\AppleStore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
