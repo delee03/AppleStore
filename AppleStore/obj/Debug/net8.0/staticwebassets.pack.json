@@ -1,431 +1,483 @@
 {
   "Files": [
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AppleStore.bundle.scp.css",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AppleStore.bundle.scp.css",
       "PackagePath": "staticwebassets\\AppleStore.bundle.scp.css"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\css\\bootstrap.min.css",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\css\\font-awesome.min.css",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\css\\font-awesome.min.css",
       "PackagePath": "staticwebassets\\css\\font-awesome.min.css"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\css\\nouislider.min.css",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\css\\nouislider.min.css",
       "PackagePath": "staticwebassets\\css\\nouislider.min.css"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\css\\site.css",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\css\\slick-theme.css",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\css\\slick-theme.css",
       "PackagePath": "staticwebassets\\css\\slick-theme.css"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\css\\slick.css",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\css\\slick.css",
       "PackagePath": "staticwebassets\\css\\slick.css"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\css\\style.css",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\css\\style.css",
       "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\favicon.ico",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\fonts\\FontAwesome.otf",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\fonts\\FontAwesome.otf",
       "PackagePath": "staticwebassets\\fonts\\FontAwesome.otf"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\fonts\\fontawesome-webfont.eot",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\fonts\\fontawesome-webfont.eot",
       "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.eot"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\fonts\\fontawesome-webfont.svg",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\fonts\\fontawesome-webfont.svg",
       "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.svg"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\fonts\\fontawesome-webfont.ttf",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\fonts\\fontawesome-webfont.ttf",
       "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.ttf"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\fonts\\fontawesome-webfont.woff",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\fonts\\fontawesome-webfont.woff",
       "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\fonts\\fontawesome-webfont.woff2",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\fonts\\fontawesome-webfont.woff2",
       "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff2"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\fonts\\slick.eot",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\fonts\\slick.eot",
       "PackagePath": "staticwebassets\\fonts\\slick.eot"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\fonts\\slick.svg",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\fonts\\slick.svg",
       "PackagePath": "staticwebassets\\fonts\\slick.svg"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\fonts\\slick.ttf",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\fonts\\slick.ttf",
       "PackagePath": "staticwebassets\\fonts\\slick.ttf"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\fonts\\slick.woff",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\fonts\\slick.woff",
       "PackagePath": "staticwebassets\\fonts\\slick.woff"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\img\\AirPodsMax.png",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\AirPodsMax.png",
       "PackagePath": "staticwebassets\\img\\AirPodsMax.png"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\img\\AirPodsPro.png",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\AirPodsPro.png",
       "PackagePath": "staticwebassets\\img\\AirPodsPro.png"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\img\\AppleLogo.png",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\AppleLogo.png",
       "PackagePath": "staticwebassets\\img\\AppleLogo.png"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\img\\Iphone15_1.png",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\Iphone15_1.png",
       "PackagePath": "staticwebassets\\img\\Iphone15_1.png"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\img\\hotdeal.png",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\hotdeal.png",
       "PackagePath": "staticwebassets\\img\\hotdeal.png"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\img\\iPadAir.png",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\iPadAir.png",
       "PackagePath": "staticwebassets\\img\\iPadAir.png"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\img\\iphone11.png",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip13den.webp",
+      "PackagePath": "staticwebassets\\img\\ip13den.webp"
+    },
+    {
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip13do.webp",
+      "PackagePath": "staticwebassets\\img\\ip13do.webp"
+    },
+    {
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip13trang.webp",
+      "PackagePath": "staticwebassets\\img\\ip13trang.webp"
+    },
+    {
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip14detail.jpg",
+      "PackagePath": "staticwebassets\\img\\ip14detail.jpg"
+    },
+    {
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip14main.jpg",
+      "PackagePath": "staticwebassets\\img\\ip14main.jpg"
+    },
+    {
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip14plus.webp",
+      "PackagePath": "staticwebassets\\img\\ip14plus.webp"
+    },
+    {
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip14plusden.webp",
+      "PackagePath": "staticwebassets\\img\\ip14plusden.webp"
+    },
+    {
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip14plusdo.webp",
+      "PackagePath": "staticwebassets\\img\\ip14plusdo.webp"
+    },
+    {
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip14timcanh.webp",
+      "PackagePath": "staticwebassets\\img\\ip14timcanh.webp"
+    },
+    {
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\iphone11.png",
       "PackagePath": "staticwebassets\\img\\iphone11.png"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\img\\iphone15_2.png",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\iphone15_2.png",
       "PackagePath": "staticwebassets\\img\\iphone15_2.png"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\img\\logo.png",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\logo.png",
       "PackagePath": "staticwebassets\\img\\logo.png"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\img\\mac1.png",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\mac1.png",
       "PackagePath": "staticwebassets\\img\\mac1.png"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\img\\mac2.png",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\mac2.png",
       "PackagePath": "staticwebassets\\img\\mac2.png"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\img\\product01.png",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\macm1canh.png",
+      "PackagePath": "staticwebassets\\img\\macm1canh.png"
+    },
+    {
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\macm1full-removebg-preview.png",
+      "PackagePath": "staticwebassets\\img\\macm1full-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\macm1full.png",
+      "PackagePath": "staticwebassets\\img\\macm1full.png"
+    },
+    {
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\macm1lung.png",
+      "PackagePath": "staticwebassets\\img\\macm1lung.png"
+    },
+    {
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\product01.png",
       "PackagePath": "staticwebassets\\img\\product01.png"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\img\\product02.png",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\product02.png",
       "PackagePath": "staticwebassets\\img\\product02.png"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\img\\product03.png",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\product03.png",
       "PackagePath": "staticwebassets\\img\\product03.png"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\img\\product04.png",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\product04.png",
       "PackagePath": "staticwebassets\\img\\product04.png"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\img\\product05.png",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\product05.png",
       "PackagePath": "staticwebassets\\img\\product05.png"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\img\\product06.png",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\product06.png",
       "PackagePath": "staticwebassets\\img\\product06.png"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\img\\product07.png",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\product07.png",
       "PackagePath": "staticwebassets\\img\\product07.png"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\img\\product08.png",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\product08.png",
       "PackagePath": "staticwebassets\\img\\product08.png"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\img\\product09.png",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\product09.png",
       "PackagePath": "staticwebassets\\img\\product09.png"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\img\\shop01.png",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\shop01.png",
       "PackagePath": "staticwebassets\\img\\shop01.png"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\img\\shop02.png",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\shop02.png",
       "PackagePath": "staticwebassets\\img\\shop02.png"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\img\\shop03.png",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\shop03.png",
       "PackagePath": "staticwebassets\\img\\shop03.png"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\img\\xsmax.png",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\xsmax.png",
       "PackagePath": "staticwebassets\\img\\xsmax.png"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\js\\bootstrap.min.js",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\js\\jquery.min.js",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\js\\jquery.min.js",
       "PackagePath": "staticwebassets\\js\\jquery.min.js"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\js\\jquery.zoom.min.js",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\js\\jquery.zoom.min.js",
       "PackagePath": "staticwebassets\\js\\jquery.zoom.min.js"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\js\\main.js",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\js\\main.js",
       "PackagePath": "staticwebassets\\js\\main.js"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\js\\nouislider.min.js",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\js\\nouislider.min.js",
       "PackagePath": "staticwebassets\\js\\nouislider.min.js"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\js\\site.js",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\js\\slick.min.js",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\js\\slick.min.js",
       "PackagePath": "staticwebassets\\js\\slick.min.js"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "D:\\WEB_VS\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

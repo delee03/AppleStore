@@ -871,7 +871,10 @@ textarea.input {
 }
 
 .product .product-img>img {
+ 
   width: 100%;
+    height: 259px;
+    object-fit: cover;
 }
 
 .product .product-img .product-label {
@@ -1202,6 +1205,10 @@ textarea.input {
   font-size: 14px;
 }
 
+img.product-preview.slick-slide.slick-current.slick-active.slick-center {
+    border-radius: 5px;
+}
+
 /*=========================================================
 	07 -> PRODUCTS PAGE
 ===========================================================*/
@@ -1523,6 +1530,7 @@ textarea.input {
 }
 
 .product-details .product-options .input-select {
+  margin-left: 3px;
   width: 90px;
 }
 
@@ -1578,8 +1586,9 @@ textarea.input {
 }
 
 .product-details .add-to-cart .qty-label .input-number {
-  width: 90px;
-  display: inline-block;
+    display: inline-block;
+    margin-left: 4px;
+    width: 90px;
 }
 
 .product-details .product-btns li {
@@ -2187,4 +2196,24 @@ textarea.input {
     float: none;
     margin-top: 10px;
   }
+}
+
+.btn-action {
+    min-width: 100px;
+    text-align: center;
+    display: inline-block;
+    background: #fff;
+    color: #ff0000;
+    border: 3px solid red;
+    padding: 8px 30px;
+    margin: 5px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+.btn-action:hover {
+    color: white;
+    border: 3px solid #e90000;
+    background-image: linear-gradient(160deg, #e90000 0%, #d08080 100%);
+    transition: ease 0.5s;
 }

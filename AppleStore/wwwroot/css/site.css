@@ -20,3 +20,23 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.btn--btn {
+    min-width: 100px;
+    text-align: center;
+    display: inline-block;
+    background: #fff;
+    color: #ff0000;
+    border: 3px solid #fff;
+    padding: 8px 30px;
+    margin: 5px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+.btn--btn:hover {
+    color: white;
+    border: 3px solid #e90000;
+    background-image: linear-gradient(160deg, #e90000 0%, #d08080 100%);
+    transition: ease 0.5s;
+}
