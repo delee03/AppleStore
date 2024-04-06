@@ -2217,3 +2217,12 @@ img.product-preview.slick-slide.slick-current.slick-active.slick-center {
     background-image: linear-gradient(160deg, #e90000 0%, #d08080 100%);
     transition: ease 0.5s;
 }
+
+/* global*/
+
+
+.flexcenter {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}

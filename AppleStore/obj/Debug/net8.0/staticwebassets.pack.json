@@ -93,6 +93,26 @@
       "PackagePath": "staticwebassets\\img\\Iphone15_1.png"
     },
     {
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\Screenshot 2024-04-02 131716.png",
+      "PackagePath": "staticwebassets\\img\\Screenshot 2024-04-02 131716.png"
+    },
+    {
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\Screenshot 2024-04-04 092916.png",
+      "PackagePath": "staticwebassets\\img\\Screenshot 2024-04-04 092916.png"
+    },
+    {
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\Screenshot 2024-04-05 200548.png",
+      "PackagePath": "staticwebassets\\img\\Screenshot 2024-04-05 200548.png"
+    },
+    {
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\WIN_20231220_10_29_28_Pro.mp4",
+      "PackagePath": "staticwebassets\\img\\WIN_20231220_10_29_28_Pro.mp4"
+    },
+    {
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\WIN_20231220_10_29_34_Pro.jpg",
+      "PackagePath": "staticwebassets\\img\\WIN_20231220_10_29_34_Pro.jpg"
+    },
+    {
       "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\hotdeal.png",
       "PackagePath": "staticwebassets\\img\\hotdeal.png"
     },
@@ -103,6 +123,10 @@
     {
       "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip13den.webp",
       "PackagePath": "staticwebassets\\img\\ip13den.webp"
+    },
+    {
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip13do - Copy.webp",
+      "PackagePath": "staticwebassets\\img\\ip13do - Copy.webp"
     },
     {
       "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip13do.webp",

@@ -1,10 +1,6 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\AppleStore",
-    "\\AppleStore\\Views",
-    "\\AppleStore\\Views\\Home"
+    ""
   ],
-  "SelectedNode": "\\AppleStore\\Views\\Home\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }
