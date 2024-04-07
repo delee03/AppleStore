@@ -4,20 +4,42 @@
 	ViewData["Title"] = "Index";
 }
 
-
+<!-- BREADCRUMB -->
+<div id="breadcrumb" class="section">
+	<!-- container -->
+	<div class="container">
+		<!-- row -->
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="breadcrumb-tree">
+					<li><a href=" /home">Home</a></li>
+					<li><a asp-action="Index" asp-controller="Product">All Product</a></li>
+					<li class="active"><a href="/product">Product</a></li>
+					@* <li><a asp-action="ShowAccessories" asp-controller="Product">Accessories</a></li>
+					
+					<li class="active"><a asp-action="ShowAccessories" asp-controller="Product">Product Display</a></li> *@
+				</ul>
+			</div>
+		</div>
+		<!-- /row -->
+	</div>
+	<!-- /container -->
+</div>
+<!-- /BREADCRUMB -->
 	<!-- Section -->
 	<div class="section">
 		<!-- container -->
 		<div class="container">
 			<!-- row -->
 			<div class="row">
-				<form asp-action="Index" method="get" class="form-check-inline">
+				<form asp-action="Index" method="get" class="form-check-inline" style="margin-bottom: 50px">
 					<label>Title</label>
 					<input type="text" name="name" value="" />
 					<label>From</label>
+					
 					<input type="number" name="Priceto" />
 					<label>To</label>
-					<input type="number" name="Pricefrom" />
+					<input type="number" name="Pricefrom" />	
 					<button class="primary-btn">Search</button>
 				</form>
 				<div class="col-md-12">

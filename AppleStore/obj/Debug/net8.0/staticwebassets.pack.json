@@ -97,6 +97,10 @@
       "PackagePath": "staticwebassets\\img\\hotdeal.png"
     },
     {
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\hotdeal1.png",
+      "PackagePath": "staticwebassets\\img\\hotdeal1.png"
+    },
+    {
       "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\iPadAir.png",
       "PackagePath": "staticwebassets\\img\\iPadAir.png"
     },
@@ -107,10 +111,6 @@
     {
       "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\iphone15_2.png",
       "PackagePath": "staticwebassets\\img\\iphone15_2.png"
-    },
-    {
-      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\logo.png",
-      "PackagePath": "staticwebassets\\img\\logo.png"
     },
     {
       "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\mac1.png",

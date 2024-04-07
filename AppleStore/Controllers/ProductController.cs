@@ -1,4 +1,5 @@
-﻿using AppleStore.DataAcess;
+﻿using System.Reflection.Metadata.Ecma335;
+using AppleStore.DataAcess;
 using AppleStore.Models;
 using AppleStore.Repository;
 using Microsoft.AspNetCore.Mvc;
@@ -47,8 +48,42 @@ namespace AppleStore.Controllers
             return View(products);
         }
 
-        //Tạo form thêm sản phẩm mới
-        public async Task<IActionResult> Add()
+        //Loc du lieu
+        public async Task<ActionResult> ShowCategories(int? CategoryId)
+        {
+            CategoryId = CategoryId ?? 0;
+            var categories = await _categoryRepository.GetAllAsync();
+            var listCategories = categories.ToList();
+            listCategories.Insert( 0, new Category { Id = 0, Name = "--Select Category--" });
+            ViewBag.CategoryId = new SelectList(listCategories, "Id", "Name", CategoryId);
+            var products =_context.Products.Where(x => x.CategoryId == CategoryId);
+            return View(products);
+        }
+		public async Task<ActionResult> ShowIphone()
+		{
+			//	CategoryId = CategoryId ?? 0;
+			//var categories = await _categoryRepository.GetAllAsync();
+			//  ViewBag.CategoryId = 1;
+			var product = await _productRepository.GetAllAsync();
+			 product = _context.Products.Where(x => x.CategoryId == 1);
+			return View(product);
+		}
+
+		public async Task<ActionResult> ShowMacbook()
+		{
+			var product = await _productRepository.GetAllAsync();
+			product = _context.Products.Where(x => x.CategoryId == 2);
+			return View(product);
+		}
+		public async Task<ActionResult> ShowAccessories()
+		{
+			var product = await _productRepository.GetAllAsync();
+			product = _context.Products.Where(x => x.CategoryId == 3);
+			return View(product);
+		}
+
+		//Tạo form thêm sản phẩm mới
+		public async Task<IActionResult> Add()
         {
             var categories = await _categoryRepository.GetAllAsync();
             ViewBag.Categories = new SelectList(categories, "Id", "Name");

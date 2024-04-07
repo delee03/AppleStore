@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4k9g7I5lRqpWQ7n2Bpa3FQCQDLpqSXneci2CTt0PD7E=",
+  "Hash": "NL5dEuFoGweEaE4m7aa5ysDjP8URNYuowCEzXX3CtKk=",
   "Source": "AppleStore",
   "BasePath": "_content/AppleStore",
   "Mode": "Default",
@@ -473,6 +473,25 @@
       "OriginalItemSpec": "wwwroot\\img\\hotdeal.png"
     },
     {
+      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\hotdeal1.png",
+      "SourceId": "AppleStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "BasePath": "_content/AppleStore",
+      "RelativePath": "img/hotdeal1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\hotdeal1.png"
+    },
+    {
       "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\iPadAir.png",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
@@ -547,25 +566,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\iphone15_2.png"
-    },
-    {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\logo.png",
-      "SourceId": "AppleStore",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
-      "BasePath": "_content/AppleStore",
-      "RelativePath": "img/logo.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\logo.png"
     },
     {
       "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\mac1.png",
