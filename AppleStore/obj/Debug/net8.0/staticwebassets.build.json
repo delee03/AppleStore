@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KjLl6kidWrqwZVXPAbMDibM3cb1Bh7j064azGwt6LLw=",
+  "Hash": "c1BfVm257YJSn0gF2FBpM3jcVjpi3dOuNcXhrhOMQ7A=",
   "Source": "AppleStore",
   "BasePath": "_content/AppleStore",
   "Mode": "Default",
@@ -12310,10 +12310,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ap00.png"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ap1.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ap1.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ap1.webp",
       "AssetKind": "All",
@@ -12329,10 +12329,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ap1.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ap1-1.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ap1-1.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ap1-1.webp",
       "AssetKind": "All",
@@ -12348,10 +12348,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ap1-1.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ap1-2.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ap1-2.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ap1-2.webp",
       "AssetKind": "All",
@@ -12367,10 +12367,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ap1-2.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ap1-3.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ap1-3.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ap1-3.webp",
       "AssetKind": "All",
@@ -12386,10 +12386,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ap1-3.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\AppleLogo.png",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\AppleLogo.png",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/AppleLogo.png",
       "AssetKind": "All",
@@ -12405,10 +12405,10 @@
       "OriginalItemSpec": "wwwroot\\img\\AppleLogo.png"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\awbac1.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\awbac1.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/awbac1.webp",
       "AssetKind": "All",
@@ -12424,10 +12424,10 @@
       "OriginalItemSpec": "wwwroot\\img\\awbac1.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\awden1.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\awden1.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/awden1.webp",
       "AssetKind": "All",
@@ -12443,10 +12443,10 @@
       "OriginalItemSpec": "wwwroot\\img\\awden1.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\awden2.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\awden2.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/awden2.webp",
       "AssetKind": "All",
@@ -12462,10 +12462,10 @@
       "OriginalItemSpec": "wwwroot\\img\\awden2.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\awtrang1.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\awtrang1.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/awtrang1.webp",
       "AssetKind": "All",
@@ -12481,10 +12481,10 @@
       "OriginalItemSpec": "wwwroot\\img\\awtrang1.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\hotdeal1.png",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\hotdeal1.png",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/hotdeal1.png",
       "AssetKind": "All",
@@ -12500,10 +12500,10 @@
       "OriginalItemSpec": "wwwroot\\img\\hotdeal1.png"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\imac1.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\imac1.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/imac1.webp",
       "AssetKind": "All",
@@ -12519,10 +12519,10 @@
       "OriginalItemSpec": "wwwroot\\img\\imac1.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\imac1-1.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\imac1-1.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/imac1-1.webp",
       "AssetKind": "All",
@@ -12538,10 +12538,10 @@
       "OriginalItemSpec": "wwwroot\\img\\imac1-1.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\imac1-2.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\imac1-2.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/imac1-2.webp",
       "AssetKind": "All",
@@ -12557,10 +12557,10 @@
       "OriginalItemSpec": "wwwroot\\img\\imac1-2.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\imac1-33.jpg",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\imac1-33.jpg",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/imac1-33.jpg",
       "AssetKind": "All",
@@ -12576,10 +12576,10 @@
       "OriginalItemSpec": "wwwroot\\img\\imac1-33.jpg"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\imac1-full.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\imac1-full.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/imac1-full.webp",
       "AssetKind": "All",
@@ -12595,10 +12595,10 @@
       "OriginalItemSpec": "wwwroot\\img\\imac1-full.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\imac2.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\imac2.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/imac2.webp",
       "AssetKind": "All",
@@ -12614,10 +12614,10 @@
       "OriginalItemSpec": "wwwroot\\img\\imac2.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\imac2-2.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\imac2-2.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/imac2-2.webp",
       "AssetKind": "All",
@@ -12633,10 +12633,10 @@
       "OriginalItemSpec": "wwwroot\\img\\imac2-2.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\imac2-3.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\imac2-3.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/imac2-3.webp",
       "AssetKind": "All",
@@ -12652,10 +12652,10 @@
       "OriginalItemSpec": "wwwroot\\img\\imac2-3.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\imac2-44.jpg",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\imac2-44.jpg",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/imac2-44.jpg",
       "AssetKind": "All",
@@ -12671,10 +12671,10 @@
       "OriginalItemSpec": "wwwroot\\img\\imac2-44.jpg"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\imac3.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\imac3.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/imac3.webp",
       "AssetKind": "All",
@@ -12690,10 +12690,10 @@
       "OriginalItemSpec": "wwwroot\\img\\imac3.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\imac3-1.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\imac3-1.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/imac3-1.webp",
       "AssetKind": "All",
@@ -12709,10 +12709,10 @@
       "OriginalItemSpec": "wwwroot\\img\\imac3-1.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\imac3-2.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\imac3-2.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/imac3-2.webp",
       "AssetKind": "All",
@@ -12728,10 +12728,10 @@
       "OriginalItemSpec": "wwwroot\\img\\imac3-2.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\imac3-33.jpg",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\imac3-33.jpg",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/imac3-33.jpg",
       "AssetKind": "All",
@@ -12747,10 +12747,10 @@
       "OriginalItemSpec": "wwwroot\\img\\imac3-33.jpg"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\imacgirl.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\imacgirl.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/imacgirl.webp",
       "AssetKind": "All",
@@ -12766,10 +12766,10 @@
       "OriginalItemSpec": "wwwroot\\img\\imacgirl.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip13-00.png",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip13-00.png",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ip13-00.png",
       "AssetKind": "All",
@@ -12785,10 +12785,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ip13-00.png"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip13-1.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip13-1.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ip13-1.webp",
       "AssetKind": "All",
@@ -12804,10 +12804,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ip13-1.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip13-2.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip13-2.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ip13-2.webp",
       "AssetKind": "All",
@@ -12823,10 +12823,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ip13-2.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip13-3.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip13-3.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ip13-3.webp",
       "AssetKind": "All",
@@ -12842,10 +12842,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ip13-3.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip13-4.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip13-4.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ip13-4.webp",
       "AssetKind": "All",
@@ -12861,10 +12861,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ip13-4.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip13-5.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip13-5.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ip13-5.webp",
       "AssetKind": "All",
@@ -12880,10 +12880,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ip13-5.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip13cam.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip13cam.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ip13cam.webp",
       "AssetKind": "All",
@@ -12899,10 +12899,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ip13cam.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip13canh.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip13canh.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ip13canh.webp",
       "AssetKind": "All",
@@ -12918,10 +12918,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ip13canh.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip13full2.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip13full2.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ip13full2.webp",
       "AssetKind": "All",
@@ -12937,10 +12937,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ip13full2.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip13full3.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip13full3.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ip13full3.webp",
       "AssetKind": "All",
@@ -12956,10 +12956,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ip13full3.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip13full33.png",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip13full33.png",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ip13full33.png",
       "AssetKind": "All",
@@ -12975,10 +12975,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ip13full33.png"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip14-1.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip14-1.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ip14-1.webp",
       "AssetKind": "All",
@@ -12994,10 +12994,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ip14-1.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip14-11.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip14-11.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ip14-11.webp",
       "AssetKind": "All",
@@ -13013,10 +13013,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ip14-11.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip14-12.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip14-12.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ip14-12.webp",
       "AssetKind": "All",
@@ -13032,10 +13032,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ip14-12.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip14-2.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip14-2.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ip14-2.webp",
       "AssetKind": "All",
@@ -13051,10 +13051,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ip14-2.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip14-3.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip14-3.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ip14-3.webp",
       "AssetKind": "All",
@@ -13070,10 +13070,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ip14-3.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip14-4.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip14-4.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ip14-4.webp",
       "AssetKind": "All",
@@ -13089,10 +13089,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ip14-4.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip14-5.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip14-5.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ip14-5.webp",
       "AssetKind": "All",
@@ -13108,10 +13108,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ip14-5.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip14-6.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip14-6.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ip14-6.webp",
       "AssetKind": "All",
@@ -13127,10 +13127,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ip14-6.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip14-7.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip14-7.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ip14-7.webp",
       "AssetKind": "All",
@@ -13146,10 +13146,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ip14-7.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip14full.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip14full.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ip14full.webp",
       "AssetKind": "All",
@@ -13165,10 +13165,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ip14full.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip14full2.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip14full2.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ip14full2.webp",
       "AssetKind": "All",
@@ -13184,10 +13184,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ip14full2.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip14full3.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip14full3.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ip14full3.webp",
       "AssetKind": "All",
@@ -13203,10 +13203,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ip14full3.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip15-1.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip15-1.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ip15-1.webp",
       "AssetKind": "All",
@@ -13222,10 +13222,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ip15-1.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip15-11.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip15-11.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ip15-11.webp",
       "AssetKind": "All",
@@ -13241,10 +13241,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ip15-11.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip15-2.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip15-2.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ip15-2.webp",
       "AssetKind": "All",
@@ -13260,10 +13260,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ip15-2.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip15-21.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip15-21.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ip15-21.webp",
       "AssetKind": "All",
@@ -13279,10 +13279,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ip15-21.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip15-3.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip15-3.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ip15-3.webp",
       "AssetKind": "All",
@@ -13298,10 +13298,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ip15-3.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip15-31.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip15-31.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ip15-31.webp",
       "AssetKind": "All",
@@ -13317,10 +13317,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ip15-31.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip15-4.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip15-4.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ip15-4.webp",
       "AssetKind": "All",
@@ -13336,10 +13336,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ip15-4.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip15-41.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip15-41.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ip15-41.webp",
       "AssetKind": "All",
@@ -13355,10 +13355,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ip15-41.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip15-5.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip15-5.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ip15-5.webp",
       "AssetKind": "All",
@@ -13374,10 +13374,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ip15-5.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip15-51.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip15-51.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ip15-51.webp",
       "AssetKind": "All",
@@ -13393,10 +13393,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ip15-51.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip15cam.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip15cam.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ip15cam.webp",
       "AssetKind": "All",
@@ -13412,10 +13412,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ip15cam.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip15cam2.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip15cam2.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ip15cam2.webp",
       "AssetKind": "All",
@@ -13431,10 +13431,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ip15cam2.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip15canh2.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip15canh2.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ip15canh2.webp",
       "AssetKind": "All",
@@ -13450,10 +13450,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ip15canh2.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip15full.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip15full.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ip15full.webp",
       "AssetKind": "All",
@@ -13469,10 +13469,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ip15full.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip15full1.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip15full1.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ip15full1.webp",
       "AssetKind": "All",
@@ -13488,10 +13488,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ip15full1.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip15full2.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip15full2.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ip15full2.webp",
       "AssetKind": "All",
@@ -13507,10 +13507,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ip15full2.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip15lung.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip15lung.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ip15lung.webp",
       "AssetKind": "All",
@@ -13526,10 +13526,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ip15lung.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\iPadAir.png",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\iPadAir.png",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/iPadAir.png",
       "AssetKind": "All",
@@ -13545,10 +13545,10 @@
       "OriginalItemSpec": "wwwroot\\img\\iPadAir.png"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ipcanh.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ipcanh.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/ipcanh.webp",
       "AssetKind": "All",
@@ -13564,7 +13564,7 @@
       "OriginalItemSpec": "wwwroot\\img\\ipcanh.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\iphone11.png",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\iphone11.png",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
@@ -13621,10 +13621,10 @@
       "OriginalItemSpec": "wwwroot\\img\\iphone15_2.png"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\mac1.png",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\mac1.png",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/mac1.png",
       "AssetKind": "All",
@@ -13659,10 +13659,10 @@
       "OriginalItemSpec": "wwwroot\\img\\mac2.png"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\macair1.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\macair1.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/macair1.webp",
       "AssetKind": "All",
@@ -13678,10 +13678,10 @@
       "OriginalItemSpec": "wwwroot\\img\\macair1.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\macair2.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\macair2.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/macair2.webp",
       "AssetKind": "All",
@@ -13697,10 +13697,10 @@
       "OriginalItemSpec": "wwwroot\\img\\macair2.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\macair3.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\macair3.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/macair3.webp",
       "AssetKind": "All",
@@ -13716,10 +13716,10 @@
       "OriginalItemSpec": "wwwroot\\img\\macair3.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\macair4.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\macair4.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/macair4.webp",
       "AssetKind": "All",
@@ -13735,10 +13735,10 @@
       "OriginalItemSpec": "wwwroot\\img\\macair4.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\macair5.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\macair5.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/macair5.webp",
       "AssetKind": "All",
@@ -13754,10 +13754,10 @@
       "OriginalItemSpec": "wwwroot\\img\\macair5.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\macgap.png",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\macgap.png",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/macgap.png",
       "AssetKind": "All",
@@ -13773,10 +13773,10 @@
       "OriginalItemSpec": "wwwroot\\img\\macgap.png"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\macgap0.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\macgap0.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/macgap0.webp",
       "AssetKind": "All",
@@ -13792,10 +13792,10 @@
       "OriginalItemSpec": "wwwroot\\img\\macgap0.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\mackey.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\mackey.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/mackey.webp",
       "AssetKind": "All",
@@ -13811,10 +13811,10 @@
       "OriginalItemSpec": "wwwroot\\img\\mackey.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\maclogo.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\maclogo.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/maclogo.webp",
       "AssetKind": "All",
@@ -13830,10 +13830,10 @@
       "OriginalItemSpec": "wwwroot\\img\\maclogo.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\maclogo2.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\maclogo2.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/maclogo2.webp",
       "AssetKind": "All",
@@ -13849,10 +13849,10 @@
       "OriginalItemSpec": "wwwroot\\img\\maclogo2.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\maclung.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\maclung.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/maclung.webp",
       "AssetKind": "All",
@@ -13868,10 +13868,10 @@
       "OriginalItemSpec": "wwwroot\\img\\maclung.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\macm1lung.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\macm1lung.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/macm1lung.webp",
       "AssetKind": "All",
@@ -13887,10 +13887,10 @@
       "OriginalItemSpec": "wwwroot\\img\\macm1lung.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\macpro0.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\macpro0.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/macpro0.webp",
       "AssetKind": "All",
@@ -13906,10 +13906,10 @@
       "OriginalItemSpec": "wwwroot\\img\\macpro0.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\macpro1.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\macpro1.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/macpro1.webp",
       "AssetKind": "All",
@@ -13925,10 +13925,10 @@
       "OriginalItemSpec": "wwwroot\\img\\macpro1.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\macpro2.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\macpro2.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/macpro2.webp",
       "AssetKind": "All",
@@ -13944,10 +13944,10 @@
       "OriginalItemSpec": "wwwroot\\img\\macpro2.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\macpro3.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\macpro3.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/macpro3.webp",
       "AssetKind": "All",
@@ -13963,10 +13963,10 @@
       "OriginalItemSpec": "wwwroot\\img\\macpro3.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\macpro4.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\macpro4.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/macpro4.webp",
       "AssetKind": "All",
@@ -13982,10 +13982,10 @@
       "OriginalItemSpec": "wwwroot\\img\\macpro4.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\macprofull.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\macprofull.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/macprofull.webp",
       "AssetKind": "All",
@@ -14001,10 +14001,10 @@
       "OriginalItemSpec": "wwwroot\\img\\macprofull.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\macprofull2.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\macprofull2.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/macprofull2.webp",
       "AssetKind": "All",
@@ -14020,10 +14020,10 @@
       "OriginalItemSpec": "wwwroot\\img\\macprofull2.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\macprogap2.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\macprogap2.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/macprogap2.webp",
       "AssetKind": "All",
@@ -14039,10 +14039,10 @@
       "OriginalItemSpec": "wwwroot\\img\\macprogap2.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\macprokey.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\macprokey.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/macprokey.webp",
       "AssetKind": "All",
@@ -14058,7 +14058,7 @@
       "OriginalItemSpec": "wwwroot\\img\\macprokey.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\product01.png",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\product01.png",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
@@ -14286,10 +14286,10 @@
       "OriginalItemSpec": "wwwroot\\img\\shop03.png"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\tablet1.webp",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\tablet1.webp",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
       "RelativePath": "img/tablet1.webp",
       "AssetKind": "All",
@@ -14305,7 +14305,7 @@
       "OriginalItemSpec": "wwwroot\\img\\tablet1.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\xsmax.png",
+      "Identity": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\xsmax.png",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\",
