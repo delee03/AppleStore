@@ -112,6 +112,7 @@
 		down.on('click', function () {
 			var value = parseInt($input.val()) - 1;
 			value = value < 1 ? 1 : value;
+			value = value > 9999.00 ? 9999.00 : value;
 			$input.val(value);
 			$input.change();
 			updatePriceSlider($this , value)
@@ -136,6 +137,25 @@
 		updatePriceSlider($(this).parent() , this.value)
 	});
 
+	// Price Slider
+	var priceSlider = document.getElementById('price-slider');
+	if (priceSlider) {
+		noUiSlider.create(priceSlider, {
+			start: [1, 10000],
+			connect: true,
+			step: 1,
+			range: {
+				'min': 1,
+				'max': 10000
+			}
+		});
+
+		priceSlider.noUiSlider.on('update', function (values, handle) {
+			var value = values[handle];
+			handle ? priceInputMax.value = value : priceInputMin.value = value
+		});
+	}
+
 	function updatePriceSlider(elem , value) {
 		if ( elem.hasClass('price-min') ) {
 			console.log('min')
@@ -146,23 +166,6 @@
 		}
 	}
 
-	// Price Slider
-	var priceSlider = document.getElementById('price-slider');
-	if (priceSlider) {
-		noUiSlider.create(priceSlider, {
-			start: [1, 999],
-			connect: true,
-			step: 1,
-			range: {
-				'min': 1,
-				'max': 999
-			}
-		});
-
-		priceSlider.noUiSlider.on('update', function( values, handle ) {
-			var value = values[handle];
-			handle ? priceInputMax.value = value : priceInputMin.value = value
-		});
-	}
+	
 
 })(jQuery);

@@ -1,51 +1,84 @@
 ﻿@model AppleStore.Models.Product
 
-<h2>Add</h2>
+<style>
+    .container--extra {
+        margin-left: 190px;
+        margin-top: 50px;
+    }
+</style>
 
-<h4>Product</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Add" enctype="multipart/form-data">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
+<!-- BREADCRUMB -->
+<div id="breadcrumb" class="section">
+    <!-- container -->
+    <div class="container">
+        <!-- row -->
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="breadcrumb-tree">
+                    <li><a href=" /home">Home</a></li>
+                    <li><a asp-action="Index" asp-controller="Product">All Product</a></li>
+                    <li class="active"><a href="/product">Product</a></li>
+                    @* <li><a asp-action="ShowAccessories" asp-controller="Product">Accessories</a></li>
+
+                    <li class="active"><a asp-action="ShowAccessories" asp-controller="Product">Product Display</a></li> *@
+                </ul>
             </div>
-            <div class="form-group">
-                <label asp-for="Price" class="control-label"></label>
-                <input asp-for="Price" class="form-control" />
-                <span asp-validation-for="Price" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Description" class="control-label"></label>
-                <input asp-for="Description" class="form-control" />
-                <span asp-validation-for="Description" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ImageUrl" class="control-label">Image</label>
-                <input type="file" asp-for="ImageUrl" class="form-control" />
-                <span asp-validation-for="ImageUrl" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ImageUrls" class="control-label">Detail Images</label>
-                <input type="file" asp-for="ImageUrls" class="form-control" multiple />
-                <span asp-validation-for="ImageUrls" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CategoryId" class="control-label">Category</label>
-                <select asp-for="CategoryId" class ="form-control" asp-items="@ViewBag.Categories"></select>
-            </div>
-            <div class="form-group" style="margin-top:15px">
-                <input type="submit" value="Create" class="primary-btn" />
-            </div>
-        </form>
+        </div>
+        <!-- /row -->
     </div>
+    <!-- /container -->
 </div>
+<!-- /BREADCRUMB -->
 
-<div>
-    <a asp-action="Index" class="btn-action">Back to List</a>
+<div class="container--extra">
+    <h2>Add</h2>
+
+    <h4>Product</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Add" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label"></label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Price" class="control-label"></label>
+                    <input asp-for="Price" class="form-control" />
+                    <span asp-validation-for="Price" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Description" class="control-label"></label>
+                    <input asp-for="Description" class="form-control" />
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ImageUrl" class="control-label">Image</label>
+                    <input type="file" asp-for="ImageUrl" class="form-control" />
+                    <span asp-validation-for="ImageUrl" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ImageUrls" class="control-label">Detail Images</label>
+                    <input type="file" asp-for="ImageUrls" class="form-control" multiple />
+                    <span asp-validation-for="ImageUrls" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="CategoryId" class="control-label">Category</label>
+                    <select asp-for="CategoryId" class="form-control" asp-items="@ViewBag.Categories"></select>
+                </div>
+                <div class="form-group" style="margin-top:15px">
+                    <input type="submit" value="Create" class="btn-action" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a asp-action="Index" class="btn-action">Back to List</a>
+    </div>
+
 </div>
 
 	
