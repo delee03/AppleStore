@@ -189,8 +189,8 @@
       "PackagePath": "staticwebassets\\img\\imacgirl.webp"
     },
     {
-      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip13-0.webp",
-      "PackagePath": "staticwebassets\\img\\ip13-0.webp"
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip13-00.png",
+      "PackagePath": "staticwebassets\\img\\ip13-00.png"
     },
     {
       "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip13-1.webp",
@@ -227,6 +227,10 @@
     {
       "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip13full3.webp",
       "PackagePath": "staticwebassets\\img\\ip13full3.webp"
+    },
+    {
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip13full33.png",
+      "PackagePath": "staticwebassets\\img\\ip13full33.png"
     },
     {
       "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip14-1.webp",

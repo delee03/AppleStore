@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wa6+e6I54mYVBIMrdSdPProaLhFexn/zu5yjOgeollo=",
+  "Hash": "NoqYW5FM93SXgn2kLueQcx2H7MvIqS1aXM0ZRl5/NOY=",
   "Source": "AppleStore",
   "BasePath": "_content/AppleStore",
   "Mode": "Default",
@@ -891,12 +891,12 @@
       "OriginalItemSpec": "wwwroot\\img\\imacgirl.webp"
     },
     {
-      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip13-0.webp",
+      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip13-00.png",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
       "BasePath": "_content/AppleStore",
-      "RelativePath": "img/ip13-0.webp",
+      "RelativePath": "img/ip13-00.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -907,7 +907,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\ip13-0.webp"
+      "OriginalItemSpec": "wwwroot\\img\\ip13-00.png"
     },
     {
       "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip13-1.webp",
@@ -1079,6 +1079,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\ip13full3.webp"
+    },
+    {
+      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip13full33.png",
+      "SourceId": "AppleStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "BasePath": "_content/AppleStore",
+      "RelativePath": "img/ip13full33.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\ip13full33.png"
     },
     {
       "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip14-1.webp",
