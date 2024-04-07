@@ -8,7 +8,6 @@ namespace AppleStore.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-       
         public int Id { get; set; }
 
         [Required(ErrorMessage = "Please type product name"), StringLength(100, ErrorMessage = "Length of product name is less than 100 characters")]      

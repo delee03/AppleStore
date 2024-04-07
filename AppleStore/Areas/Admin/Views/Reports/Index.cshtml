@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewBag.Title = "Báo cáo - Góp ý - Liên hệ";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    // var listReports = (List<reports>)ViewData["listReports"];
+}
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="card">
+            <!-- Table Start -->
+            <div class="card-body">
+                <div class="table-responsive table-desi">
+                    <table class="user-table ticket-table table table-striped">
+                        <thead>
+                            <tr>
+                                <th>No.</th>
+                                <th>Người gửi</th>
+                                <th>Email</th>
+                                <th>Date</th>
+                                <th>Tóm tắt nội dung</th>
+                                <th>Options</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @* @foreach (var item in listReports)
+                            {
+                                string content = item.report_content;
+                                if (content.Length > 50) {
+                                    content = content.Substring(0, 50) + "...";
+                                }
+                                <tr>
+                                    <td>#@item.report_id</td>
+                                    <td>@item.report_fullname</td>
+                                    <td>@item.report_email</td>
+                                    <td>@item.report_created_at.ToString()</td>
+                                    <td>@content</td>
+                                    <td>
+                                        <ul>
+                                            <li>
+                                                <a href="@Url.Action("Detail", new { report_id = item.report_id })" title="Xem chi tiết">
+                                                    <span class="lnr lnr-eye"></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            } *@
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- Table End -->
+            <!-- Pagination Start -->
+            @*<div class="pagination-box">
+                <nav class="ms-auto me-auto " aria-label="...">
+                    <ul class="pagination pagination-primary">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="javascript:void(0)">Previous</a>
+                        </li>
+                        <li class="page-item active">
+                            <a class="page-link" href="javascript:void(0)">1 </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="javascript:void(0)">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="javascript:void(0)">3</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="javascript:void(0)">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>*@
+            <!-- Pagination End -->
+        </div>
+    </div>
+</div>

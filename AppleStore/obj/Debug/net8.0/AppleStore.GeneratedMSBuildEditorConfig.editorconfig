@@ -26,40 +26,108 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Web_VS\AppleStore\AppleStore
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Web_VS/AppleStore/AppleStore/Views/Admin/billing.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cYmlsbGluZy5jc2h0bWw=
+[D:/Web_VS/AppleStore/AppleStore/Areas/Admin/Views2/billing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3MyXGJpbGxpbmcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Web_VS/AppleStore/AppleStore/Views/Admin/dashboard.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cZGFzaGJvYXJkLmNzaHRtbA==
+[D:/Web_VS/AppleStore/AppleStore/Areas/Admin/Views2/Dashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3MyXERhc2hib2FyZFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Web_VS/AppleStore/AppleStore/Views/Admin/notifications.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cbm90aWZpY2F0aW9ucy5jc2h0bWw=
+[D:/Web_VS/AppleStore/AppleStore/Areas/Admin/Views2/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3MyXExvZ2luXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Web_VS/AppleStore/AppleStore/Views/Admin/profile.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5ccHJvZmlsZS5jc2h0bWw=
+[D:/Web_VS/AppleStore/AppleStore/Areas/Admin/Views2/notifications.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3MyXG5vdGlmaWNhdGlvbnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Web_VS/AppleStore/AppleStore/Views/Admin/rtl.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5ccnRsLmNzaHRtbA==
+[D:/Web_VS/AppleStore/AppleStore/Areas/Admin/Views2/Products/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3MyXFByb2R1Y3RzXEFkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Web_VS/AppleStore/AppleStore/Views/Admin/signin.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cc2lnbmluLmNzaHRtbA==
+[D:/Web_VS/AppleStore/AppleStore/Areas/Admin/Views2/Products/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3MyXFByb2R1Y3RzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Web_VS/AppleStore/AppleStore/Views/Admin/signup.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cc2lnbnVwLmNzaHRtbA==
+[D:/Web_VS/AppleStore/AppleStore/Areas/Admin/Views2/profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3MyXHByb2ZpbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Web_VS/AppleStore/AppleStore/Views/Admin/tables.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cdGFibGVzLmNzaHRtbA==
+[D:/Web_VS/AppleStore/AppleStore/Areas/Admin/Views2/rtl.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3MyXHJ0bC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Web_VS/AppleStore/AppleStore/Views/Admin/virtual-reality.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cdmlydHVhbC1yZWFsaXR5LmNzaHRtbA==
+[D:/Web_VS/AppleStore/AppleStore/Areas/Admin/Views2/Shared/_LayoutAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3MyXFNoYXJlZFxfTGF5b3V0QWRtaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Web_VS/AppleStore/AppleStore/Areas/Admin/Views2/Shared/_LayoutAdmin2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3MyXFNoYXJlZFxfTGF5b3V0QWRtaW4yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Web_VS/AppleStore/AppleStore/Areas/Admin/Views2/signup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3MyXHNpZ251cC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Web_VS/AppleStore/AppleStore/Areas/Admin/Views2/tables.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3MyXHRhYmxlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Web_VS/AppleStore/AppleStore/Areas/Admin/Views2/virtual-reality.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3MyXHZpcnR1YWwtcmVhbGl0eS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Web_VS/AppleStore/AppleStore/Areas/Admin/Views/Customers/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ3VzdG9tZXJzXERldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Web_VS/AppleStore/AppleStore/Areas/Admin/Views/Customers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ3VzdG9tZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Web_VS/AppleStore/AppleStore/Areas/Admin/Views/Dashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGFzaGJvYXJkXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Web_VS/AppleStore/AppleStore/Areas/Admin/Views/Invoices/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSW52b2ljZXNcRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Web_VS/AppleStore/AppleStore/Areas/Admin/Views/Invoices/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSW52b2ljZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Web_VS/AppleStore/AppleStore/Areas/Admin/Views/Invoices/Print.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSW52b2ljZXNcUHJpbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Web_VS/AppleStore/AppleStore/Areas/Admin/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Web_VS/AppleStore/AppleStore/Areas/Admin/Views/Products/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdHNcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Web_VS/AppleStore/AppleStore/Areas/Admin/Views/Products/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Web_VS/AppleStore/AppleStore/Areas/Admin/Views/Products/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Web_VS/AppleStore/AppleStore/Areas/Admin/Views/Reports/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUmVwb3J0c1xEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Web_VS/AppleStore/AppleStore/Areas/Admin/Views/Reports/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUmVwb3J0c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Web_VS/AppleStore/AppleStore/Areas/Admin/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Web_VS/AppleStore/AppleStore/Views/Blank/Blank.cshtml]
@@ -104,10 +172,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Web_VS/AppleStore/AppleStore/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Web_VS/AppleStore/AppleStore/Views/Shared/_LayoutAdmin.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Web_VS/AppleStore/AppleStore/Views/Shared/_ValidationScriptsPartial.cshtml]
