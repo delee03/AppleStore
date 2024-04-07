@@ -33,22 +33,47 @@
 	<div class="container">
 		<!-- row -->
 		<div class="row">
-			<h2>Show Macbook</h2>
-			<form asp-action="Index" method="get" class="form-check-inline" style="margin-bottom: 50px">
-				<label>Title</label>
-				<input type="text" name="name" value="" />
-				<label>From</label>
-
-				<input type="number" name="Priceto" />
-				<label>To</label>
-				<input type="number" name="Pricefrom" />
-				<button class="primary-btn">Search</button>
-			</form>
+			<!--Title-->
 			<div class="col-md-12">
 				<div class="section-title text-center">
-					<h3 class="title">Our Products</h3>
+					<h3 class="title">Our Macbook</h3>
 				</div>
 			</div>
+			<!--/Title-->
+			<form asp-action="ShowMacbook" method="get" class="form-check-inline" style="margin-bottom: 50px">
+				<!-- ASIDE -->
+				<div id="aside" class="col-md-3">
+
+					<div class="aside">
+
+						<!-- aside title -->
+						<label class="aside-title">Product Name</label>
+						<input type="text" class="input" name="name" value="" />
+						<!--- /aside title -->
+						<!-- aside Widget -->
+						<label class="aside-title">Price</label>
+						<div class="price-filter">
+							<div id="price-slider"></div>
+							<div class="input-number price-min">
+								<input id="price-min" type="number" name="Priceto" placeholder="1">
+								<span class="qty-up">+</span>
+								<span class="qty-down">-</span>
+							</div>
+							<span> - </span>
+							<div class="input-number price-max">
+								<input id="price-max" type="number" name="Pricefrom" placeholder="9999">
+								<span class="qty-up">+</span>
+								<span class="qty-down">-</span>
+							</div>
+						</div>
+					</div>
+					<!-- /aside Widget -->
+					<!--btn action-->
+					<br />
+					<button class="primary-btn">Search</button>
+				</div>
+			</form>
+			<!--/ ASIDE -->
 			<p style="text-align: right">
 				<a asp-action="Add" class="primary-btn"><i class="fa-solid fa-file-circle-plus"></i> Thêm sản phẩm</a>
 			</p>
@@ -68,6 +93,12 @@
 							<h3 class="product-name"><a asp-action="Detail" asp-route-id="@item.Id">@item.Name</a></h3>
 							<h4 class="product-price">@item.Price<del class="product-old-price">$980.00</del></h4>
 							<div class="product-rating">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							
 							</div>
 							<div class="product-btns">
 								<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>

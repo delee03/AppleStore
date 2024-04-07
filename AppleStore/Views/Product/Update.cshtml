@@ -6,7 +6,8 @@
 
 <style>
     .container--extra {
-        margin: 50px;
+        margin-left: 190px;
+        margin-top: 50px;
     }
 </style>
 
@@ -46,35 +47,27 @@
                     <br />
                     <img src="@Model.ImageUrl" alt="ProductImage" style="max-width:200px" id="previewImage" />
                 </div>
-
-
+              
+                <div class="row">
+                    <div class="col-3 align-content-lg-center" style="margin-left: 180px">
+                        @if (ViewBag.dsImage != null)
+                        {
+                            foreach (var img in ViewBag.dsImage)
+                            {
+                                <img class="m-1" src="@img.Url" width="80" ; height="100px" id="previewImage" />
+                            }
+                        }
+                    </div>
+                </div>
                 <div class="form-group">
                     <input type="submit" value="Lưu" class="btn-action" />
+                    <br />
+                    <a asp-action="Index" class="btn-action">Quay lại</a>
                 </div>
 
-
-            </form>
-            <div class="row">
-                <div class="col-3 align-content-lg-center" style="margin-left: 180px">
-                    @if (ViewBag.dsImage != null)
-                    {
-                        foreach (var img in ViewBag.dsImage)
-                        {
-                            <img class="m-1" src="@img.Url" width="80" ; height="100px" id="previewImage" />
-                        }
-                    }
-                </div>
-
-            </div>
-            <br />
-           
+            </form>                     
         </div>
-    </div>
-    <br />
-    <div>
-        <a asp-action="Index" class="btn-action">Quay lại</a>
-    </div>
-
+    </div> 
 </div>
 
 
