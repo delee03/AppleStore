@@ -193,8 +193,16 @@
       "PackagePath": "staticwebassets\\img\\macm1full.png"
     },
     {
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\macm1lung - Copy.png",
+      "PackagePath": "staticwebassets\\img\\macm1lung - Copy.png"
+    },
+    {
       "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\macm1lung.png",
       "PackagePath": "staticwebassets\\img\\macm1lung.png"
+    },
+    {
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\product01 - Copy.png",
+      "PackagePath": "staticwebassets\\img\\product01 - Copy.png"
     },
     {
       "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\product01.png",

@@ -2066,24 +2066,31 @@ img.product-preview.slick-slide.slick-current.slick-active.slick-center {
   display: block;
 }
 
-/*=========================================================
+.btn-pay {
+    padding: 5px 10px;
+    color: black;
+    background: rgb(255, 248, 248);
+}
+
+.btn-pay:hover {
+    background: rgba(255, 248, 248, 0.6);
+}
+    /*=========================================================
 	12 -> SLICK STYLE
 ===========================================================*/
-
-/*----------------------------*\
+    /*----------------------------*\
 	Arrows
 \*----------------------------*/
-
-.slick-prev, .slick-next {
-  width: 40px;
-  height: 40px;
-  border: 1px solid #E4E7ED;
-  background-color: #FFF;
-  border-radius: 50%;
-  z-index: 22;
-  -webkit-transition: 0.2s all;
-  transition: 0.2s all;
-}
+    .slick-prev, .slick-next {
+        width: 40px;
+        height: 40px;
+        border: 1px solid #E4E7ED;
+        background-color: #FFF;
+        border-radius: 50%;
+        z-index: 22;
+        -webkit-transition: 0.2s all;
+        transition: 0.2s all;
+    }
 
 .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
   background-color: #D10024;

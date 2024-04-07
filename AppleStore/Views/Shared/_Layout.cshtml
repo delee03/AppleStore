@@ -1,4 +1,4 @@
-﻿
+﻿@*  @model ShoppingCart *@
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -99,6 +99,14 @@
 								</a>
 							</div>
 							<!-- /Wishlist -->
+
+							 
+							<a  aria-expanded="true" style="color:white;"  asp-controller="ShoppingCart" >
+								<i class="fa fa-shopping-cart"></i>
+								<span>Your Cart</span>
+								
+							</a>
+
 							<!-- Cart -->
 							<div class="dropdown">
 								<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
@@ -108,7 +116,23 @@
 								</a>
 								<div class="cart-dropdown">
 									<div class="cart-list">
-										<div class="product-widget">
+
+										@* @foreach (var item in Model.Items)
+										{
+											<div class="product-widget">
+												<div class="product-img">
+													<img src="@item." alt="">
+												</div>
+												<div class="product-body">
+													<h3 class="product-name"><a href="#">@item.Name</a></h3>
+													<h4 class="product-price"><span class="qty">1x</span>$ @item.Price</h4>
+												</div>
+												<button class="delete"><i class="fa fa-close"></i></button>
+											</div>
+										} *@
+
+
+										 <div class="product-widget">
 											<div class="product-img">
 												<img src="~/img/product01.png" alt="">
 											</div>
@@ -128,8 +152,10 @@
 												<h4 class="product-price"><span class="qty">3x</span>$980.00</h4>
 											</div>
 											<button class="delete"><i class="fa fa-close"></i></button>
-										</div>
+										</div>  
 									</div>
+
+
 									<div class="cart-summary">
 										<small>3 Item(s) selected</small>
 										<h5>SUBTOTAL: $2940.00</h5>
