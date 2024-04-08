@@ -1,0 +1,129 @@
+﻿@model ShoppingCart
+
+@{
+    decimal SubTotal = 0;
+}
+
+<style>
+    .section-container{
+        color: #fff !important;
+    }
+
+    .row.mb-4.d-flex {
+        color: #fff !important;
+    }
+</style>
+
+<div class="section-container">
+    <section class="h-100 h-custom" style="background-color: white; border-radius: 5px; padding:50px; min-height:70vh;margin:50px; color:#fff;">
+
+        @if (Model.Items.Count == 0)
+        {
+            <div style="padding: 20px; color:#FFF;">
+                <h1>CHƯA THÊM SẢN PHẨM NÀO!!!</h1>
+            </div>
+        }
+        else
+        {
+            <div class=" py-5 h-100">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-12">
+                        <div class="card card-registration card-registration-2" style="border-radius: 15px;">
+                            <div class="card-body p-0">
+                                <div class="row g-0" style="display:flex; justify-content:space-between;">
+                                    <div class="col-lg-8" style="width:70%;">
+                                        <div class="p-5">
+                                            <div class="d-flex mb-5" style="display: flex;justify-content: space-between;align-items: center;">
+                                                <h1 class="fw-bold mb-0 text-black">Shopping Cart</h1>
+                                                <h6 class="mb-0 text-muted">
+                                                    @Model.Items.Count sản phẩm
+                                                </h6>
+                                            </div>
+                                            <hr class="my-4">
+
+                                            @foreach (var item in Model.Items)
+                                            {
+
+                                                <div style="display: flex; align-items: center;justify-content: space-between; color: #fff;" class="row mb-4 d-flex">
+                                                    <div class="col-md-2 col-lg-2 col-xl-2">
+                                                        <img src="@item.ImageUrl"
+                                                             class="img-fluid rounded-3" alt="Cotton T-shirt" style="width:120px; height:120px;">
+                                                    </div>
+                                                    <div class="col-md-3 col-lg-3 col-xl-3">
+                                                        <h6 class="text-muted">@item.Name</h6>
+
+                                                    </div>
+                                                    <div class="col-md-3 col-lg-3 col-xl-2 d-flex" style="display:flex; gap:10px;">
+                                                        <button class="btn btn-link px-2"
+                                                                onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                                                            <i class="fas fa-minus"></i>
+                                                        </button>
+
+                                                        <input id="form1" min="0" name="quantity" value="@item.Quantity" type="number"
+                                                               class="form-control form-control-sm" style="width:50px;" />
+
+                                                        <button class="btn btn-link px-2"
+                                                                onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                                                            <i class="fas fa-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                    <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                                                        <h6 class="mb-0"> @item.Price VND</h6>
+                                                    </div>
+                                                    <div class="col-md-1 col-lg-1 col-xl-1 text-end" style="font-size:40px;">
+                                                        <a asp-action="RemoveFromCart" asp-route-productId="@item.ProductId" class="text-muted"><i class="fas fa-times"></i></a>
+                                                    </div>
+                                                </div>
+
+                                                <hr class="my-4">
+
+
+                                            }
+
+                                            <div style="font-size:26px;">
+                                                <a asp-action="RemoveAllFromCart" class="text-muted"><i class="fas fa-times"> </i><span style="margin-left: 5px;">Delete All</span> </a>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+                                    @foreach (var item in Model.Items)
+                                    {
+
+                                        SubTotal += item.Price * item.Quantity;
+
+                                    }
+
+                                    <div class="col-lg-4">
+                                        <div class="p-5">
+                                            <h3 class="fw-bold mb-5 mt-2 pt-1" style="font-size:38px; margin-bottom:28px;">Summary</h3>
+                                            <hr class="my-4">
+
+                                            <div class="d-flex justify-content-between mb-5">
+                                                <h5 class="text-uppercase">Total price</h5>
+                                                <h5>@SubTotal</h5>
+                                            </div>
+
+                                            <a asp-action="Checkout">
+                                                <button type="button" class="btn btn-pay"
+                                                        data-mdb-ripple-color="dark" style="margin-top:57px; width:50%;">
+                                                    Thanh toán
+                                                </button>
+                                            </a>
+                                            
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </section>
+
+</div>
+
+
