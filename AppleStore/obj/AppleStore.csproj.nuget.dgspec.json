@@ -10,11 +10,15 @@
         "projectUniqueName": "D:\\Web_Vs\\AppleStore\\AppleStore\\AppleStore.csproj",
         "projectName": "AppleStore",
         "projectPath": "D:\\Web_Vs\\AppleStore\\AppleStore\\AppleStore.csproj",
-        "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\MSI GAMING\\.nuget\\packages\\",
         "outputPath": "D:\\Web_Vs\\AppleStore\\AppleStore\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MSI GAMING\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -60,6 +64,10 @@
               "version": "[8.0.3, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[8.0.3, )"
             },

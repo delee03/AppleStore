@@ -1,4 +1,5 @@
-﻿
+﻿ @model ShoppingCart
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -46,15 +47,14 @@
 	<header>
 		<!-- TOP HEADER -->
 		<div id="top-header">
-			<div class="container">
+			<div style="display:flex; align-items:center; justify-content:space-between;width:100%; padding: 0 120px;">
 				<ul class="header-links pull-left">
 					<li><a href="tel:+840931034852" rel="noopener" target="_blank"><i class="fa fa-phone"></i> (+84)0931034852</a></li>
-					<li><a href="mailto:phamphat20033vn@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope-o"></i> phamphat20033vn@gmail.com</a></li>
 					<li><a href="#" rel="noopener" target="_blank"><i class="fa fa-map-marker"></i> HUTECH,  TPHCM, VIET NAM</a></li>
 				</ul>
-				<ul class="header-links pull-right">
-					<li><a href="#"><i class="fa fa-dollar"></i> USD</a></li>
-					<li><a href="#"><i class="fa fa-user-o"></i> My Account</a></li>
+				<ul class="header-links pull-right" style="display:flex; align-items:center; justify-content:center; gap:10px;">
+					<li> <partial name="_LoginPartial"/> </li>
+					@* <li><a href="#"><i class="fa fa-user-o"></i> My Account</a></li> *@
 				</ul>
 			</div>
 		</div>
@@ -107,6 +107,10 @@
 								</a>
 							</div>
 							<!-- /Wishlist -->
+								
+							 
+							
+
 							<!-- Cart -->
 							<div class="dropdown">
 								<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
@@ -116,7 +120,23 @@
 								</a>
 								<div class="cart-dropdown">
 									<div class="cart-list">
-										<div class="product-widget">
+
+										@foreach (var item in Model.Items)
+										{
+											<div class="product-widget">
+												<div class="product-img">
+													<img src="@item." alt="">
+												</div>
+												<div class="product-body">
+													<h3 class="product-name"><a href="#">@item.Name</a></h3>
+													<h4 class="product-price"><span class="qty">1x</span>$ @item.Price</h4>
+												</div>
+												<button class="delete"><i class="fa fa-close"></i></button>
+											</div>
+										}
+
+
+										 @* <div class="product-widget">
 											<div class="product-img">
 												<img src="~/img/product01.png" alt="">
 											</div>
@@ -136,14 +156,18 @@
 												<h4 class="product-price"><span class="qty">3x</span>$980.00</h4>
 											</div>
 											<button class="delete"><i class="fa fa-close"></i></button>
-										</div>
+										</div>  *@ 
 									</div>
+
+
 									<div class="cart-summary">
 										<small>3 Item(s) selected</small>
 										<h5>SUBTOTAL: $2940.00</h5>
 									</div>
 									<div class="cart-btns">
-										<a href="#">View Cart</a>
+										<a aria-expanded="true" style="color:white;" asp-controller="ShoppingCart">
+											View Cart
+										</a>
 										<a href="#">Checkout  <i class="fa fa-arrow-circle-right"></i></a>
 									</div>
 								</div>
@@ -216,7 +240,7 @@
 	<!-- /BREADCRUMB --> *@
 
 	
-<div>
+<div ">
 		
 	@RenderBody()
 		
@@ -224,7 +248,7 @@
 	
   
 
-	<!-- NEWSLETTER -->
+@* 	<!-- NEWSLETTER -->
 	<div id="newsletter" class="section">
 		<!-- container -->
 		<div class="container">
@@ -258,9 +282,9 @@
 		</div>
 		<!-- /container -->
 	</div>
-	<!-- /NEWSLETTER -->
+	<!-- /NEWSLETTER --> *@
 	<!-- FOOTER -->
-	<footer id="footer">
+	<footer id="footer" style="border-top: 3px solid #D10024;">
 		<!-- top footer -->
 		<div class="section">
 			<!-- container -->
