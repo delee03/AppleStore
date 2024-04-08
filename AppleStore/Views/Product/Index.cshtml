@@ -2,6 +2,7 @@
 
 @{
 	ViewData["Title"] = "Index";
+	int numOfQuanity = 1;
 }
 
 <!-- BREADCRUMB -->
@@ -103,12 +104,16 @@
 								<div class="product-btns">
 									<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
 									<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
-								<button class="quick-view"><a asp-action="Detail" asp-route-id="@item.Id"><i class="fa fa-eye"></i></a><span class="tooltipp">quick view</span></button>
+									<button class="quick-view"><a asp-action="Detail" asp-route-id="@item.Id"><i class="fa fa-eye"></i></a><span class="tooltipp">quick view</span></button>
 								</div>
 							</div>
 							<div class="add-to-cart">
-								<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
-								
+								<a asp-controller="ShoppingCart" asp-action="AddToCart" asp-route-productId="@item.Id" asp-route-quantity="@numOfQuanity">
+									<button class="add-to-cart-btn">
+										<i class="fa fa-shopping-cart"></i> add to cart
+									</button>
+								</a>
+														
 								<a asp-action="Update" asp-route-id="@item.Id" class="btn-action">Edit</a>
 								<a asp-action="Detail" asp-route-id="@item.Id" class="btn-action">Details</a>
 								<a asp-action="Delete" asp-route-id="@item.Id" class="btn-action">Delete</a>

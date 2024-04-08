@@ -51,7 +51,7 @@
 					<li><a href="#" rel="noopener" target="_blank"><i class="fa fa-map-marker"></i> HUTECH,  TPHCM, VIET NAM</a></li>
 				</ul>
 				<ul class="header-links pull-right" style="display:flex; align-items:center; justify-content:center; gap:10px;">
-					@* <li> <partial name="_LoginPartial"/> </li> *@
+					<li> <partial name="_LoginPartial"/> </li>
 					@* <li><a href="#"><i class="fa fa-user-o"></i> My Account</a></li> *@
 				</ul>
 			</div>
@@ -143,7 +143,7 @@
 												<h4 class="product-price"><span class="qty">1x</span>$980.00</h4>
 											</div>
 											<button class="delete"><i class="fa fa-close"></i></button>
-										</div>
+										</div> 
 
 										<div class="product-widget">
 											<div class="product-img">
@@ -203,7 +203,7 @@
 					<li><a asp-action="ShowIphone" asp-controller="Product">Iphone</a></li>
 					<li><a asp-action="ShowMacbook" asp-controller="Product">Macbook</a></li>
 					<li><a asp-action="ShowAccessories" asp-controller="Product">Accessories</a></li>
-					<li><a href="/checkout">Checkout</a></li>
+					<li><a asp-action="Index" asp-controller="ShoppingCart">Your Cart</a></li>
 					<li><a asp-action="ShowCategories" asp-controller="Product">Filter</a></li>
 					<li><a href="/product">About</a></li>
 					<li><a href="#">Contact</a></li>

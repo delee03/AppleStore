@@ -1,8 +1,14 @@
 ﻿@model AppleStore.Models.Product
 
+
+
 @{
 	ViewData["Title"] = "Detail";
+	int numOfQuanity = 1;
+	
+
 }
+
 
 <!-- BREADCRUMB -->
 <div id="breadcrumb" class="section">
@@ -36,7 +42,7 @@
 			<!-- Product main img -->
 			<div class="col-md-5 col-md-push-2">
 				<div id="product-main-img">
-					
+
 
 					<div class="product-preview">
 						<img src="@Html.DisplayFor(model => model.ImageUrl)" alt="">
@@ -44,12 +50,12 @@
 
 					@if (ViewBag.dsImage != null)
 					{
-					foreach (var img in ViewBag.dsImage)
-					{
-					<img class="m-1 product-preview" src="@img.Url" width="80" ; height="100px" />
+						foreach (var img in ViewBag.dsImage)
+						{
+							<img class="m-1 product-preview" src="@img.Url" width="80" ; height="100px" />
+						}
 					}
-					}
-				@* 	<div class="product-preview">
+					@* 	<div class="product-preview">
 						<img src="~/img/iPadAir.png" alt="">
 					</div>
 
@@ -76,8 +82,8 @@
 						{
 							<img class="product-preview" src="@img.Url" width="80" ; height="100px" />
 						}
-					} 
-				@* 	<div class="product-preview">
+					}
+					@* 	<div class="product-preview">
 						<img src="~/img/Iphone15_1.png" alt="">
 					</div>
 
@@ -133,18 +139,26 @@
 					</div>
 
 					<div class="add-to-cart">
-						<div class="qty-label">
+						<div class="qty-label" >
 							Qty
-							<div class="input-number">
-								<input type="number">
+							<div class="input-number">								
+								<input type="number" value="1">
 								<span class="qty-up">+</span>
 								<span class="qty-down">-</span>
 							</div>
 						</div>
-						<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
-						<br />
-						<a asp-action="Update" asp-route-id="@Model.Id" class="btn-action">Edit</a> |
-						<a asp-action="Index" class="btn-action">Back to List</a>
+						@* <button class="add-to-cart-btn"><a asp-controller="ShoppingCart" asp-action="AddToCart" asp-route-productId="@Model.Id>" asp-route-quantity="@numOfQuanity"><i class="fa fa-shopping-cart"></i> add to cart</a></button> *@
+						<div class="add-to-cart">
+							<a asp-controller="ShoppingCart" asp-action="AddToCart" asp-route-productId="@Model.Id" asp-route-quantity="@numOfQuanity">
+								<button class="add-to-cart-btn">
+									<i class="fa fa-shopping-cart"></i> add to cart
+								</button>
+							</a>
+							<a asp-action="Update" asp-route-id="@Model.Id" class="btn-action">Edit</a> |
+							<a asp-action="Index" class="btn-action">Back to List</a>
+						</div>
+						
+						
 					</div>
 
 					<ul class="product-btns">

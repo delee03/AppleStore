@@ -2,12 +2,14 @@
 using AppleStore.DataAcess;
 using AppleStore.Models;
 using AppleStore.Repository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace AppleStore.Controllers
 {
-    public class ProductController : Controller
+	
+	public class ProductController : Controller
     {
         private readonly IProductRepository _productRepository;
         private readonly ICategoryRepository _categoryRepository;

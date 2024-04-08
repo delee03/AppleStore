@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pw+ZWi05Legs4AH/XsgRB7s78yNU5X5mAduDEzEf/7c=",
+  "Hash": "/9+p5JmixZt8USZh9Wbs5QefwGtFibg4P4ck0MNE0Vc=",
   "Source": "AppleStore",
   "BasePath": "_content/AppleStore",
   "Mode": "Default",
@@ -2960,6 +2960,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\macair2.webp"
+    },
+    {
+      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\macair3 - Copy.webp",
+      "SourceId": "AppleStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "BasePath": "_content/AppleStore",
+      "RelativePath": "img/macair3 - Copy.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\macair3 - Copy.webp"
     },
     {
       "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\macair3.webp",
