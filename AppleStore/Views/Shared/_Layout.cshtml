@@ -1,6 +1,4 @@
-﻿ @model ShoppingCart
-
-
+﻿
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,7 +51,7 @@
 					<li><a href="#" rel="noopener" target="_blank"><i class="fa fa-map-marker"></i> HUTECH,  TPHCM, VIET NAM</a></li>
 				</ul>
 				<ul class="header-links pull-right" style="display:flex; align-items:center; justify-content:center; gap:10px;">
-					<li> <partial name="_LoginPartial"/> </li>
+					@* <li> <partial name="_LoginPartial"/> </li> *@
 					@* <li><a href="#"><i class="fa fa-user-o"></i> My Account</a></li> *@
 				</ul>
 			</div>
@@ -121,7 +119,7 @@
 								<div class="cart-dropdown">
 									<div class="cart-list">
 
-										@foreach (var item in Model.Items)
+										@* @foreach (var item in Model.Items)
 										{
 											<div class="product-widget">
 												<div class="product-img">
@@ -133,10 +131,10 @@
 												</div>
 												<button class="delete"><i class="fa fa-close"></i></button>
 											</div>
-										}
+										} *@
 
 
-										 @* <div class="product-widget">
+										 <div class="product-widget">
 											<div class="product-img">
 												<img src="~/img/product01.png" alt="">
 											</div>
@@ -156,7 +154,7 @@
 												<h4 class="product-price"><span class="qty">3x</span>$980.00</h4>
 											</div>
 											<button class="delete"><i class="fa fa-close"></i></button>
-										</div>  *@ 
+										</div>  
 									</div>
 
 
