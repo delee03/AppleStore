@@ -1,4 +1,4 @@
-﻿ @model ShoppingCart
+﻿@* @model ShoppingCart *@
 
 
 <!DOCTYPE html>
@@ -115,7 +115,7 @@
 								<div class="cart-dropdown">
 									<div class="cart-list">
 
-										@foreach (var item in Model.Items)
+										@* @foreach (var item in Model.Items)
 										{
 											<div class="product-widget">
 												<div class="product-img">
@@ -127,10 +127,10 @@
 												</div>
 												<button class="delete"><i class="fa fa-close"></i></button>
 											</div>
-										}
+										} *@
 
 
-										 @* <div class="product-widget">
+										  <div class="product-widget">
 											<div class="product-img">
 												<img src="~/img/product01.png" alt="">
 											</div>
@@ -150,7 +150,9 @@
 												<h4 class="product-price"><span class="qty">3x</span>$980.00</h4>
 											</div>
 											<button class="delete"><i class="fa fa-close"></i></button>
-										</div>  *@ 
+										</div>  
+
+
 									</div>
 
 
@@ -162,7 +164,7 @@
 										<a aria-expanded="true" style="color:white;" asp-controller="ShoppingCart">
 											View Cart
 										</a>
-										<a href="#">Checkout  <i class="fa fa-arrow-circle-right"></i></a>
+										<a  href="#">Checkout  <i class="fa fa-arrow-circle-right"></i></a>
 									</div>
 								</div>
 							</div>

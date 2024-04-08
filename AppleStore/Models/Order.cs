@@ -11,9 +11,11 @@ namespace AppleStore.Models
         public decimal TotalPrice { get; set; }
         public string ShippingAddress { get; set; }
         public string Notes { get; set; }
+
+
         [ForeignKey("UserId")]
         [ValidateNever]
-      //  public ApplicationUser ApplicationUser { get; set; }
+        public ApplicationUser ApplicationUser { get; set; }
         public List<OrderDetail> OrderDetails { get; set; }
     }
 }
