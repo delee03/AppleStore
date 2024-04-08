@@ -8567,8 +8567,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\MSI GAMING\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\ACER\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -8576,15 +8575,11 @@
       "projectUniqueName": "D:\\Web_Vs\\AppleStore\\AppleStore\\AppleStore.csproj",
       "projectName": "AppleStore",
       "projectPath": "D:\\Web_Vs\\AppleStore\\AppleStore\\AppleStore.csproj",
-      "packagesPath": "C:\\Users\\MSI GAMING\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
       "outputPath": "D:\\Web_Vs\\AppleStore\\AppleStore\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\MSI GAMING\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
