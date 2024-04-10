@@ -14,8 +14,7 @@ namespace AppleStore.Controllers
 		private readonly IProductRepository _productRepository;
 		private readonly ApplicationDbContext _context;
 		private readonly UserManager<ApplicationUser> _userManager;
-		public ShoppingCartController( ApplicationDbContext context,
-UserManager<ApplicationUser> userManager, IProductRepository productRepository)
+		public ShoppingCartController( ApplicationDbContext context,UserManager<ApplicationUser> userManager, IProductRepository productRepository)
 		{
 			_productRepository = productRepository;
 			_context = context;
@@ -87,13 +86,13 @@ UserManager<ApplicationUser> userManager, IProductRepository productRepository)
 		[HttpPost]
 		public async Task<IActionResult> Checkout(Order order)
 		{
-			var cart =
-HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
+			var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
 			if (cart == null || !cart.Items.Any())
 			{
 				// Xử lý giỏ hàng trống...
 				return RedirectToAction("Index");
 			}
+
 			var user = await _userManager.GetUserAsync(User);
 			order.UserId = user.Id;
 			order.OrderDate = DateTime.UtcNow;

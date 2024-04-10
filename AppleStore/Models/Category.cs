@@ -13,5 +13,7 @@ namespace AppleStore.Models
         public string Name { get; set; }
 
         public List<Product> Products { get; set; }
+        
+
     }
 }

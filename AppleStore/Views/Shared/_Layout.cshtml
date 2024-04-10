@@ -1,4 +1,4 @@
-﻿@* @model ShoppingCart *@
+﻿@* @model AppleStore.Models.ShoppingCart *@
 
 
 <!DOCTYPE html>
@@ -47,7 +47,7 @@
 	<header>
 		<!-- TOP HEADER -->
 		<div id="top-header">
-			<div style="display:flex; align-items:center; justify-content:space-between;width:100%; padding: 0 120px;">
+			<div style="display:flex; align-items:center; justify-content:space-between;padding: 0 120px;">
 				<ul class="header-links pull-left">
 					<li><a href="tel:+840931034852" rel="noopener" target="_blank"><i class="fa fa-phone"></i> (+84)0931034852</a></li>
 					<li><a href="#" rel="noopener" target="_blank"><i class="fa fa-map-marker"></i> HUTECH,  TPHCM, VIET NAM</a></li>
@@ -112,61 +112,7 @@
 									<span>Your Cart</span>
 									<div class="qty">3</div>
 								</a>
-								<div class="cart-dropdown">
-									<div class="cart-list">
-
-										@* @foreach (var item in Model.Items)
-										{
-											<div class="product-widget">
-												<div class="product-img">
-													<img src="@item." alt="">
-												</div>
-												<div class="product-body">
-													<h3 class="product-name"><a href="#">@item.Name</a></h3>
-													<h4 class="product-price"><span class="qty">1x</span>$ @item.Price</h4>
-												</div>
-												<button class="delete"><i class="fa fa-close"></i></button>
-											</div>
-										} *@
-
-
-										  <div class="product-widget">
-											<div class="product-img">
-												<img src="~/img/product01.png" alt="">
-											</div>
-											<div class="product-body">
-												<h3 class="product-name"><a href="#">product name goes here</a></h3>
-												<h4 class="product-price"><span class="qty">1x</span>$980.00</h4>
-											</div>
-											<button class="delete"><i class="fa fa-close"></i></button>
-										</div>
-
-										<div class="product-widget">
-											<div class="product-img">
-												<img src="~/img/product02.png" alt="">
-											</div>
-											<div class="product-body">
-												<h3 class="product-name"><a href="#">product name goes here</a></h3>
-												<h4 class="product-price"><span class="qty">3x</span>$980.00</h4>
-											</div>
-											<button class="delete"><i class="fa fa-close"></i></button>
-										</div>  
-
-
-									</div>
-
-
-									<div class="cart-summary">
-										<small>3 Item(s) selected</small>
-										<h5>SUBTOTAL: $2940.00</h5>
-									</div>
-									<div class="cart-btns">
-										<a aria-expanded="true" style="color:white;" asp-controller="ShoppingCart">
-											View Cart
-										</a>
-										<a  href="#">Checkout  <i class="fa fa-arrow-circle-right"></i></a>
-									</div>
-								</div>
+								@* @Html.Partial("_ShoppingCartPartial", Model) *@
 							</div>
 							<!-- /Cart -->
 							<!-- Menu Toogle -->

@@ -2,6 +2,7 @@
 
 @{
     decimal totalPrice = 0;
+
 }
 
 <form asp-action="Checkout" method="post">
@@ -22,15 +23,17 @@
                                type="text"
                                name="full-name"
                                placeholder="Full Name"
-                               asp-action=""
-                         />
+                               asp-action=""                                
+                               />
+                              
                     </div>
                 </div>
                 <div class="form-group">
                     <input class="input"
                            type="email"
                            name="email"
-                           placeholder="Email" />
+                           placeholder="Email"
+                           value=""/>
                 </div>
                 <div class="form-group">
                     <input class="input"

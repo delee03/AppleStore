@@ -3,143 +3,115 @@
   "WorkspaceRootPath": "D:\\Web_Vs\\AppleStore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\areas\\identity\\pages\\account\\manage\\_managenav.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\areas\\identity\\pages\\account\\manage\\_managenav.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\areas\\identity\\pages\\account\\manage\\managenavpages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\areas\\identity\\pages\\account\\manage\\managenavpages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\dataacess\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\dataacess\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\areas\\identity\\pages\\account\\manage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\areas\\identity\\pages\\account\\manage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\areas\\identity\\pages\\account\\manage\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\areas\\identity\\pages\\account\\manage\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\areas\\identity\\pages\\account\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\areas\\identity\\pages\\account\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\repository\\efcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\repository\\efcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\views\\shoppingcart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\views\\shoppingcart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\models\\shoppingcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\models\\shoppingcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\views\\shoppingcart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\views\\shoppingcart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\views\\product\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\views\\product\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\wwwroot\\js\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\wwwroot\\js\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/MSI_MSSQLSERVER2022/AppleStore/True/SqlTable/dbo.AspNetRoles.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\models\\sd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\models\\sd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\controllers\\applestorecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\controllers\\applestorecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\dataacess\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\dataacess\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\models\\shoppingcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\models\\shoppingcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\views\\shared\\_shoppingcartpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\views\\shared\\_shoppingcartpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\controllers\\manegeordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\controllers\\manegeordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/MSI_MSSQLSERVER2022/AppleStore/True/SqlTable/dbo.AspNetUsers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\repository\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\repository\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\dataquery\\querydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\dataquery\\querydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\extensions\\sessionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\extensions\\sessionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\repository\\efcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\repository\\efcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Web_Vs\\AppleStore\\AppleStore\\Migrations\\20240406033011_ExtendIdentityUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:AppleStore\\Migrations\\20240406033011_ExtendIdentityUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\repository\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\repository\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\migrations\\20240407132835_initialorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\migrations\\20240407132835_initialorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\views\\checkout\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\views\\checkout\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\views\\shoppingcart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\views\\shoppingcart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|d:\\web_vs\\applestore\\applestore\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46833221-0B83-457D-B0A7-3EF058ED77F7}|AppleStore\\AppleStore.csproj|solutionrelative:applestore\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Web_Vs\\AppleStore\\AppleStore\\Func.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:AppleStore\\Func.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -148,9 +120,87 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 293,
-          "SelectedChildIndex": 10,
+          "DockedHeight": 355,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "AppleStore\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "AppleStore\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T08:59:25.82Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "AppleStore\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "AppleStore\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAC0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-10T14:46:51.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "AppleStore\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "AppleStore\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAYwEsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T14:22:01.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SD.cs",
+              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Models\\SD.cs",
+              "RelativeDocumentMoniker": "AppleStore\\Models\\SD.cs",
+              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Models\\SD.cs",
+              "RelativeToolTip": "AppleStore\\Models\\SD.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T14:20:30.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "AppleStore\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "AppleStore\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAAAGsAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-10T13:15:58.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ShoppingCart.cs",
+              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Models\\ShoppingCart.cs",
+              "RelativeDocumentMoniker": "AppleStore\\Models\\ShoppingCart.cs",
+              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Models\\ShoppingCart.cs",
+              "RelativeToolTip": "AppleStore\\Models\\ShoppingCart.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T13:07:54.293Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
@@ -173,278 +223,250 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_ManageNav.cshtml",
-              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
-              "RelativeDocumentMoniker": "AppleStore\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
-              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
-              "RelativeToolTip": "AppleStore\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-08T03:32:46.918Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ManageNavPages.cs",
-              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Areas\\Identity\\Pages\\Account\\Manage\\ManageNavPages.cs",
-              "RelativeDocumentMoniker": "AppleStore\\Areas\\Identity\\Pages\\Account\\Manage\\ManageNavPages.cs",
-              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Areas\\Identity\\Pages\\Account\\Manage\\ManageNavPages.cs",
-              "RelativeToolTip": "AppleStore\\Areas\\Identity\\Pages\\Account\\Manage\\ManageNavPages.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAYwAgAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T03:01:33.98Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
-              "RelativeDocumentMoniker": "AppleStore\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
-              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
-              "RelativeToolTip": "AppleStore\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-08T02:55:48.227Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ApplicationUser.cs",
-              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Models\\ApplicationUser.cs",
-              "RelativeDocumentMoniker": "AppleStore\\Models\\ApplicationUser.cs",
-              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Models\\ApplicationUser.cs",
-              "RelativeToolTip": "AppleStore\\Models\\ApplicationUser.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-06T03:29:18.026Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Program.cs",
-              "RelativeDocumentMoniker": "AppleStore\\Program.cs",
-              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Program.cs*",
-              "RelativeToolTip": "AppleStore\\Program.cs*",
-              "ViewState": "AQIAAFcAAAAAAAAAAAAAAFwAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-06T03:40:23.586Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml.cs",
-              "RelativeDocumentMoniker": "AppleStore\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml.cs",
-              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml.cs",
-              "RelativeToolTip": "AppleStore\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAwwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T03:00:02.044Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\DataAcess\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "AppleStore\\DataAcess\\ApplicationDbContext.cs",
               "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\DataAcess\\ApplicationDbContext.cs",
               "RelativeToolTip": "AppleStore\\DataAcess\\ApplicationDbContext.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAA2AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-03T07:41:13.461Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ScaffoldingReadMe.txt",
-              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\ScaffoldingReadMe.txt",
-              "RelativeDocumentMoniker": "AppleStore\\ScaffoldingReadMe.txt",
-              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\ScaffoldingReadMe.txt",
-              "RelativeToolTip": "AppleStore\\ScaffoldingReadMe.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-04-08T02:55:32.879Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "_LoginPartial.cshtml",
-              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeDocumentMoniker": "AppleStore\\Views\\Shared\\_LoginPartial.cshtml",
-              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeToolTip": "AppleStore\\Views\\Shared\\_LoginPartial.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-08T02:51:57.97Z",
+              "DocumentIndex": 4,
+              "Title": "ShoppingCartController.cs",
+              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Controllers\\ShoppingCartController.cs",
+              "RelativeDocumentMoniker": "AppleStore\\Controllers\\ShoppingCartController.cs",
+              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Controllers\\ShoppingCartController.cs",
+              "RelativeToolTip": "AppleStore\\Controllers\\ShoppingCartController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABoAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T11:48:13.652Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Login.cshtml.cs",
-              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
-              "RelativeDocumentMoniker": "AppleStore\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
-              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
-              "RelativeToolTip": "AppleStore\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAAwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-06T03:36:24.172Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "AppleStore\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "RelativeToolTip": "AppleStore\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "ViewState": "AQIAABIAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Title": "_ShoppingCartPartial.cshtml",
+              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Views\\Shared\\_ShoppingCartPartial.cshtml",
+              "RelativeDocumentMoniker": "AppleStore\\Views\\Shared\\_ShoppingCartPartial.cshtml",
+              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Views\\Shared\\_ShoppingCartPartial.cshtml",
+              "RelativeToolTip": "AppleStore\\Views\\Shared\\_ShoppingCartPartial.cshtml",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAD8AAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-08T02:52:41.769Z",
+              "WhenOpened": "2024-04-10T13:15:08.514Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "AppleStore\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "AppleStore\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-07T08:11:51.008Z",
+              "Title": "ManegeOrderController.cs",
+              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Controllers\\ManegeOrderController.cs",
+              "RelativeDocumentMoniker": "AppleStore\\Controllers\\ManegeOrderController.cs",
+              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Controllers\\ManegeOrderController.cs",
+              "RelativeToolTip": "AppleStore\\Controllers\\ManegeOrderController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAADIAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T11:27:32.607Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "AppleStore\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
-              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
-              "RelativeToolTip": "AppleStore\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-08T02:52:45.317Z",
+              "DocumentIndex": 9,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "AppleStore\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Controllers\\UserController.cs",
+              "RelativeToolTip": "AppleStore\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAIcAAAAAAAAAAAAuwJgAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T07:31:22.262Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 11,
+              "Title": "dbo.AspNetUsers [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/MSI_MSSQLSERVER2022/AppleStore/True/SqlTable/dbo.AspNetUsers.sql",
+              "ToolTip": "dbo.AspNetUsers [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-04-10T12:20:26.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "AppleStore\\Models\\ApplicationUser.cs",
+              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "AppleStore\\Models\\ApplicationUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T11:49:51.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Order.cs",
               "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Models\\Order.cs",
               "RelativeDocumentMoniker": "AppleStore\\Models\\Order.cs",
               "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Models\\Order.cs",
               "RelativeToolTip": "AppleStore\\Models\\Order.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAxwAUAAAAWAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-04T16:00:24.046Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Views\\ShoppingCart\\Index.cshtml",
-              "RelativeDocumentMoniker": "AppleStore\\Views\\ShoppingCart\\Index.cshtml",
-              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Views\\ShoppingCart\\Index.cshtml",
-              "RelativeToolTip": "AppleStore\\Views\\ShoppingCart\\Index.cshtml",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAAGgAAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-07T05:44:56.346Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ShoppingCartController.cs",
-              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Controllers\\ShoppingCartController.cs",
-              "RelativeDocumentMoniker": "AppleStore\\Controllers\\ShoppingCartController.cs",
-              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Controllers\\ShoppingCartController.cs",
-              "RelativeToolTip": "AppleStore\\Controllers\\ShoppingCartController.cs",
-              "ViewState": "AQIAAEcAAAAAAAAAAAAswFEAAAAcAAAA",
+              "DocumentIndex": 12,
+              "Title": "OrderDetail.cs",
+              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Models\\OrderDetail.cs",
+              "RelativeDocumentMoniker": "AppleStore\\Models\\OrderDetail.cs",
+              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Models\\OrderDetail.cs",
+              "RelativeToolTip": "AppleStore\\Models\\OrderDetail.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T13:20:36.108Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\appsettings.json",
-              "RelativeDocumentMoniker": "AppleStore\\appsettings.json",
-              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\appsettings.json",
-              "RelativeToolTip": "AppleStore\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-04-05T15:05:05.512Z",
+              "WhenOpened": "2024-04-10T06:27:42.852Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Checkout.cshtml",
-              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Views\\ShoppingCart\\Checkout.cshtml",
-              "RelativeDocumentMoniker": "AppleStore\\Views\\ShoppingCart\\Checkout.cshtml",
-              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Views\\ShoppingCart\\Checkout.cshtml",
-              "RelativeToolTip": "AppleStore\\Views\\ShoppingCart\\Checkout.cshtml",
-              "ViewState": "AQIAAF8AAAAAAAAAAAApwFcAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-07T13:30:11.879Z"
+              "DocumentIndex": 14,
+              "Title": "ICategoryRepository.cs",
+              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Repository\\ICategoryRepository.cs",
+              "RelativeDocumentMoniker": "AppleStore\\Repository\\ICategoryRepository.cs",
+              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Repository\\ICategoryRepository.cs",
+              "RelativeToolTip": "AppleStore\\Repository\\ICategoryRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T11:29:35.882Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Program.cs",
+              "RelativeDocumentMoniker": "AppleStore\\Program.cs",
+              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Program.cs",
+              "RelativeToolTip": "AppleStore\\Program.cs",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAAAE0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T08:28:40.363Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SessionExtensions.cs",
+              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Extensions\\SessionExtensions.cs",
+              "RelativeDocumentMoniker": "AppleStore\\Extensions\\SessionExtensions.cs",
+              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Extensions\\SessionExtensions.cs",
+              "RelativeToolTip": "AppleStore\\Extensions\\SessionExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T08:40:19.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "EFCategoryRepository.cs",
               "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Repository\\EFCategoryRepository.cs",
               "RelativeDocumentMoniker": "AppleStore\\Repository\\EFCategoryRepository.cs",
               "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Repository\\EFCategoryRepository.cs",
               "RelativeToolTip": "AppleStore\\Repository\\EFCategoryRepository.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBAAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-07T16:26:09.038Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ShoppingCart.cs",
-              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Models\\ShoppingCart.cs",
-              "RelativeDocumentMoniker": "AppleStore\\Models\\ShoppingCart.cs",
-              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Models\\ShoppingCart.cs",
-              "RelativeToolTip": "AppleStore\\Models\\ShoppingCart.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAANAAAA",
+              "DocumentIndex": 19,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "AppleStore\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "AppleStore\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAowEwAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T15:57:59.27Z"
+              "WhenOpened": "2024-04-03T08:26:48.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Repository\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "AppleStore\\Repository\\IProductRepository.cs",
+              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Repository\\IProductRepository.cs",
+              "RelativeToolTip": "AppleStore\\Repository\\IProductRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T07:54:19.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "QueryData.cs",
+              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\DataQuery\\QueryData.cs",
+              "RelativeDocumentMoniker": "AppleStore\\DataQuery\\QueryData.cs",
+              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\DataQuery\\QueryData.cs",
+              "RelativeToolTip": "AppleStore\\DataQuery\\QueryData.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T07:37:56.132Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Func.cs",
+              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Func.cs",
+              "RelativeDocumentMoniker": "AppleStore\\Func.cs",
+              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Func.cs",
+              "RelativeToolTip": "AppleStore\\Func.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T07:50:06.001Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Models\\User.cs",
+              "RelativeDocumentMoniker": "AppleStore\\Models\\User.cs",
+              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Models\\User.cs",
+              "RelativeToolTip": "AppleStore\\Models\\User.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwBIAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T07:15:18.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Checkout.cshtml",
+              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Views\\ShoppingCart\\Checkout.cshtml",
+              "RelativeDocumentMoniker": "AppleStore\\Views\\ShoppingCart\\Checkout.cshtml",
+              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Views\\ShoppingCart\\Checkout.cshtml",
+              "RelativeToolTip": "AppleStore\\Views\\ShoppingCart\\Checkout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-09T08:53:15.594Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 22,
-              "Title": "Add.cshtml",
-              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Views\\Product\\Add.cshtml",
-              "RelativeDocumentMoniker": "AppleStore\\Views\\Product\\Add.cshtml",
-              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Views\\Product\\Add.cshtml",
-              "RelativeToolTip": "AppleStore\\Views\\Product\\Add.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-03T10:08:19.095Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
               "Title": "CheckoutController.cs",
               "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Controllers\\CheckoutController.cs",
               "RelativeDocumentMoniker": "AppleStore\\Controllers\\CheckoutController.cs",
@@ -456,190 +478,50 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "CartItem.cs",
-              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Models\\CartItem.cs",
-              "RelativeDocumentMoniker": "AppleStore\\Models\\CartItem.cs",
-              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Models\\CartItem.cs",
-              "RelativeToolTip": "AppleStore\\Models\\CartItem.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T08:23:53.114Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "Product.cs",
               "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Models\\Product.cs",
               "RelativeDocumentMoniker": "AppleStore\\Models\\Product.cs",
               "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Models\\Product.cs",
               "RelativeToolTip": "AppleStore\\Models\\Product.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-07T08:29:45.287Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "AppleStore\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "AppleStore\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAtAAAA",
+              "DocumentIndex": 23,
+              "Title": "Checkout.cshtml",
+              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Views\\Checkout\\Checkout.cshtml",
+              "RelativeDocumentMoniker": "AppleStore\\Views\\Checkout\\Checkout.cshtml",
+              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Views\\Checkout\\Checkout.cshtml",
+              "RelativeToolTip": "AppleStore\\Views\\Checkout\\Checkout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAALIAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-07T07:35:43.344Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "main.js",
-              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\js\\main.js",
-              "RelativeDocumentMoniker": "AppleStore\\wwwroot\\js\\main.js",
-              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\js\\main.js",
-              "RelativeToolTip": "AppleStore\\wwwroot\\js\\main.js",
-              "ViewState": "AQIAAEAAAAAAAAAAAAAkwEgAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-04-07T07:47:57.751Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "style.css",
-              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\css\\style.css",
-              "RelativeDocumentMoniker": "AppleStore\\wwwroot\\css\\style.css",
-              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\css\\style.css",
-              "RelativeToolTip": "AppleStore\\wwwroot\\css\\style.css",
-              "ViewState": "AQIAAAUIAAAAAAAAAAAqwA8IAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-04-07T06:43:38.525Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "20240406033011_ExtendIdentityUser.cs",
-              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Migrations\\20240406033011_ExtendIdentityUser.cs",
-              "RelativeDocumentMoniker": "AppleStore\\Migrations\\20240406033011_ExtendIdentityUser.cs",
-              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Migrations\\20240406033011_ExtendIdentityUser.cs",
-              "RelativeToolTip": "AppleStore\\Migrations\\20240406033011_ExtendIdentityUser.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-06T03:30:45.179Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "dbo.AspNetRoles [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/MSI_MSSQLSERVER2022/AppleStore/True/SqlTable/dbo.AspNetRoles.sql",
-              "ToolTip": "dbo.AspNetRoles [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-04-06T03:54:28.451Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Category.cs",
-              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Models\\Category.cs",
-              "RelativeDocumentMoniker": "AppleStore\\Models\\Category.cs",
-              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Models\\Category.cs",
-              "RelativeToolTip": "AppleStore\\Models\\Category.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-06T04:08:39.606Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "Register.cshtml.cs",
-              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "RelativeDocumentMoniker": "AppleStore\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "RelativeToolTip": "AppleStore\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "ViewState": "AQIAAGgAAAAAAAAAAAAYwH4AAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-06T02:44:29.304Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "AppleStoreController.cs",
-              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Controllers\\AppleStoreController.cs",
-              "RelativeDocumentMoniker": "AppleStore\\Controllers\\AppleStoreController.cs",
-              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Controllers\\AppleStoreController.cs",
-              "RelativeToolTip": "AppleStore\\Controllers\\AppleStoreController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-06T02:44:42.675Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "site.css",
-              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "AppleStore\\wwwroot\\css\\site.css",
-              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "AppleStore\\wwwroot\\css\\site.css",
-              "ViewState": "AQIAABcAAAAAAAAAAAAYwCcAAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-04-03T10:52:41.927Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "AppleStore\\Controllers\\ProductController.cs",
-              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "AppleStore\\Controllers\\ProductController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T08:26:48.364Z"
+              "WhenOpened": "2024-04-10T05:48:56.284Z"
             }
           ]
         },
         {
-          "DockedHeight": 100,
-          "SelectedChildIndex": 0,
+          "DockedHeight": 38,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "20240407132835_initialOrder.cs",
-              "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Migrations\\20240407132835_initialOrder.cs",
-              "RelativeDocumentMoniker": "AppleStore\\Migrations\\20240407132835_initialOrder.cs",
-              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Migrations\\20240407132835_initialOrder.cs",
-              "RelativeToolTip": "AppleStore\\Migrations\\20240407132835_initialOrder.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T13:28:35.962Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             }
           ]
         },
         {
           "DockedHeight": 697,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
-            }
-          ]
-        },
-        {
-          "DockedHeight": 530,
           "SelectedChildIndex": -1,
           "Children": [
             {
