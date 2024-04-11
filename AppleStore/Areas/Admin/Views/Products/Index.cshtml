@@ -1,10 +1,10 @@
-﻿
+﻿@model IEnumerable<AppleStore.Models.Product>
 @{
     ViewBag.Title = "Index";
     Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
 
     // Func f = new Func();
-    // var listProducts = (List<products>)ViewData["listProducts"];
+    var listProducts = ViewBag.Products;
 }
 
 <div class="row">
@@ -19,29 +19,28 @@
                                     <th>Ảnh</th>
                                     <th>Tên sản phẩm</th>
                                     <th>Loại</th>
-                                    <th>Số lượng</th>
+                                    @* <th>Số lượng</th> *@
                                     <th>Giá</th>
-                                    <th>Công khai</th>
                                     <th>Hành động</th>
                                 </tr>
                             </thead>
 
                             <tbody>
-                                @* @foreach (var item in listProducts)
+                                @foreach (var item in listProducts)
                                 {
                                     <tr>
                                         <td>
-                                            <img src="@item.product_img" class="img-fluid" alt="" />
+                                            <img src="@item.ImageUrl" class="img-fluid" alt="" />
                                         </td>
                                         <td>
-                                            <a href="~/Shop/Detail/@item.product_id" target="_blank">@item.product_name</a>
+                                            <a href="~/Shop/Detail/@item.Id" target="_blank">@item.Name</a>
                                         </td>
                                         <td>
-                                            <a href="javascript:void(0)">@item.product_types.product_type_name</a>
+                                            <a href="javascript:void(0)">@item.Category.Name</a>
                                         </td>
-                                        <td>@item.product_quantity</td>
-                                        <td class="td-price">@f.NumberToStr(item.product_price)đ</td>
-                                        @if(item.product_published == 1)
+                                        @* <td>@item.product_quantity</td> *@
+                                        <td class="td-price">@item.Price$</td>
+                                        @* @if(item.product_published == 1)
                                         {
                                             <td class="td-check">
                                                 <span class="lnr lnr-checkmark-circle"></span>
@@ -52,24 +51,24 @@
                                             <td class="td-cross">
                                                 <span class="lnr lnr-cross-circle"></span>
                                             </td>
-                                        }
+                                        } *@
                                         <td>
                                             <ul>
                                                 <li>
-                                                    <a href="~/Shop/Detail/@item.product_id" target="_blank" title="Xem chi tiết">
+                                                    <a href="~/Product/Detail/@item.Id" target="_blank" title="Xem chi tiết">
                                                         <span class="lnr lnr-eye"></span>
                                                     </a>
                                                 </li>
 
                                                 <li>
-                                                    <a href="~/Admin/Products/Edit/@item.product_id" title="Chỉnh sửa">
+                                                    <a href="~/Admin/Products/Edit/@item.Id" title="Chỉnh sửa">
                                                         <span class="lnr lnr-pencil"></span>
                                                     </a>
                                                 </li>
                                             </ul>
                                         </td>
                                     </tr>
-                                } *@
+                                }
                             </tbody>
                         </table>
                     </div>

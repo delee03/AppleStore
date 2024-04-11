@@ -1,7 +1,13 @@
-﻿@{
+﻿@model IList<AppleStore.Models.ApplicationUser>
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, AuthoringTagHelpers
+@using Microsoft.AspNetCore.Identity
+@{
     ViewBag.Title = "Index";
     Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
     // var listCustomers = (List<users>)ViewData["listCustomers"];
+    var listCustomers = ViewBag.Customers;
 }
 
 <div class="row">
@@ -14,40 +20,42 @@
                             <thead>
                                 <tr>
                                     <th>Name</th>
-                                    <th>Phone</th>
+                                    <th>Address</th>
                                     <th>Email</th>
                                     <th>Options</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <!-- table view o day -->
+                                @foreach (var item in ViewBag.Customers)
+                                {
+                                    @if (item != null)
+                                    {
+                                        <tr>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <span class="d-block ">@item.FullName</span>
+                                                    @*<span>Essex Court</span>*@
+                                                </a>
+                                            </td>
+                                            <td>@item.Address</td>
+                                            <td>@item.Email</td>
+                                            <td>
+                                                <ul>
+                                                    <li>
+                                                        <a href="@Url.Action("Detail", "Customers", new { Id = item.Id })" title="Xem chi tiết">
+                                                            <span class="lnr lnr-eye"></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    }
+                                }
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
-
-            @*<div class="pagination-box">
-            <nav class="ms-auto me-auto " aria-label="...">
-            <ul class="pagination pagination-primary">
-            <li class="page-item disabled">
-            <a class="page-link" href="javascript:void(0)">Previous</a>
-            </li>
-            <li class="page-item active">
-            <a class="page-link" href="javascript:void(0)">1 </a>
-            </li>
-            <li class="page-item">
-            <a class="page-link" href="javascript:void(0)">2</a>
-            </li>
-            <li class="page-item">
-            <a class="page-link" href="javascript:void(0)">3</a>
-            </li>
-            <li class="page-item">
-            <a class="page-link" href="javascript:void(0)">Next</a>
-            </li>
-            </ul>
-            </nav>
-            </div>*@
         </div>
     </div>
 </div>

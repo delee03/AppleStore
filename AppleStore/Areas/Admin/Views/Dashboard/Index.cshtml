@@ -3,7 +3,6 @@
     Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
     // Func f = new Func();
     // QueryData QD = new QueryData();
-    // var statistic = QD.GetStatistic();
 }
 
 <div class="row">
@@ -63,7 +62,7 @@
                 <div class="media static-top-widget">
                     <div class="media-body p-0">
                         <span class="m-0">Tổng người dùng</span>
-                        <h4 class="mb-0 counter">21</h4>
+                        <h4 class="mb-0 counter">@ViewBag.CustomersCount</h4>
                     </div>
 
                     <div class="align-self-center text-center">

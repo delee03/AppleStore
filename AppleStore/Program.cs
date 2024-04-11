@@ -1,10 +1,13 @@
-﻿using AppleStore.DataAcess;
+using AppleStore.DataAcess;
 using AppleStore.Repository;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
+using AppleStore.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 // Add services to the container.
 
 // Đặt trước AddControllersWithViews();
@@ -21,6 +24,12 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<IProductRepository, EFProductRepository>();
 builder.Services.AddScoped<ICategoryRepository, EFCategoryRepository>();
+
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
+ .AddDefaultTokenProviders()
+ .AddDefaultUI()
+ .AddEntityFrameworkStores<ApplicationDbContext>();
+builder.Services.AddRazorPages();
 
 builder.Services.AddSession(options =>
 {
@@ -71,5 +80,7 @@ app.MapControllerRoute(
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.MapRazorPages();
 
 app.Run();

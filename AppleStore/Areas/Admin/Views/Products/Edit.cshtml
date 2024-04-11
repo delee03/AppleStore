@@ -5,9 +5,10 @@
 
     // var listPT = (List<product_types>)ViewData["listPT"];
     // var p = (products)ViewData["product"];
-
-    string isCheckedA = "";
-    string isCheckedB = "checked";
+    var listPT = ViewBag.Categories;
+    var product = ViewBag.Product;
+    // string isCheckedA = "";
+    // string isCheckedB = "checked";
 }
 
 <div class="row">
@@ -20,28 +21,28 @@
                             <h5>Sửa sản phẩm</h5>
                         </div>
 
-                        <form class="theme-form theme-form-2 mega-form" method="post" action="">
+                        <form class="theme-form theme-form-2 mega-form" method="post" action="" enctype="multipart/form-data">
                             <div class="row">
                                 <div class="mb-4 row align-items-center">
                                     <label class="form-label-title col-sm-2 mb-0">Tên sản phẩm</label>
                                     <div class="col-sm-10">
-                                        <input class="form-control" type="text" value="" name="product_name" required />
+                                        <input class="form-control" type="text" value="@product.Name" name="Name" required />
                                     </div>
                                 </div>
 
                                 <div class="mb-4 row align-items-center">
                                     <label class="col-sm-2 col-form-label form-label-title">Loại sản phẩm</label>
                                     <div class="col-sm-10">
-                                        <select class="js-example-basic-single w-100" name="product_type_id">
-                                            @* @foreach (var item in listPT)
+                                        <select class="js-example-basic-single w-100" name="CategoryId">
+                                            @foreach (var item in listPT)
                                             {
                                                 string isSelected = "";
-                                                if (item.product_type_id == p.product_type_id)
+                                                if (item.Id == product.CategoryId)
                                                 {
                                                     isSelected = "selected";
                                                 }
-                                                <option value="@item.product_type_id" @isSelected>@item.product_type_name</option>
-                                            } *@
+                                                <option value="@item.Id" @isSelected >@item.Name</option>
+                                            }
                                         </select>
                                     </div>
                                 </div>
@@ -49,40 +50,59 @@
                                 <div class="mb-4 row align-items-center">
                                     <label class="form-label-title col-sm-2 mb-0">Giá</label>
                                     <div class="col-sm-10">
-                                        <input class="form-control" type="number" value="" name="product_price" required />
+                                        <input class="form-control" value="@product.Price" name="Price" required />
                                     </div>
                                 </div>
 
                                 <div class="mb-4 row align-items-center">
                                     <label class="form-label-title col-sm-2 mb-0">Ảnh</label>
                                     <div class="col-sm-10">
-                                        <input class="form-control" type="text" value="" name="product_img" required />
+                                        <input class="form-control" type="file" value="@product.ImageUrl" id="imageInput" name="ImageUrl" />
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <img src="@Model.ImageUrl" alt="ProductImage" style="max-width:200px" id="previewImage" />
                                     </div>
                                 </div>
 
                                 <div class="mb-4 row align-items-center">
+                                    <label class="form-label-title col-sm-2 mb-0">Ảnh chi tiết</label>
+                                    <div class="col-sm-10">
+                                        <input id="imageInputs" class="form-control" type="file" value="@product.ImageUrls" name="ImageUrls" multiple />
+                                    </div>
+                                    <div class="col-sm-10" id="previewImages">
+                                        @if (ViewBag.dsImage != null)
+                                        {
+                                            foreach (var img in ViewBag.dsImage)
+                                            {
+                                                <img class="product-preview" src="@img.Url" alt="Product Images" style="max-width:225px" />
+                                            }
+                                        }
+                                    </div>
+                                </div>
+
+                                @* <div class="mb-4 row align-items-center">
                                     <label class="form-label-title col-sm-2 mb-0">Số lượng</label>
                                     <div class="col-sm-10">
                                         <input class="form-control" type="number" min="0" value="" name="product_quantity" required />
                                     </div>
-                                </div>
+                                </div> *@
 
                                 <div class="mb-4 row align-items-center">
                                     <label class="form-label-title col-sm-2 mb-0">Mô tả</label>
                                     <div class="col-sm-10">
-                                        <textarea class="form-control" name="product_description"></textarea>
+                                        <input class="form-control" type="text" value="@product.Description" name="Description"></input>
                                     </div>
                                 </div>
 
-                                <div class="mb-4 row align-items-center">
+                                @* <div class="mb-4 row align-items-center">
                                     <label class="form-label-title col-sm-2 mb-0">Công khai</label>
                                     <div class="col-md-10">
                                         <div class="form-check user-checkbox ps-0">
-                                            @* @if (p.product_published == 1)
+                                             @if (p.product_published == 1)
                                             {
                                                 isCheckedA = "checked";
                                                 isCheckedB = "";
-                                            } *@
+                                            }
                                             <div class="radio-section">
                                                 <label>
                                                     <input type="radio" name="product_published" value="1" @isCheckedA />
@@ -98,7 +118,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> *@
 
                                 <div class="card-footer text-end border-0 pt-0">
                                     <input class="form-control" type="number" value="<product_id o day nếu cập nhật>" name="product_id" hidden />
@@ -112,3 +132,37 @@
         </div>
     </div>
 </div>
+
+<script>
+    document.getElementById("imageInput").addEventListener("change", function (event) {
+        var output = document.getElementById("previewImage");
+        if (this.files && this.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                output.src = e.target.result;
+                outpt.style.display = "block";
+            };
+            reader.readAsDataURL(this.files[0]);
+        }
+    });
+
+    document.getElementById("imageInputs").addEventListener("change", function (event) {
+        var output = document.getElementById("previewImages");
+        output.innerHTML = "";
+
+        if (this.files && this.files.length > 0) {
+            for (var i = 0; i < this.files.length; i++) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    var img = document.createElement("img");
+                    img.src = e.target.result; 
+                    img.style.maxWidth = "200px"; 
+                    output.appendChild(img); 
+                };
+                reader.readAsDataURL(this.files[i]);
+            }
+        }
+    });
+
+</script>
