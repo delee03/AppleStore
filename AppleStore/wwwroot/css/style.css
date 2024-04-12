@@ -2072,6 +2072,16 @@ img.product-preview.slick-slide.slick-current.slick-active.slick-center {
 .btn-pay:hover {
     background: rgba(255, 248, 248, 0.6);
 }
+
+/*CART CHECKOUT ===========*/
+
+.cart--container {
+    display: flex;
+    justify-content: center;
+    align-content: stretch;
+}
+
+/*=============CART CHECKOUT */
     /*=========================================================
 	12 -> SLICK STYLE
 ===========================================================*/
@@ -2207,19 +2217,21 @@ img.product-preview.slick-slide.slick-current.slick-active.slick-center {
     text-align: center;
     display: inline-block;
     background: #fff;
+    text-transform: uppercase;
     color: #ff0000;
     border: 3px solid red;
     padding: 8px 30px;
     margin: 5px 0;
     border-radius: 30px;
     transition: background 0.5s;
+    font-weight: 700;
 }
 
 .btn-action:hover {
     color: white;
     border: 3px solid #e90000;
     background-image: linear-gradient(160deg, #e90000 0%, #d08080 100%);
-    transition: ease 0.5s;
+    transition: ease 0.7s;
 }
 
 /* global*/
@@ -2229,4 +2241,14 @@ img.product-preview.slick-slide.slick-current.slick-active.slick-center {
     display: flex;
     align-items:center;
     justify-content:center;
+}
+
+/*title update*/
+.title-gradient {
+    font-size: 26px;
+    text-transform: uppercase;
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

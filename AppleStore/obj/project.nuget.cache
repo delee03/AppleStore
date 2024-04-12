@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Q2DyxKf6MRsfde7IDyCAa3TBPwRuSRCeCwYItHRSkzgvuPFMFSLxnqlNpt60S8yMazkWLqUbUaK31/ZMVa6ukw==",
+  "dgSpecHash": "QVfeL0WDpLYvzC0imKRUimt6YXZo9OC1aKNI+Q1MQViC7cVTaMistJxE02E8wlfXgN+fUeVdSEGeiFPhwjxjrQ==",
   "success": true,
-  "projectFilePath": "D:\\Web_Vs\\AppleStore\\AppleStore\\AppleStore.csproj",
+  "projectFilePath": "D:\\Web_VS\\AppleStore\\AppleStore\\AppleStore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ACER\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

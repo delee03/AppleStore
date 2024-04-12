@@ -23,6 +23,7 @@ UserManager<ApplicationUser> userManager, IProductRepository productRepository)
 		}	
 		public IActionResult Index()
 		{
+			ViewBag.ProductList = _context.Products.ToList();
 			var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart();
 			return View(cart);
 		}
@@ -79,12 +80,25 @@ UserManager<ApplicationUser> userManager, IProductRepository productRepository)
         }
 
 
-		public IActionResult Checkout()
-		{
-			return View(new Order());
-		}
+        public IActionResult Checkout()
+        {
+            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
+            if (cart != null)
+            {
+				List<CartItem> items = cart.Items;
+                foreach (var item in cart.Items)
+                {
+                    string productName = item.Name;
+                    int quantity = item.Quantity;
+                    decimal price = item.Price;
+                }
+                ViewBag.CartOrder = items;
+            }
+            return View(new Order());
+        }
 
-		[HttpPost]
+
+        [HttpPost]
 		public async Task<IActionResult> Checkout(Order order)
 		{
 			var cart =

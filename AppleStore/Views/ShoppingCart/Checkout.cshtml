@@ -1,145 +1,150 @@
 ﻿@model Order
 
 @{
-    decimal totalPrice = 0;
+    decimal Total = 0;
 }
 
 <form asp-action="Checkout" method="post">
 
-<div class="section">
-    <!-- container -->
-    <div class="container" style="display: flex; justify-content: space-between; gap:20px;">
-        <!-- row -->
-        <div class="row" style="width:70%;">
-            <div class="col-md-7" style="width:100%;">
-                <!-- Billing Details -->
-                <div class="billing-details">
-                    <div class="section-title">
-                        <h3 class="title">Shipping address</h3>
+    <div class="section">
+        <!-- container -->
+        <div class="container" style="display: flex; justify-content: space-between; gap:20px;">
+            <!-- row -->
+            <div class="row" style="width:70%;">
+                <div class="col-md-7" style="width:100%;">
+                    <!-- Billing Details -->
+                    <div class="billing-details">
+                        <div class="section-title">
+                            <h3 class="title">Shipping address</h3>
+                        </div>
+                        <div class="form-group">
+                            <input class="input"
+                                   type="text"
+                                   name="full-name"
+                                   placeholder="Full Name"
+                                   asp-action="" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input class="input"
+                               type="email"
+                               name="email"
+                               placeholder="Email" />
                     </div>
                     <div class="form-group">
                         <input class="input"
                                type="text"
-                               name="full-name"
-                               placeholder="Full Name"
-                               asp-action=""
-                         />
+                               name="address"
+                               placeholder="Address" />
                     </div>
-                </div>
-                <div class="form-group">
-                    <input class="input"
-                           type="email"
-                           name="email"
-                           placeholder="Email" />
-                </div>
-                <div class="form-group">
-                    <input class="input"
-                           type="text"
-                           name="address"
-                           placeholder="Address" />
-                </div>
-                <div class="form-group">
-                    <input class="input" type="text" name="city" placeholder="City" />
-                </div>
-                <div class="form-group">
-                    <input class="input"
-                           type="text"
-                           name="country"
-                           placeholder="Country" />
-                </div>
-                <div class="form-group">
-                    <input class="input"
-                           type="tel"
-                           name="tel"
-                           placeholder="Telephone" />
-                </div>
+                    <div class="form-group">
+                        <input class="input" type="text" name="city" placeholder="City" />
+                    </div>
+                    <div class="form-group">
+                        <input class="input"
+                               type="text"
+                               name="country"
+                               placeholder="Country" />
+                    </div>
+                    <div class="form-group">
+                        <input class="input"
+                               type="tel"
+                               name="tel"
+                               placeholder="Telephone" />
+                    </div>
 
-                <!-- Order notes -->
-                <div class="order-notes">
-                    <textarea class="input" placeholder="Order Notes"></textarea>
+                    <!-- Order notes -->
+                    <div class="order-notes">
+                        <textarea class="input" placeholder="Order Notes"></textarea>
+                    </div>
+                    <!-- /Order notes -->
                 </div>
-                <!-- /Order notes -->
-            </div>
-            <!-- /Billing Details -->
-            
-        </div>
+                <!-- /Billing Details -->
 
-        <!-- Order Details -->
-        <div class="col-md-5 order-details" style="margin-top: 86px;">
-            <div class="section-title text-center">
-                <h3 class="title">Your Order</h3>
             </div>
-            <div class="order-summary">
-                <div class="order-col">
-                    <div><strong>PRODUCT</strong></div>
-                    <div><strong>TOTAL</strong></div>
+
+            <!-- Order Details -->
+
+            <div class="col-md-5 order-details" style="margin-top: 86px;">
+                <div class="section-title text-center">
+                    <h3 class="title">Your Order</h3>
                 </div>
-                <div class="order-products">
-                     <div class="order-col">
-                        <div>1x Product Name Goes Here</div>
-                        <div>$980.00</div>
+                <div class="order-summary">
+                    <div class="order-col">
+                        <div><strong>PRODUCT</strong></div>
+                        <div><strong>TOTAL</strong></div>
+                    </div>
+                    @foreach (var item in ViewBag.CartOrder)
+                    {
+                        decimal subtotal = (int)item.Quantity * item.Price;
+                        Total += subtotal;
+                        <div class="order-products">
+
+
+                            <div class="order-col">
+                                <div>x1 @item.Name</div>
+                                <div>$@subtotal</div>
+                            </div>
+
+
+                        </div>
+                    }
+                    <div class="order-col">
+                        <div>Shiping</div>
+                        <div><strong>FREE</strong></div>
                     </div>
                     <div class="order-col">
-                        <div>2x Product Name Goes Here</div>
-                        <div>$980.00</div>
+                        <div><strong>TOTAL</strong></div>
+                        <div><strong class="order-total">$@Total</strong></div>
                     </div>
                 </div>
-                <div class="order-col">
-                    <div>Shiping</div>
-                    <div><strong>FREE</strong></div>
+                <div class="payment-method">
+                    <div class="input-radio">
+                        <input type="radio" name="payment" id="payment-1" />
+                        <label for="payment-1">
+                            <span></span>
+                            Direct Bank Transfer
+                        </label>
+                        <div class="caption">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="input-radio">
+                        <input type="radio" name="payment" id="payment-2" />
+                        <label for="payment-2">
+                            <span></span>
+                            Cheque Payment
+                        </label>
+                        <div class="caption">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="input-radio">
+                        <input type="radio" name="payment" id="payment-3" />
+                        <label for="payment-3">
+                            <span></span>
+                            Paypal System
+                        </label>
+                        <div class="caption">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="order-col">
-                    <div><strong>TOTAL</strong></div>
-                    <div><strong class="order-total">$@totalPrice</strong></div>
-                </div>
+
+                <a href="#" class="primary-btn order-submit">Place order</a>
             </div>
-            <div class="payment-method">
-                <div class="input-radio">
-                    <input type="radio" name="payment" id="payment-1" />
-                    <label for="payment-1">
-                        <span></span>
-                        Direct Bank Transfer
-                    </label>
-                    <div class="caption">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
-                    </div>
-                </div>
-                <div class="input-radio">
-                    <input type="radio" name="payment" id="payment-2" />
-                    <label for="payment-2">
-                        <span></span>
-                        Cheque Payment
-                    </label>
-                    <div class="caption">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
-                    </div>
-                </div>
-                <div class="input-radio">
-                    <input type="radio" name="payment" id="payment-3" />
-                    <label for="payment-3">
-                        <span></span>
-                        Paypal System
-                    </label>
-                    <div class="caption">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            
-            <a href="#" class="primary-btn order-submit">Place order</a>
+            <!-- /Order Details -->
         </div>
-        <!-- /Order Details -->
+        <!-- /row -->
     </div>
-    <!-- /row -->
-</div>
 
 </form>
