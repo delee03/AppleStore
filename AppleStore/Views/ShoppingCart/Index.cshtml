@@ -46,26 +46,40 @@
 
                                                 <div style="display: flex; align-items: center;justify-content: space-between; color: #fff;" class="row mb-4 d-flex">
                                                     <div class="col-md-2 col-lg-2 col-xl-2">
-                                                        <img src="@item.ImageUrl"
-                                                             class="img-fluid rounded-3" alt="Cotton T-shirt" style="width:120px; height:120px;">
+                                                        <img src="@item.ImageUrl" class="img-fluid rounded-3" alt="Cotton T-shirt" style="width:120px; height:120px;">
                                                     </div>
                                                     <div class="col-md-3 col-lg-3 col-xl-3">
                                                         <h6 class="text-muted">@item.Name</h6>
 
                                                     </div>
                                                     <div class="col-md-3 col-lg-3 col-xl-2 d-flex" style="display:flex; gap:10px;">
-                                                        <button class="btn btn-link px-2"
-                                                                onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                                                            <i class="fas fa-minus"></i>
-                                                        </button>
+
+                                                        @* <button class="btn btn-link px-2 updateQuantityBtn "
+                                                                    onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                                                    asp-action="UpdateQuantity" asp-route-productId="@item.ProductId" asp-route-quantity="-1"
+                                                                    data-productid="@item.ProductId" data-quantity="-1">
+                                                                <i class="fas fa-minus"></i>
+                                                         </button> *@
+
+                                                        <a asp-action="UpdateQuantity" asp-route-productId="@item.ProductId" asp-route-quantity="-1">
+                                                            <button class="btn btn-link px-2"
+                                                                    onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                                                                <i class="fas fa-minus"></i>
+                                                            </button>
+                                                        </a>
+
+
 
                                                         <input id="form1" min="0" name="quantity" value="@item.Quantity" type="number"
                                                                class="form-control form-control-sm" style="width:50px;" />
 
-                                                        <button class="btn btn-link px-2"
-                                                                onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                                                            <i class="fas fa-plus"></i>
-                                                        </button>
+                                                        <a asp-action="UpdateDesQuantity" asp-route-productId="@item.ProductId" asp-route-quantity="1">
+                                                                <button class="btn btn-link px-2"
+                                                                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                                                                    <i class="fas fa-plus"></i>
+                                                                </button>
+                                                          </a>
+                                                        
                                                     </div>
                                                     <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
                                                         <h6 class="mb-0"> @item.Price VND</h6>
@@ -125,5 +139,8 @@
     </section>
 
 </div>
+
+
+
 
 

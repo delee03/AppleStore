@@ -6,6 +6,7 @@ namespace AppleStore.Models
     {
         public List<CartItem> Items { get; set; } = new List<CartItem>();
 
+       
 
         public void AddItem(CartItem item)
         {
@@ -25,8 +26,22 @@ namespace AppleStore.Models
         {
             Items.RemoveAll(i => i.ProductId == productId);
         }
-     
 
-       
-    }
+		public void InsQuantity(int productId)
+		{
+			var existingItem = Items.FirstOrDefault(i => i.ProductId == productId);
+
+			existingItem.Quantity += 1;
+
+		}
+
+		public void DesQuantity(int productId)
+		{
+			var existingItem = Items.FirstOrDefault(i => i.ProductId == productId);
+
+			existingItem.Quantity -= 1;
+
+		}
+
+	}
 }

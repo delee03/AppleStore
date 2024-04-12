@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Identity;
 using AppleStore.Extensions;
 using Microsoft.AspNetCore.Authorization;
 using AppleStore.DataAcess;
+using Newtonsoft.Json;
+using static AppleStore.Models.ShoppingCart;
 
 namespace AppleStore.Controllers
 {
@@ -26,6 +28,8 @@ namespace AppleStore.Controllers
 			return View(cart);
 		}
 
+
+
 		public async Task<IActionResult> AddToCart(int productId, int quantity)
 		{
 			// Giả sử bạn có phương thức lấy thông tin sản phẩm từ productId
@@ -35,15 +39,69 @@ namespace AppleStore.Controllers
 				ProductId = productId,
 				Name = product.Name,
 				Price = product.Price,
-				Quantity = quantity,
-				ImageUrl = product.ImageUrl,
+				Quantity = quantity
 			};
 			var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart();
 			cart.AddItem(cartItem);
+			HttpContext.Session.SetObjectAsJson("Cart", cart);
+			//return RedirectToAction("Index");
+			return Json(new { success = true });
+		}
+
+
+		public IActionResult UpdateQuantity(int productId, int quantity)
+		{
+			var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart();
+
+			// Update the quantity of the specified product in the cart
+			foreach (var item in cart.Items)
+			{
+				if (item.ProductId == productId)
+				{
+					if(item.Quantity == 1)
+					{
+						cart.RemoveItem(item.ProductId);
+                        HttpContext.Session.SetObjectAsJson("Cart", cart);
+                        break;
+                    }
+
+
+					item.Quantity += quantity;
+					break;
+				}
+			}
 
 			HttpContext.Session.SetObjectAsJson("Cart", cart);
-			return RedirectToAction("Index");
+			return RedirectToAction("Index"); // Assuming you have an "Index" action to display the updated cart
 		}
+
+		public IActionResult UpdateDesQuantity(int productId, int quantity)
+		{
+			var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart();
+
+			// Update the quantity of the specified product in the cart
+			foreach (var item in cart.Items)
+			{
+				if (item.ProductId == productId)
+				{
+					if (item.Quantity < 1)
+					{
+						cart.RemoveItem(item.ProductId);
+						HttpContext.Session.SetObjectAsJson("Cart", cart);
+						break;
+					}
+
+
+					item.Quantity += quantity;
+					break;
+				}
+			}
+
+			HttpContext.Session.SetObjectAsJson("Cart", cart);
+			return RedirectToAction("Index"); // Assuming you have an "Index" action to display the updated cart
+		}
+
+
 
 		// Các actions khác...
 		private async Task<Product> GetProductFromDatabase(int productId)
@@ -66,7 +124,8 @@ namespace AppleStore.Controllers
 			return RedirectToAction("Index");
 		}
 
-        public IActionResult RemoveAllFromCart()
+
+		public IActionResult RemoveAllFromCart()
         {
 
             var newCart = new ShoppingCart();
@@ -80,6 +139,8 @@ namespace AppleStore.Controllers
 
 		public IActionResult Checkout()
 		{
+			List<CartItem> cartItems = new List<CartItem>();
+			ViewBag.CartItems = cartItems;
 			return View(new Order());
 		}
 
