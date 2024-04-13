@@ -10,7 +10,6 @@ using static AppleStore.Models.ShoppingCart;
 
 namespace AppleStore.Controllers
 {
-	[Authorize]
 	public class ShoppingCartController : Controller
 	{
 		private readonly IProductRepository _productRepository;
@@ -49,33 +48,33 @@ namespace AppleStore.Controllers
 		}
 
 
-		public IActionResult UpdateQuantity(int productId, int quantity)
-		{
-			var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart();
+        public IActionResult UpdateQuantity(int productId, int quantity)
+        {
+            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart();
 
-			// Update the quantity of the specified product in the cart
-			foreach (var item in cart.Items)
-			{
-				if (item.ProductId == productId)
-				{
-					if(item.Quantity == 1)
-					{
-						cart.RemoveItem(item.ProductId);
+            // Update the quantity of the specified product in the cart
+            foreach (var item in cart.Items)
+            {
+                if (item.ProductId == productId)
+                {
+                    if (item.Quantity == 1)
+                    {
+                        cart.RemoveItem(item.ProductId);
                         HttpContext.Session.SetObjectAsJson("Cart", cart);
                         break;
                     }
 
 
-					item.Quantity += quantity;
-					break;
-				}
-			}
+                    item.Quantity += quantity;
+                    break;
+                }
+            }
 
-			HttpContext.Session.SetObjectAsJson("Cart", cart);
-			return RedirectToAction("Index"); // Assuming you have an "Index" action to display the updated cart
-		}
+            HttpContext.Session.SetObjectAsJson("Cart", cart);
+            return RedirectToAction("Index"); // Assuming you have an "Index" action to display the updated cart
+        }
 
-		public IActionResult UpdateDesQuantity(int productId, int quantity)
+        public IActionResult UpdateDesQuantity(int productId, int quantity)
 		{
 			var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart();
 
@@ -136,7 +135,7 @@ namespace AppleStore.Controllers
             return RedirectToAction("Index");
         }
 
-
+		[Authorize]
 		public IActionResult Checkout()
 		{
 			List<CartItem> cartItems = new List<CartItem>();

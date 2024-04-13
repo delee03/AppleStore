@@ -169,7 +169,7 @@
 										<h5>SUBTOTAL: $2940.00</h5>
 									</div>
 									<div class="cart-btns">
-										<a aria-expanded="true" style="color:white;" asp-controller="ShoppingCart">
+										<a aria-expanded="true" style="color:white;" asp-controller="ShoppingCart" asp-action="Index">
 											View Cart
 										</a>
 										<a asp-controller="ShoppingCart" asp-action="CheckOut">Checkout  <i class="fa fa-arrow-circle-right"></i></a>
@@ -248,41 +248,7 @@
 	
   
 
-@* 	<!-- NEWSLETTER -->
-	<div id="newsletter" class="section">
-		<!-- container -->
-		<div class="container">
-			<!-- row -->
-			<div class="row">
-				<div class="col-md-12">
-					<div class="newsletter">
-						<p>Sign Up for the <strong>NEWSLETTER</strong></p>
-						<form>
-							<input class="input" type="email" placeholder="Enter Your Email">
-							<button class="newsletter-btn"><i class="fa fa-envelope"></i> Subscribe</button>
-						</form>
-						<ul class="newsletter-follow">
-							<li>
-								<a href="#"><i class="fa fa-facebook"></i></a>
-							</li>
-							<li>
-								<a href="#"><i class="fa fa-twitter"></i></a>
-							</li>
-							<li>
-								<a href="#"><i class="fa fa-instagram"></i></a>
-							</li>
-							<li>
-								<a href="#"><i class="fa fa-pinterest"></i></a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<!-- /row -->
-		</div>
-		<!-- /container -->
-	</div>
-	<!-- /NEWSLETTER --> *@
+
 	<!-- FOOTER -->
 	<footer id="footer" style="border-top: 3px solid #D10024;">
 		<!-- top footer -->
@@ -469,29 +435,6 @@
 			duration: 5000,
 		});
 	}
-</script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-	$(document).ready(function () {
-		$('.updateQuantityBtn').click(function () {
-			var productId = $(this).data('productid');
-			var quantity = parseInt($(this).closest('.product').find('.quantityInput').val());
-
-			$.ajax({
-				url: '/ShoppingCart/UpdateQuantity',
-				method: 'POST',
-				data: { productId: productId, quantity: quantity },
-				success: function (response) {
-					// Xử lý kết quả ở đây nếu cần
-					console.log('Cập nhật số lượng thành công');
-				},
-				error: function (xhr, status, error) {
-					// Xử lý lỗi ở đây nếu cần
-					console.error('Lỗi khi cập nhật số lượng:', error);
-				}
-			});
-		});
-	});
 </script>
 
 <style>

@@ -2,6 +2,13 @@
 
 @{
     decimal SubTotal = 0;
+
+    @foreach (var item in Model.Items)
+    {
+
+        SubTotal += item.Price * item.Quantity;
+
+    }
 }
 
 <style>
@@ -54,9 +61,8 @@
                                                     </div>
                                                     <div class="col-md-3 col-lg-3 col-xl-2 d-flex" style="display:flex; gap:10px;">
 
-                                                        @* <button class="btn btn-link px-2 updateQuantityBtn "
+                                                       @*  <button class="updateQuantityBtn btn btn-link px-2 "
                                                                     onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                                                                    asp-action="UpdateQuantity" asp-route-productId="@item.ProductId" asp-route-quantity="-1"
                                                                     data-productid="@item.ProductId" data-quantity="-1">
                                                                 <i class="fas fa-minus"></i>
                                                          </button> *@
@@ -71,7 +77,7 @@
 
 
                                                         <input id="form1" min="0" name="quantity" value="@item.Quantity" type="number"
-                                                               class="form-control form-control-sm" style="width:50px;" />
+                                                               class="form-control form-control-sm quantityInput" style="width:50px;" />
 
                                                         <a asp-action="UpdateDesQuantity" asp-route-productId="@item.ProductId" asp-route-quantity="1">
                                                                 <button class="btn btn-link px-2"
@@ -102,12 +108,7 @@
                                         </div>
                                     </div>
 
-                                    @foreach (var item in Model.Items)
-                                    {
-
-                                        SubTotal += item.Price * item.Quantity;
-
-                                    }
+                                  
 
                                     <div class="col-lg-4">
                                         <div class="p-5">
@@ -141,6 +142,29 @@
 </div>
 
 
-
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.updateQuantityBtn').click(function () {
+            var productId = $(this).data('productid');
+            var quantity = parseInt($(this).data('quantity'));
+            
+            console.log(quantity, productId);
+            $.ajax({
+                url: '/ShoppingCart/UpdateQuantity',
+                method: 'POST',
+                data: { productId: productId, quantity: quantity },
+                success: function (response) {
+                    // Xử lý kết quả ở đây nếu cần
+                    console.log('Cập nhật số lượng thành công');
+                },
+                error: function (xhr, status, error) {
+                    // Xử lý lỗi ở đây nếu cần
+                    console.error('Lỗi khi cập nhật số lượng:', error);
+                }
+            });
+        });
+    });
+</script>
 
 
