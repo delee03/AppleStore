@@ -227,10 +227,16 @@
                     </div> *@
                 </div>
                 <div style="display: flex; align-items: flex-end; justify-content: space-around">
-                    <button type="submit" class="primary-btn order-submit">
+
+                    <input type="submit" name="payment" class="primary-btn order-submit" value="đặt hàng cod"/>
+                    <input type="submit" name="payment" class="primary-btn order-submit" value="thanh toán vnpay" />
+                   @*  <button type="submit" name="payment" class="primary-btn order-submit">
                         Place order
                     </button>
-                    <a asp-action="Index" class="btn-action-checkout">Back To Cart</a>
+                    <button type="submit" name="payment" class="primary-btn order-submit">
+                       VN Pay
+                    </button> *@
+                  @*   <a asp-action="Index" class="btn-action-checkout">Back To Cart</a> *@
                 </div>
                
             </div>

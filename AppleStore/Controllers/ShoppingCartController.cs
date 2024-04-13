@@ -5,6 +5,10 @@ using Microsoft.AspNetCore.Identity;
 using AppleStore.Extensions;
 using Microsoft.AspNetCore.Authorization;
 using AppleStore.DataAcess;
+using AppleStore.Services;
+using AppleStore.ViewModels;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace AppleStore.Controllers
 {
@@ -14,12 +18,15 @@ namespace AppleStore.Controllers
 		private readonly IProductRepository _productRepository;
 		private readonly ApplicationDbContext _context;
 		private readonly UserManager<ApplicationUser> _userManager;
-		public ShoppingCartController( ApplicationDbContext context,
-UserManager<ApplicationUser> userManager, IProductRepository productRepository)
+        private readonly IVnPayService _vnPayService;
+
+        public ShoppingCartController( ApplicationDbContext context,
+UserManager<ApplicationUser> userManager, IProductRepository productRepository, IVnPayService vnPayService)
 		{
 			_productRepository = productRepository;
 			_context = context;
 			_userManager = userManager;
+            _vnPayService = vnPayService;
 		}	
 		public IActionResult Index()
 		{
@@ -128,23 +135,39 @@ UserManager<ApplicationUser> userManager, IProductRepository productRepository)
 
 
         [HttpPost]
-        public async Task<IActionResult> Checkout(Order order, ApplicationUser users)
+        public async Task<IActionResult> Checkout(Order order, string payment = "COD")
         {
             var cart =
-                HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
+               HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
+            if (payment == "thanh toán vnpay")
+            {
+                var vnPayModel = new VnPaymentRequestModel
+                {
+                    Amount = (double)cart.Items.Sum(x => x.Quantity * x.Price),
+                    CreatedDate = DateTime.Now,
+                    Desc = $"{order.FullName_Order} {order.PhoneNumber_Order}",
+                    FullName = order.FullName_Order,
+                    OrderId = new Random().Next(1000, 10000)
+                };
+                return Redirect(_vnPayService.CreatePaymentUrl(HttpContext, vnPayModel));
+
+            }
+
+           
             if (cart == null || !cart.Items.Any())
             {
                 // Xử lý giỏ hàng trống...
                 return RedirectToAction("/Product");
             }
             var user = await _userManager.GetUserAsync(User);          
-            ViewBag.Info = user;
+            ViewBag.Info = order;
             order.UserId = user.Id;
             order.OrderDate = DateTime.Now;
-           /* order.PhoneNumber_Order = users.PhoneNumber;
-            order.FullName_Order = users.FullName;
-            order.ShippingAddress = users.Address;
-            order.Email_Order = users.Email;*/
+            /* order.PhoneNumber_Order = users.PhoneNumber;
+             order.FullName_Order = users.FullName;
+             order.ShippingAddress = users.Address;
+             order.Email_Order = users.Email;*/
+            order.Vnpay_transaction = "COD"; 
             order.TotalPrice = cart.Items.Sum(i => i.Price * i.Quantity);
             order.OrderDetails = cart.Items.Select(i => new OrderDetail
             {
@@ -160,6 +183,24 @@ UserManager<ApplicationUser> userManager, IProductRepository productRepository)
 
 
             return View("SucessfulOrder", order.OrderDate);
+        }
+        [Authorize]
+        public IActionResult PaymentFail()
+        {
+            return View();
+        }
+        [Authorize]
+        public IActionResult PaymentCallBack()
+        {
+            var response = _vnPayService.PaymentExecute(Request.Query);
+            if (response == null || response.VnPayResponseCode != "00")
+            {
+                TempData["Message"] = $"Lỗi thanh toán VNPay: {response.VnPayResponseCode}";
+                return RedirectToAction("PaymentFail");
+            }
+            //Lưu đơn hàng vào database tự code
+            TempData["Message"] = $"Thanh toán VNPAY thành công";
+            return View("SucessfulOrder");
         }
 
 
