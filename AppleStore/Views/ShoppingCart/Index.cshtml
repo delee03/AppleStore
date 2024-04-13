@@ -166,19 +166,22 @@
                                     <td >
                                         <div class="box-updown">
 
-                                            <button class="btn btn-link px-2"
-                                                    onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                                                  <i class="fas fa-minus"></i>
-                                            </button>
+                                            <a asp-action="DescQuantity" asp-route-productId="@item.ProductId" asp-route-quantity="-1">
+                                                <button class="btn btn-link px-2"
+                                                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                                                    <i class="fas fa-minus"></i>
+                                                </button>
+                                            </a>
 
                                             <input id="form1" min="1" name="quantity" value="@item.Quantity" type="number"
                                                    class="form-control form-control-sm" style="width:50px;" />
 
-                                            <button class="btn btn-link px-2"
-                                                    onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                                                <i class="fas fa-plus"></i>
-                                            </button>
-
+                                            <a asp-action="AccesQuantity" asp-route-productId="@item.ProductId" asp-route-quantity="1">
+                                                <button class="btn btn-link px-2"
+                                                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                                                    <i class="fas fa-plus"></i>
+                                                </button>
+                                            </a>
                                         </div>
                                     </td>
                                     <td style="vertical-align:central"  @* class="col-md-3 col-lg-3 col-xl-5" *@>

@@ -76,7 +76,9 @@
 	       
             <div class="cart--container">
                 <h2 class="text-danger">@TempData["Message"]</h2>
-                <h3 style="max-width: 800px" class="title-gradient"> Đơn hàng có ngày đặt @Model  đã thanh toán thành công</h3>
+               
+                <pre style="max-width: 800px" class="title-gradient"> Đơn hàng có ID: @TempData["OrderId"]
+                                                                thông tin User: @TempData:["Desc"]  đã thanh toán thành công</pre>                                          
                 <img src="https://png.pngtree.com/png-clipart/20230926/original/pngtree-online-payment-using-smartphone-app-successful-transfer-technology-transfer-purchase-vector-png-image_12880289.png" width="auto" height="300px" />
                 <div class="item--cart">
                     <a asp-action="Index" asp-controller="product">

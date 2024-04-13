@@ -9,10 +9,11 @@ using AppleStore.Services;
 using AppleStore.ViewModels;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Azure;
 
 namespace AppleStore.Controllers
 {
-	[Authorize]
+	
 	public class ShoppingCartController : Controller
 	{
 		private readonly IProductRepository _productRepository;
@@ -36,7 +37,59 @@ UserManager<ApplicationUser> userManager, IProductRepository productRepository, 
 			return View(cart);
 		}
 
-		public async Task<IActionResult> AddToCart(int productId, int quantity)
+        public IActionResult DescQuantity(int productId, int quantity)
+        {
+            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart();
+
+            // Update the quantity of the specified product in the cart
+            foreach (var item in cart.Items)
+            {
+                if (item.ProductId == productId)
+                {
+                    if (item.Quantity == 1)
+                    {
+                        cart.RemoveItem(item.ProductId);
+                        HttpContext.Session.SetObjectAsJson("Cart", cart);
+                        break;
+                    }
+
+                    item.Quantity += quantity;
+                    break;
+                }
+            }
+
+            HttpContext.Session.SetObjectAsJson("Cart", cart);
+            return RedirectToAction("Index"); // Assuming you have an "Index" action to display the updated cart
+        }
+
+
+        public IActionResult AccesQuantity(int productId, int quantity)
+        {
+            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart();
+
+            // Update the quantity of the specified product in the cart
+            foreach (var item in cart.Items)
+            {
+                if (item.ProductId == productId)
+                {
+                    if (item.Quantity < 1)
+                    {
+                        cart.RemoveItem(item.ProductId);
+                        HttpContext.Session.SetObjectAsJson("Cart", cart);
+                        break;
+                    }
+
+
+                    item.Quantity += quantity;
+                    break;
+                }
+            }
+
+            HttpContext.Session.SetObjectAsJson("Cart", cart);
+            return RedirectToAction("Index"); // Assuming you have an "Index" action to display the updated cart
+        }
+
+        public async Task<IActionResult> AddToCart(int productId, int quantity)
 		{
 			// Giả sử bạn có phương thức lấy thông tin sản phẩm từ productId
 			var product = await GetProductFromDatabase(productId);
@@ -107,7 +160,7 @@ UserManager<ApplicationUser> userManager, IProductRepository productRepository, 
               return View();
           }*/
 
-
+        [Authorize]
         public async Task< IActionResult > Checkout()
         {
             var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
@@ -139,7 +192,8 @@ UserManager<ApplicationUser> userManager, IProductRepository productRepository, 
         {
             var cart =
                HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
-            if (payment == "thanh toán vnpay")
+            
+             if (payment == "thanh toán vnpay")
             {
                 var vnPayModel = new VnPaymentRequestModel
                 {
@@ -152,8 +206,8 @@ UserManager<ApplicationUser> userManager, IProductRepository productRepository, 
                 return Redirect(_vnPayService.CreatePaymentUrl(HttpContext, vnPayModel));
 
             }
+            TempData["MessageCOD"] = payment;
 
-           
             if (cart == null || !cart.Items.Any())
             {
                 // Xử lý giỏ hàng trống...
@@ -180,18 +234,24 @@ UserManager<ApplicationUser> userManager, IProductRepository productRepository, 
 
             await _context.SaveChangesAsync();
             HttpContext.Session.Remove("Cart");
+            TempData["OrderId"] = order.Id;
 
-
-            return View("SucessfulOrder", order.OrderDate);
+            return View("SucessfulOrderCOD", order.OrderDate);
         }
         [Authorize]
         public IActionResult PaymentFail()
         {
             return View();
         }
+        //hàm trả về sucessfulOrer VNPay và lưu vào database
+        [HttpPost]
         [Authorize]
-        public IActionResult PaymentCallBack()
+        public async Task<IActionResult> PaymentCallBack(Order order)
         {
+            var cart =
+             HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
+
+
             var response = _vnPayService.PaymentExecute(Request.Query);
             if (response == null || response.VnPayResponseCode != "00")
             {
@@ -199,8 +259,34 @@ UserManager<ApplicationUser> userManager, IProductRepository productRepository, 
                 return RedirectToAction("PaymentFail");
             }
             //Lưu đơn hàng vào database tự code
-            TempData["Message"] = $"Thanh toán VNPAY thành công";
+            var user = await _userManager.GetUserAsync(User);
+            ViewBag.Info = order;
+            order.UserId = user.Id;
+            order.OrderDate = DateTime.Now;
+            /* order.PhoneNumber_Order = users.PhoneNumber;
+             order.FullName_Order = users.FullName;
+             order.ShippingAddress = users.Address;
+             order.Email_Order = users.Email;*/
+            order.Vnpay_transaction = "COD";
+            order.TotalPrice = cart.Items.Sum(i => i.Price * i.Quantity);
+            order.OrderDetails = cart.Items.Select(i => new OrderDetail
+            {
+                ProductId = i.ProductId,
+                Quantity = i.Quantity,
+                Price = i.Price
+            }).ToList();
+
+            _context.Orders.Add(order);
+
+            await _context.SaveChangesAsync();
+            HttpContext.Session.Remove("Cart");
+            TempData["Message"] = $"Thanh toán VNPAY thành công: {response.VnPayResponseCode}";
+            TempData["OrderId"] = response.OrderId;
+            TempData["Desc"] = response.OrderDescription;           
+
+          
             return View("SucessfulOrder");
+
         }
 
 

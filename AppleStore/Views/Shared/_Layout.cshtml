@@ -75,7 +75,7 @@
 					<!-- SEARCH BAR -->
 					<div class="col-md-6">
 						<div class="header-search">
-							<form>
+							<form asp-action="Index" asp-controller="Product" method="get">
 								<select class="input-select">
 									<option value="0">All Categories</option>
 									<option value="1">Iphone</option>
@@ -83,8 +83,11 @@
 									<option value="3">Accessories</option>
 								</select>
 				
-								<input type="text" class="input" placeholder="Search here">
-								<button class="search-btn"><a asp-action="Index" asp-controller="Product" style="color: white" >Search</a></button>
+								<input type="text" class="input" name="name" placeholder="Search here">
+								<button class="search-btn" type="submit">
+									Search
+									@* <a asp-action="Index" asp-controller="Product" style="color: white" >Search</a> *@
+								</button>
 								
 								@* <button class="search-btn"><a asp-action="Index" asp-controller="Product"></a>Tìm kiếm</button> *@
 								@* <button  asp-action="Index" asp-controller="Product" class="search-btn">Search</button> *@

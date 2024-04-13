@@ -8,6 +8,7 @@ namespace AppleStore.Controllers
     public class HomeController : Controller
     {
         private readonly IProductRepository _productRepository;
+      
 
         public HomeController(IProductRepository productRepository)
         {
@@ -16,7 +17,7 @@ namespace AppleStore.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var products = await _productRepository.GetAllAsync();
+            var products = await _productRepository.GetAllAsync();         
             return View(products);
         }
 
