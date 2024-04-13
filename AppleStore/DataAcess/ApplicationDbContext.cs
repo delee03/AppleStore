@@ -14,5 +14,6 @@ namespace AppleStore.DataAcess
         public DbSet<ProductImage> ProductImages { get; set; }
 		public DbSet<Order> Orders { get; set; }
 		public DbSet<OrderDetail> OrderDetails { get; set; }
+       public DbSet<ApplicationUser> applicationUsers { get; set; }
 	}
 }

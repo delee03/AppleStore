@@ -79,7 +79,10 @@
             -webkit-text-fill-color: transparent;
             .title-gradient
 
-        {
+        }
+        .box-updown {
+            display: flex;
+        }
 </style>
 
 
@@ -93,7 +96,7 @@
                 <ul class="breadcrumb-tree">
                     <li><a href=" /home">Home</a></li>
                     <li><a asp-action="Index" asp-controller="Product">All Product</a></li>
-                    <li><a asp-action="Index" asp-controller="ShoppingCart">Order</a></li>
+                    <li><a class="active" asp-action="Index" asp-controller="ShoppingCart">Order</a></li>
                 </ul>
             </div>
         </div>
@@ -108,23 +111,19 @@
         <div class="row">
             @if (Model.Items.Count == 0)
             {
-                <div class="cart--container">
-                   
+                <div class="cart--container">                 
                     <div>
-
                         <h3 class="title-gradient">OOPS! CHƯA THÊM SẢN PHẨM NÀO!!!</h3>
-                        <img src="~/img/empty_cart.jpg" width="auto" height="300px" />
+                        <img src="~/img/empty_cart.jpg" style="margin-left:20px" width="auto" height="300px" />
                         <div class="item--cart">
                             <a asp-action="Index" asp-controller="product">
                                 <button class="btn-action" style="margin: 20px;">
-                                    <i class="fa-solid fa-turn-up fa-rotate-270"></i>
-                                    Tiếp tục mua hàng
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                     Tiếp tục mua hàng
                                 </button>
                             </a>          
                         </div>
-                     </div>
-                       
-                                      
+                        </div>                                                  
                 </div>
                
             }
@@ -165,10 +164,11 @@
                                         <h6 style="vertical-align:central"  class="mb-0">@item.Price</h6>
                                     </td>
                                     <td >
-                                        <div @* class="col-md-3 col-lg-3 col-xl-2 d-flex" *@>
+                                        <div class="box-updown">
 
                                             <button class="btn btn-link px-2"
                                                     onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                                                  <i class="fas fa-minus"></i>
                                             </button>
 
                                             <input id="form1" min="1" name="quantity" value="@item.Quantity" type="number"
@@ -176,6 +176,7 @@
 
                                             <button class="btn btn-link px-2"
                                                     onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                                                <i class="fas fa-plus"></i>
                                             </button>
 
                                         </div>
@@ -198,7 +199,8 @@
                 <div class="cart-container">
                     <div class="cart-item">
                         <a href="~/Product" class="btn-action" style="margin-left: 0">
-                            <i class="add-to-cart"></i>Tiếp tục mua hàng
+                            <i class="fa-solid fa-arrow-left"></i>
+                            Tiếp tục mua hàng
                         </a>
                     </div>
 

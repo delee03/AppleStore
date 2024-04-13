@@ -1,8 +1,12 @@
-﻿@model Order
+﻿@model AppleStore.Models.Order
 
 @{
     decimal Total = 0;
+    var userInfo = ViewBag.Info;
 }
+
+
+
 
 <style>
     .title-gradient-h {
@@ -32,8 +36,8 @@
         text-transform: uppercase;
         color: #ff0000;
         border: 3px solid red;
-        padding: 8px 25px;
-        margin: 5px 0;
+        padding: 8px 30px;
+       /*  margin: 5px 0; */
         border-radius: 30px;
         transition: background 0.5s;
         font-weight: 700;
@@ -45,7 +49,41 @@
             background-image: linear-gradient(160deg, #e90000 0%, #d08080 100%);
             transition: ease 0.7s;
         }
+    
+    .form-group{
+            margin-top: 35px
+        }
+    .form-group:first-child {
+        margin-top: 0px;
+    }
+
+    .col-md-7 {
+        margin-top: -7px;
+    }
+     
 </style>
+
+<!-- BREADCRUMB -->
+<div id="breadcrumb" class="section">
+    <!-- container -->
+    <div class="container">
+        <!-- row -->
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="breadcrumb-tree">
+                    <li><a href=" /home">Home</a></li>
+                    <li><a asp-action="Index" asp-controller="Product">All Product</a></li>
+                    <li><a asp-action="Index" asp-controller="ShoppingCart">Order</a></li>
+                    <li><a class="active" asp-action="Checkout" asp-controller="ShoppingCart">Check Out</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- /row -->
+    </div>
+    <!-- /container -->
+</div>
+<!-- /BREADCRUMB -->
+
 
 <form asp-action="Checkout" method="post">
 
@@ -56,41 +94,46 @@
             <div class="row" style="width:70%;">
                 <div class="col-md-7" style="width:100%;">
                     <!-- Billing Details -->
-                    <div class="billing-details">
-                        <div class="section-title">
-                            <h3 class="title-gradient-h">Check out</h3>
+                    <div class="billing-details">            
+                        <div class="section-title text-center">
+                            <h2  class="title-gradient-h">Check out</h2>
                         </div>
-                        
                     </div>
+                  
                     <div class="form-group">
                         <input class="input"
-                               type="text"
-                               name="full-name"
-                               placeholder="Full Name"
-                               asp-action="" />
+                                type="text"    
+                                value="@ViewBag.FullName"
+                                asp-for="FullName_Order"
+                                placeholder="Full Name"
+                                asp-action="" />
                     </div>
+                                                         
+                   
                     <div class="form-group">
-                        <input class="input"
-                               type="email"
-                               name="email"
+                        <input class="input"                        
+                               type="email" 
+                               value="@ViewBag.Email"
+                               asp-for="Email_Order"
                                placeholder="Email" />
                     </div>
                     <div class="form-group">
                         <input class="input"
-                               type="tel"
-                               name="tel"
+                               type="tel"                
+                               asp-for ="PhoneNumber_Order"
                                placeholder="Phone Number" />
                     </div>
                     <div class="form-group">
                         <input class="input"
                                type="text"
-                               name="address"
+                               
+                               asp-for="ShippingAddress"
                                placeholder="Address" />
                     </div>                                            
 
                     <!-- Order notes -->
-                    <div class="order-notes">
-                        <textarea class="input" placeholder="Order Notes"></textarea>
+                    <div class="order-notes form-group">
+                        <textarea class="input" placeholder="Order Notes" asp-for="Notes"></textarea>
                     </div>
                     <!-- /Order notes -->
 
@@ -157,10 +200,10 @@
                         </div>
                     </div>
                     <div class="input-radio">
-                        <input type="radio" name="payment" id="payment-2" />
+                        <input type="radio"  name="payment" id="payment-2" />
                         <label for="payment-2">
                             <span></span>
-                            VN Pay
+                            VN PAY
                         </label>
                         <div class="caption">
                             <p>
@@ -183,8 +226,13 @@
                         </div>
                     </div> *@
                 </div>
-
-                <a href="#" class="primary-btn order-submit">Place order</a>
+                <div style="display: flex; align-items: flex-end; justify-content: space-around">
+                    <button type="submit" class="primary-btn order-submit">
+                        Place order
+                    </button>
+                    <a asp-action="Index" class="btn-action-checkout">Back To Cart</a>
+                </div>
+               
             </div>
             <!-- /Order Details -->
         </div>

@@ -24,6 +24,7 @@ UserManager<ApplicationUser> userManager, IProductRepository productRepository)
 		public IActionResult Index()
 		{
 			ViewBag.ProductList = _context.Products.ToList();
+            
 			var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart();
 			return View(cart);
 		}
@@ -32,7 +33,9 @@ UserManager<ApplicationUser> userManager, IProductRepository productRepository)
 		{
 			// Giả sử bạn có phương thức lấy thông tin sản phẩm từ productId
 			var product = await GetProductFromDatabase(productId);
-			var cartItem = new CartItem
+         
+          
+            var cartItem = new CartItem
 			{
 				ProductId = productId,
 				Name = product.Name,
@@ -79,13 +82,37 @@ UserManager<ApplicationUser> userManager, IProductRepository productRepository)
             return RedirectToAction("Index");
         }
 
+        /*	public async Task<IActionResult> Checkout()
+            {
+                var Customers = await _userManager.GetUsersInRoleAsync("Customer");
+                ViewBag.Customers = Customers;
+                return View();
+            }*/
 
-        public IActionResult Checkout()
+        /*  public async Task<IActionResult> Checkout(string id)
+          {
+              var Customers = await _userManager.FindByIdAsync("Customer");
+              if(Customers == null)
+              {
+                  return RedirectToAction("Index");
+              }    
+              ViewBag.Customers = Customers;
+              return View();
+          }*/
+
+
+        public async Task< IActionResult > Checkout()
         {
             var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
+
+            var user =  await _userManager.GetUserAsync(User);
+            ViewBag.Email = user.Email;
+            ViewBag.FullName = user.FullName;
+            //	ViewBag.UserFullName = user.FullName;
             if (cart != null)
             {
-				List<CartItem> items = cart.Items;
+                List<CartItem> items = cart.Items;
+
                 foreach (var item in cart.Items)
                 {
                     string productName = item.Name;
@@ -98,30 +125,44 @@ UserManager<ApplicationUser> userManager, IProductRepository productRepository)
         }
 
 
+
+
         [HttpPost]
-		public async Task<IActionResult> Checkout(Order order)
-		{
-			var cart =
-				HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
-			if (cart == null || !cart.Items.Any())
-			{
-				// Xử lý giỏ hàng trống...
-				return RedirectToAction("Index");
-			}
-			var user = await _userManager.GetUserAsync(User);
-			order.UserId = user.Id;
-			order.OrderDate = DateTime.UtcNow;
-			order.TotalPrice = cart.Items.Sum(i => i.Price * i.Quantity);
-			order.OrderDetails = cart.Items.Select(i => new OrderDetail
-			{
-				ProductId = i.ProductId,
-				Quantity = i.Quantity,
-				Price = i.Price
-			}).ToList();
-			_context.Orders.Add(order);
-			await _context.SaveChangesAsync();
-			HttpContext.Session.Remove("Cart");
-			return View("OrderCompleted", order.Id); 
-		}
-	}
+        public async Task<IActionResult> Checkout(Order order, ApplicationUser users)
+        {
+            var cart =
+                HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
+            if (cart == null || !cart.Items.Any())
+            {
+                // Xử lý giỏ hàng trống...
+                return RedirectToAction("/Product");
+            }
+            var user = await _userManager.GetUserAsync(User);          
+            ViewBag.Info = user;
+            order.UserId = user.Id;
+            order.OrderDate = DateTime.Now;
+           /* order.PhoneNumber_Order = users.PhoneNumber;
+            order.FullName_Order = users.FullName;
+            order.ShippingAddress = users.Address;
+            order.Email_Order = users.Email;*/
+            order.TotalPrice = cart.Items.Sum(i => i.Price * i.Quantity);
+            order.OrderDetails = cart.Items.Select(i => new OrderDetail
+            {
+                ProductId = i.ProductId,
+                Quantity = i.Quantity,
+                Price = i.Price
+            }).ToList();
+
+            _context.Orders.Add(order);
+
+            await _context.SaveChangesAsync();
+            HttpContext.Session.Remove("Cart");
+
+
+            return View("SucessfulOrder", order.OrderDate);
+        }
+
+
+
+    }
 }
