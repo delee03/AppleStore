@@ -1,14 +1,16 @@
 using System.Diagnostics;
 using AppleStore.Models;
+using Microsoft.AspNetCore.Authorization;
 using AppleStore.Repository;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AppleStore.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         private readonly IProductRepository _productRepository;
-      
+
 
         public HomeController(IProductRepository productRepository)
         {
@@ -17,7 +19,7 @@ namespace AppleStore.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var products = await _productRepository.GetAllAsync();         
+            var products = await _productRepository.GetAllAsync();
             return View(products);
         }
 

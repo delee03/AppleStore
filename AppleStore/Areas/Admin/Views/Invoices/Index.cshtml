@@ -1,0 +1,106 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    // Func f = new Func();
+    // var listInv = (List<invoices>)ViewData["listInv"];
+}
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="card">
+            <div class="card-body">
+                <div>
+                    <div class="table-responsive table-desi">
+                        <table class="user-table invoice-table trans-table table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Mã hoá đơn</th>
+                                    <th>Mã khách hàng</th>
+                                    <th>Tên người nhận</th>
+                                    <th>Số điện thoại</th>
+                                    <th>Tổng đơn</th>
+                                    <th>Trạng thái</th>
+                                    <th>Ngày đặt</th>
+                                    <th>Thanh toán</th>
+                                    <th>Options</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                @* @foreach (var item in listInv)
+                                {
+                                    string status = "";
+                                    switch (item.invoice_status_id)
+                                    {
+                                        case 1:
+                                            status = "success";
+                                            break;
+                                        case 2:
+                                            status = "pending";
+                                            break;
+                                        case 3:
+                                            status = "cancle";
+                                            break;
+                                    }
+                                    <tr>
+                                        <td>@item.invoice_id</td>
+                                        <td><a href="@Url.Action("Detail", "Customers", new { user_id = item.user_id })">@item.user_id</a></td>
+                                        <td>@item.invoice_user_fullname</td>
+                                        <td>@item.invoice_user_phone_number</td>
+                                        <td>@f.NumberToStr(item.invoice_subtotal) đ</td>
+                                        <td class="order-@status">
+                                            <span>@item.invoice_status.invoice_status_name</span>
+                                        </td>
+                                        <td>@item.invoice_created_at.ToString()</td>
+                                        @if(item.invoice_prepaid == 0)
+                                        {
+                                            <td>COD</td>
+                                        }
+                                        else
+                                        {
+                                            <td>VN PAY</td>
+                                        }
+                                        <td>
+                                            <ul>
+                                                <li>
+                                                    <a href="@Url.Action("Detail", "Invoices", new { invoice_id = item.invoice_id })" title="Xem chi tiết">
+                                                        <span class="lnr lnr-eye"></span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                } *@
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination Box Start -->
+            @*<div class="pagination-box">
+                <nav class="ms-auto me-auto " aria-label="...">
+                    <ul class="pagination pagination-primary">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="javascript:void(0)">Previous</a>
+                        </li>
+                        <li class="page-item active">
+                            <a class="page-link" href="javascript:void(0)">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="javascript:void(0)">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="javascript:void(0)">3</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="javascript:void(0)">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>*@
+            <!-- Pagination Box End -->
+        </div>
+    </div>
+</div>
