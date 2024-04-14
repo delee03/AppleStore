@@ -137,6 +137,10 @@
       "PackagePath": "staticwebassets\\img\\empty_cart.jpg"
     },
     {
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\favicon.png",
+      "PackagePath": "staticwebassets\\img\\favicon.png"
+    },
+    {
       "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\hotdeal1.png",
       "PackagePath": "staticwebassets\\img\\hotdeal1.png"
     },
