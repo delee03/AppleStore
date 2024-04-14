@@ -1,0 +1,272 @@
+﻿@model ShoppingCart
+
+@{
+    decimal Total = 0;
+    decimal subtotal = 0;
+    // List < Product > = ViewBag.productLis;
+}
+
+<style>
+    .section-container {
+        color: #fff !important;
+    }
+
+    .row.mb-4.d-flex {
+        color: #fff !important;
+    }
+
+    .section.cart-section.section-b-space {
+        padding: 50px 0 100px;
+    }
+
+    .cart--container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .cart--container .item--cart {
+        /* align-self: flex-end */
+        margin: 0px 0 50px 90px;
+    }
+
+    .cart-checkout-section{
+        
+    }
+
+    .total-box-checkout {
+        margin: 10px 5px 100px;
+        width: 330px;
+        height: 170px; 
+        padding: 30px;       
+        background-color: #1e1f29;
+        opacity: 0.9;
+        border-radius: 27px;
+        box-shadow: 10px 10px 5px 0px rgba(206,16,16,0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(206,16,16,0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(206,16,16,0.75);
+        box-sizing: border-box;
+    }
+
+        .total-box-checkout .title-details, .total-box-checkout .action-total {
+            
+            margin: 5px auto;
+            
+        }
+
+         .table > tbody > tr > td {
+             vertical-align: middle;
+             line-height:1.2;
+             padding: 8px;
+              border-top: 2px solid #ddd
+         }
+
+         .title-gradient {
+             font-size: 26px;
+            background-color: #00DBDE;
+            background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);      
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+         }
+
+  
+        .title-gradient-h {
+            font-size: 26px;
+            text-transform: uppercase;
+            background-color: #de0004;
+            background-image: linear-gradient(90deg, #f00 0%, #122125 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            .title-gradient
+
+        }
+        .box-updown {
+            display: flex;
+        }
+</style>
+
+
+<!-- BREADCRUMB -->
+<div id="breadcrumb" class="section">
+    <!-- container -->
+    <div class="container">
+        <!-- row -->
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="breadcrumb-tree">
+                    <li><a href=" /home">Home</a></li>
+                    <li><a asp-action="Index" asp-controller="Product">All Product</a></li>
+                    <li><a class="active" asp-action="Index" asp-controller="ShoppingCart">Order</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- /row -->
+    </div>
+    <!-- /container -->
+</div>
+<!-- /BREADCRUMB -->
+
+<section class="cart-section section-b-space">
+    <div class="container">
+        <div class="row">
+            @if (Model.Items.Count == 0)
+            {
+                <div class="cart--container">                 
+                    <div>
+                        <h3 class="title-gradient">OOPS! CHƯA THÊM SẢN PHẨM NÀO!!!</h3>
+                        <img src="~/img/empty_cart.jpg" style="margin-left:20px" width="auto" height="300px" />
+                        <div class="item--cart">
+                            <a asp-action="Index" asp-controller="product">
+                                <button class="btn-action" style="margin: 20px;">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                     Tiếp tục mua hàng
+                                </button>
+                            </a>          
+                        </div>
+                        </div>                                                  
+                </div>
+               
+            }
+            else
+            {
+                <div class="section-title text-center">
+                    <h2 style="margin: 20px 0 30px" class="title-gradient-h">Your Cart</h2>
+                </div>
+                
+                <div class="col-sm-12 table-responsive mt-4">
+                    
+                    <table class="table cart-table">
+                        <thead>
+                            <tr class="table-head">
+                                <th scope="col">Image</th>
+                                <th scope="col">Product Name</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Action</th>
+                                <th scope="col">SubTotal</th>
+                            </tr>
+                        </thead>
+                        @foreach (var item in Model.Items)
+                        {
+                             subtotal = (int)item.Quantity * item.Price;
+                            Total += subtotal;
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a href="javascript:void();">
+                                            <img src="@item.ImageUrl" class=" blur-up lazyload" width="120px" height="129px" />
+                                        </a>
+                                    </td>
+                                    <td @* class="col-md-3 col-lg-3 col-xl-3" *@>
+                                        <a href="~/Product/Detail/@item.ProductId">@item.Name</a>
+                                    </td>
+                                    <td @* class="col-md-3 col-lg-2 col-xl-2 offset-lg-1" *@>
+                                        <h6 style="vertical-align:central"  class="mb-0">@item.Price</h6>
+                                    </td>
+                                    <td >
+                                        <div class="box-updown">
+
+                                            <a asp-action="DescQuantity" asp-route-productId="@item.ProductId" asp-route-quantity="-1">
+                                                <button class="btn btn-link px-2"
+                                                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                                                    <i class="fas fa-minus"></i>
+                                                </button>
+                                            </a>
+
+                                            <input id="form1" min="1" name="quantity" value="@item.Quantity" type="number"
+                                                   class="form-control form-control-sm" style="width:50px;" />
+
+                                            <a asp-action="AccesQuantity" asp-route-productId="@item.ProductId" asp-route-quantity="1">
+                                                <button class="btn btn-link px-2"
+                                                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                                                    <i class="fas fa-plus"></i>
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td style="vertical-align:central"  @* class="col-md-3 col-lg-3 col-xl-5" *@>
+                                        <div  style="font-size:20px; ">
+                                            <a asp-action="RemoveFromCart" asp-route-productId="@item.ProductId" class="text-muted"> x </a>
+                                        </div>
+                                    </td>
+                                    <td style="vertical-align:central"  @* class="col-md-3 col-lg-2 col-xl-2 offset-lg-1" *@>
+                                        <h6 class="mb-0">@subtotal</h6>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        }
+                    </table>
+                </div>
+
+
+                <div class="cart-container">
+                    <div class="cart-item">
+                        <a href="~/Product" class="btn-action" style="margin-left: 0">
+                            <i class="fa-solid fa-arrow-left"></i>
+                            Tiếp tục mua hàng
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="cart-checkout-section">
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-sm-6">
+                            @*<div class="promo-section">
+                        <form class="row g-3">
+                        <div class="col-7">
+                        <input type="text" class="form-control" id="number" placeholder="Coupon Code">
+                        </div>
+                        <div class="col-5">
+                        <button class="btn btn-solid-default rounded btn">Apply Coupon</button>
+                        </div>
+                        </form>
+                        </div>*@
+                        </div>
+
+                        <div class="col-lg-4 col-sm-6 ">
+                            @*<div class="checkout-button">
+                        <a href="checkout.html" class="btn btn-solid-default btn fw-bold">
+                        Thanh toán <i class="fas fa-arrow-right ms-1"></i>
+                        </a>
+                        </div>*@
+                        </div>
+
+                        <div class="col-lg-4">
+                           
+                            <div class="total-box-checkout">
+                                <div class="total-details">
+                                    <div class="title--total" >
+                                        <h4 style="color: #fff">Total Order Price</h4>
+                                        <h5 style="color: #fff">Price is:  <span id="cart_subtotal">@Total $</span></h5>
+                                        
+                                    </div>
+                                    <div class="action-total">
+                                        @{
+                                            string checkout = "javascript:void();";
+                                            if (Total > 0)
+                                            {
+                                                checkout = "/Checkout";
+                                            }
+                                        }
+                                        <a asp-action="Checkout" asp-controller="ShoppingCart">
+                                            <button class="btn-action">
+                                                <i class="fa fa-shopping-cart"></i>
+                                                Truy cập Thanh toán
+                                            </button>
+                                            </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            }                               
+        </div>
+    </div>
+</section>
+<!-- Cart Section End -->
+
+
+

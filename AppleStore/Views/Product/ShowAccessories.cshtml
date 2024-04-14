@@ -4,6 +4,19 @@
 	ViewData["Title"] = "ShowAccessories";
 }
 
+<style>
+	.title-gradient {
+		font-size: 26px;
+		text-transform: uppercase;
+		background-color: #de0004;
+		background-image: linear-gradient(90deg, #f00 0%, #122125 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		.title-gradient
+
+	}
+</style>
+
 <!-- BREADCRUMB -->
 <div id="breadcrumb" class="section">
 	<!-- container -->
@@ -36,7 +49,7 @@
 			
 			<div class="col-md-12">
 				<div class="section-title text-center">
-					<h3 class="title">Our Accessories</h3>
+					<h3 class="title-gradient">Our Accessories</h3>
 				</div>
 			</div>
 			<form asp-action="ShowAccessories" method="get" class="form-check-inline" style="margin-bottom: 50px">
@@ -76,49 +89,80 @@
 			<p style="text-align: right">
 				<a asp-action="Add" class="primary-btn"><i class="fa-solid fa-file-circle-plus"></i> Add product</a>
 			</p>
-			@foreach (var item in Model)
-			{
-				<!-- product -->
-				<div style="margin-bottom:150px" class="col-md-3 col-xs-6">
-					<div class="product">
-						<div class="product-img">
-							<img src="@item.ImageUrl" alt="productImage">
-							<div class="product-label">
-								<span class="sale">-30%</span>
-							</div>
-						</div>
-						<div class="product-body">
-							<p class="product-category">@item.Category.Name</p>
-							<h3 class="product-name"><a asp-action="Detail" asp-route-id="@item.Id">@item.Name</a></h3>
-							<h4 class="product-price">@item.Price<del class="product-old-price">$980.00</del></h4>
-							<div class="product-rating">
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-							
-							</div>
-							<div class="product-btns">
-								<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
-								<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
-								<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
-							</div>
-						</div>
-						<div class="add-to-cart">
-							<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+			<!-- STORE -->
+			<div id="store" class="col-md-9">
 
-							<a asp-action="Update" asp-route-id="@item.Id" class="btn-action">Edit</a>
-							<a asp-action="Detail" asp-route-id="@item.Id" class="btn-action">Details</a>
-							<a asp-action="Delete" asp-route-id="@item.Id" class="btn-action">Delete</a>
+
+				<!-- store products -->
+				<div class="row">
+				@foreach (var item in Model)
+				{
+					<!-- product -->
+					<div style="margin-bottom:150px" class=" col-md-4 col-xs-6">
+						<div class="product">
+							<div class="product-img">
+								<img src="@item.ImageUrl" alt="productImage">
+								<div class="product-label">
+									<span class="sale">-30%</span>
+								</div>
+							</div>
+							<div class="product-body">
+								<p class="product-category">@item.Category.Name</p>
+								<h3 class="product-name"><a asp-action="Detail" asp-route-id="@item.Id">@item.Name</a></h3>
+								<h4 class="product-price">@item.Price<del class="product-old-price">$980.00</del></h4>
+								<div class="product-rating">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+							
+								</div>
+								<div class="product-btns">
+									<button class="add-to-wishlist"><i class="fa-regular fa-heart"></i><span class="tooltipp">add to wishlist</span></button>
+									<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
+									<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+								</div>
+							</div>
+							<div class="add-to-cart">
+								<button onclick="showSuccessToast();" class="add-to-cart-btn addToCartBtn btn--success" data-productId="@item.Id"><i class="fa fa-shopping-cart"></i> add to cart</button>
+								<a asp-action="Detail" asp-route-id="@item.Id" class="btn-action">Details</a>
+							@* 	<a asp-action="Update" asp-route-id="@item.Id" class="btn-action">Edit</a>
+							
+								<a asp-action="Delete" asp-route-id="@item.Id" class="btn-action">Delete</a> *@
+							</div>
 						</div>
 					</div>
+					<!-- /product -->
+				}
 				</div>
-				<!-- /product -->
-			}
+			</div>
 		</div>
 		<!-- /row -->
 	</div>
 	<!-- /container -->
 </div>
 <!-- /Section -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+	$(document).ready(function () {
+		$('.addToCartBtn').click(function () {
+			var productId = $(this).data('productid');
+			var quantity = 1; // Hoặc lấy số lượng từ ô nhập liệu tùy theo cấu trúc của trang của bạn
+
+			$.ajax({
+				url: '/ShoppingCart/AddToCart', // Đảm bảo URL đúng
+				type: 'POST',
+				data: { productId: productId, quantity: quantity },
+				success: function (response) {
+					// Xử lý kết quả ở đây nếu cần
+					console.log('Sản phẩm đã được thêm vào giỏ hàng');
+				},
+				error: function (xhr, status, error) {
+					// Xử lý lỗi ở đây nếu cần
+					console.error('Lỗi khi thêm sản phẩm vào giỏ hàng:', error);
+				}
+			});
+		});
+	});
+</script>

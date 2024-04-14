@@ -1345,7 +1345,15 @@
       "PackagePath": "staticwebassets\\img\\ap1.webp"
     },
     {
-      "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\awbac1.webp",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\applestore.avif",
+      "PackagePath": "staticwebassets\\img\\applestore.avif"
+    },
+    {
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\arrow-left-solid.svg",
+      "PackagePath": "staticwebassets\\img\\arrow-left-solid.svg"
+    },
+    {
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\awbac1.webp",
       "PackagePath": "staticwebassets\\img\\awbac1.webp"
     },
     {
@@ -1366,6 +1374,11 @@
     },
     {
       "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\hotdeal1.png",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\empty_cart.jpg",
+      "PackagePath": "staticwebassets\\img\\empty_cart.jpg"
+    },
+    {
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\hotdeal1.png",
       "PackagePath": "staticwebassets\\img\\hotdeal1.png"
     },
     {
@@ -1529,7 +1542,15 @@
       "PackagePath": "staticwebassets\\img\\ip14full3.webp"
     },
     {
-      "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip15-1.webp",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip14tim.jpg",
+      "PackagePath": "staticwebassets\\img\\ip14tim.jpg"
+    },
+    {
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip14timmain.webp",
+      "PackagePath": "staticwebassets\\img\\ip14timmain.webp"
+    },
+    {
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip15-1.webp",
       "PackagePath": "staticwebassets\\img\\ip15-1.webp"
     },
     {
@@ -1625,7 +1646,11 @@
       "PackagePath": "staticwebassets\\img\\macair2.webp"
     },
     {
-      "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\macair3.webp",
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\macair3 - Copy.webp",
+      "PackagePath": "staticwebassets\\img\\macair3 - Copy.webp"
+    },
+    {
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\macair3.webp",
       "PackagePath": "staticwebassets\\img\\macair3.webp"
     },
     {

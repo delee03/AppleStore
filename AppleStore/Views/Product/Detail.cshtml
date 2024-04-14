@@ -1,8 +1,14 @@
 ﻿@model AppleStore.Models.Product
 
+
+
 @{
 	ViewData["Title"] = "Detail";
+	int numOfQuanity = 1;
+	
+
 }
+
 
 <!-- BREADCRUMB -->
 <div id="breadcrumb" class="section">
@@ -36,20 +42,19 @@
 			<!-- Product main img -->
 			<div class="col-md-5 col-md-push-2">
 				<div id="product-main-img">
-					
-
-					<div class="product-preview">
-						<img src="@Html.DisplayFor(model => model.ImageUrl)" alt="">
-					</div>
+			
 
 					@if (ViewBag.dsImage != null)
 					{
-					foreach (var img in ViewBag.dsImage)
-					{
-					<img class="m-1 product-preview" src="@img.Url" width="80" ; height="100px" />
+						<div class="product-preview">
+							<img src="@Html.DisplayFor(model => model.ImageUrl)" alt="">
+						</div>
+						foreach (var img in ViewBag.dsImage)
+						{
+							<img class="m-1 product-preview" src="@img.Url" width="80" ; height="100px" />
+						}
 					}
-					}
-				@* 	<div class="product-preview">
+					@* 	<div class="product-preview">
 						<img src="~/img/iPadAir.png" alt="">
 					</div>
 
@@ -72,12 +77,15 @@
 				<div id="product-imgs">
 					@if (ViewBag.dsImage != null)
 					{
+						<div class="product-preview">
+							<img src="@Html.DisplayFor(model => model.ImageUrl)" alt="">
+						</div>
 						foreach (var img in ViewBag.dsImage)
 						{
 							<img class="product-preview" src="@img.Url" width="80" ; height="100px" />
 						}
-					} 
-				@* 	<div class="product-preview">
+					}
+					@* 	<div class="product-preview">
 						<img src="~/img/Iphone15_1.png" alt="">
 					</div>
 
@@ -133,22 +141,31 @@
 					</div>
 
 					<div class="add-to-cart">
-						<div class="qty-label">
+						@* <div class="qty-label" >
 							Qty
-							<div class="input-number">
-								<input type="number">
+							<div class="input-number">								
+								<input type="number" value="1">
 								<span class="qty-up">+</span>
 								<span class="qty-down">-</span>
 							</div>
+						</div> *@
+						@* <button class="add-to-cart-btn"><a asp-controller="ShoppingCart" asp-action="AddToCart" asp-route-productId="@Model.Id>" asp-route-quantity="@numOfQuanity"><i class="fa fa-shopping-cart"></i> add to cart</a></button> *@
+						<div class="add-to-cart">
+							@* <a asp-controller="ShoppingCart" asp-action="AddToCart" asp-route-productId="@Model.Id" asp-route-quantity="@numOfQuanity">
+								<button class="add-to-cart-btn">
+									<i class="fa fa-shopping-cart"></i> add to cart
+								</button>
+							</a> *@
+							<button onclick="showSuccessToast();" class="add-to-cart-btn addToCartBtn btn--success" data-productId="@Model.Id"><i class="fa fa-shopping-cart"></i> add to cart</button>
+							@* <a asp-action="Update" asp-route-id="@Model.Id" class="btn-action">Edit</a> | *@
+							<a asp-action="Index" class="btn-action">Back to List</a>
 						</div>
-						<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
-						<br />
-						<a asp-action="Update" asp-route-id="@Model.Id" class="btn-action">Edit</a> |
-						<a asp-action="Index" class="btn-action">Back to List</a>
+						
+						
 					</div>
 
 					<ul class="product-btns">
-						<li><a href="#"><i class="fa fa-heart-o"></i> add to wishlist</a></li>
+						<li><a href="#"><i class="fa-regular fa-heart"></i> add to wishlist</a></li>
 						<li><a href="#"><i class="fa fa-exchange"></i> add to compare</a></li>
 					</ul>
 
@@ -160,10 +177,10 @@
 
 					<ul class="product-links">
 						<li>Share:</li>
-						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-						<li><a href="#"><i class="fa fa-envelope"></i></a></li>
+						<li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa-brands fa-google-plus"></i></a></li>
+						<li><a href="#"><i class="fa-brands fa-envelope"></i></a></li>
 					</ul>
 
 				</div>
@@ -391,3 +408,26 @@
 <script src="~/js/nouislider.min.js"></script>
 <script src="~/js/jquery.zoom.min.js"></script>
 <script src="~/js/main.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+	$(document).ready(function () {
+		$('.addToCartBtn').click(function () {
+			var productId = $(this).data('productid');
+			var quantity = 1; // Hoặc lấy số lượng từ ô nhập liệu tùy theo cấu trúc của trang của bạn
+
+			$.ajax({
+				url: '/ShoppingCart/AddToCart', // Đảm bảo URL đúng
+				type: 'POST',
+				data: { productId: productId, quantity: quantity },
+				success: function (response) {
+					// Xử lý kết quả ở đây nếu cần
+					console.log('Sản phẩm đã được thêm vào giỏ hàng');
+				},
+				error: function (xhr, status, error) {
+					// Xử lý lỗi ở đây nếu cần
+					console.error('Lỗi khi thêm sản phẩm vào giỏ hàng:', error);
+				}
+			});
+		});
+	});
+</script>

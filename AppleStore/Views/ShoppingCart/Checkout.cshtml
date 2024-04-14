@@ -1,0 +1,248 @@
+﻿@model AppleStore.Models.Order
+
+@{
+    decimal Total = 0;
+    var userInfo = ViewBag.Info;
+}
+
+
+
+
+<style>
+    .title-gradient-h {
+        font-size: 26px;
+        text-transform: uppercase;
+        background-color: #de0004;
+        background-image: linear-gradient(90deg, #f00 0%, #122125 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        .title-gradient
+
+    }
+
+    .title-gradient {
+        font-size: 26px;
+        background-color: #00DBDE;
+        background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .btn-action-checkout {
+        min-width: 90px;
+        text-align: center;
+        display: inline-block;
+        background: #fff;
+        text-transform: uppercase;
+        color: #ff0000;
+        border: 3px solid red;
+        padding: 8px 30px;
+       /*  margin: 5px 0; */
+        border-radius: 30px;
+        transition: background 0.5s;
+        font-weight: 700;
+    }
+
+        .btn-action-checkout:hover {
+            color: white;
+            border: 3px solid #e90000;
+            background-image: linear-gradient(160deg, #e90000 0%, #d08080 100%);
+            transition: ease 0.7s;
+        }
+    
+    .form-group{
+            margin-top: 35px
+        }
+    .form-group:first-child {
+        margin-top: 0px;
+    }
+
+    .col-md-7 {
+        margin-top: -7px;
+    }
+     
+</style>
+
+<!-- BREADCRUMB -->
+<div id="breadcrumb" class="section">
+    <!-- container -->
+    <div class="container">
+        <!-- row -->
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="breadcrumb-tree">
+                    <li><a href=" /home">Home</a></li>
+                    <li><a asp-action="Index" asp-controller="Product">All Product</a></li>
+                    <li><a asp-action="Index" asp-controller="ShoppingCart">Order</a></li>
+                    <li><a class="active" asp-action="Checkout" asp-controller="ShoppingCart">Check Out</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- /row -->
+    </div>
+    <!-- /container -->
+</div>
+<!-- /BREADCRUMB -->
+
+
+<form asp-action="Checkout" method="post">
+
+    <div class="section">
+        <!-- container -->
+        <div class="container" style="display: flex; justify-content: space-between; gap:40px;">
+            <!-- row -->
+            <div class="row" style="width:70%;">
+                <div class="col-md-7" style="width:100%;">
+                    <!-- Billing Details -->
+                    <div class="billing-details">            
+                        <div class="section-title text-center">
+                            <h2  class="title-gradient-h">Check out</h2>
+                        </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <input class="input"
+                                type="text"    
+                                value="@ViewBag.FullName"
+                                asp-for="FullName_Order"
+                                placeholder="Full Name"
+                                asp-action="" />
+                    </div>
+                                                         
+                   
+                    <div class="form-group">
+                        <input class="input"                        
+                               type="email" 
+                               value="@ViewBag.Email"
+                               asp-for="Email_Order"
+                               placeholder="Email" />
+                    </div>
+                    <div class="form-group">
+                        <input class="input"
+                               type="tel"                
+                               asp-for ="PhoneNumber_Order"
+                               placeholder="Phone Number" />
+                    </div>
+                    <div class="form-group">
+                        <input class="input"
+                               type="text"
+                               
+                               asp-for="ShippingAddress"
+                               placeholder="Address" />
+                    </div>                                            
+
+                    <!-- Order notes -->
+                    <div class="order-notes form-group">
+                        <textarea class="input" placeholder="Order Notes" asp-for="Notes"></textarea>
+                    </div>
+                    <!-- /Order notes -->
+
+                </div>
+                <!-- /Billing Details -->
+
+            </div>
+
+            <!-- Order Details -->
+
+            <div class="col-md-5 order-details" style="margin-top: 86px;">
+                <div class="section-title text-center">
+                    <h3 class="title-gradient">Your Order</h3>
+                </div>
+                <div class="order-summary">
+                    <div class="order-col">
+                        <div><strong>PRODUCT</strong></div>
+                        <div><strong>SUB TOTAL</strong></div>
+                    </div>
+                    @foreach (var item in ViewBag.CartOrder)
+                    {
+                        decimal subtotal = (int)item.Quantity * item.Price;
+                        Total += subtotal;
+                        <div class="order-products">
+
+
+                            <div class="order-col">
+                                <div>x1 @item.Name</div>
+                                <div>$@subtotal</div>
+                            </div>
+
+
+                        </div>
+                    }
+                    <div class="order-col">
+                        <div>Shiping</div>
+                        <div><strong>FREE</strong></div>
+                    </div>
+                    <div class="order-col">
+                        <div><strong>TOTAL</strong></div>
+                        <div><strong class="order-total">$@Total</strong></div>
+                    </div>
+                    <div class="order-col">
+                        <div><strong>VOUCHER</strong></div>
+                        <input style="margin-left: 5px" type="text" class="form-control input" placeholder="Discount">
+                        <div class="input-group-append">
+                            <button type="reset" class="btn-action-checkout">Apply</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment-method">
+                    
+                    <div class="input-radio">
+                        <input type="radio" name="payment" id="payment-1" />
+                        <label for="payment-1">
+                            <span></span>
+                            Payment upon successful delivery
+                        </label>
+                        <div class="caption">
+                            <p>
+                                Vui lòng kiểm tra kĩ trước khi nhấn nút đặt hàng. Nhớ review
+                                cho chúng tôi biết về sự hài lòng của bạn! Cám ơn!          
+                            </p>
+                        </div>
+                    </div>
+                    <div class="input-radio">
+                        <input type="radio"  name="payment" id="payment-2" />
+                        <label for="payment-2">
+                            <span></span>
+                            VN PAY
+                        </label>
+                        <div class="caption">
+                            <p>
+                                Vui lòng kiểm tra kĩ trước khi nhấn nút đặt hàng. Nhớ review
+                                cho chúng tôi biết về sự hài lòng của bạn! Cám ơn!
+                            </p>
+                        </div>
+                    </div>
+                  @*   <div class="input-radio">
+                        <input type="radio" name="payment" id="payment-3" />
+                        <label for="payment-3">
+                            <span></span>
+                            Paypal System
+                        </label>
+                        <div class="caption">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div> *@
+                </div>
+                <div style="display: flex; align-items: flex-end; justify-content: space-around">
+
+                    <input type="submit" name="payment" class="primary-btn order-submit" value="đặt hàng cod"/>
+                    <input type="submit" name="payment" class="primary-btn order-submit" value="thanh toán vnpay" />
+                   @*  <button type="submit" name="payment" class="primary-btn order-submit">
+                        Place order
+                    </button>
+                    <button type="submit" name="payment" class="primary-btn order-submit">
+                       VN Pay
+                    </button> *@
+                  @*   <a asp-action="Index" class="btn-action-checkout">Back To Cart</a> *@
+                </div>
+               
+            </div>
+            <!-- /Order Details -->
+        </div>
+        <!-- /row -->
+    </div>
+
+</form>
