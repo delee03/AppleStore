@@ -79,7 +79,7 @@
                                                         <input id="form1" min="0" name="quantity" value="@item.Quantity" type="number"
                                                                class="form-control form-control-sm quantityInput" style="width:50px;" />
 
-                                                        <a asp-action="UpdateDesQuantity" asp-route-productId="@item.ProductId" asp-route-quantity="1">
+                                                        <a asp-action="UpdateInsQuantity" asp-route-productId="@item.ProductId" asp-route-quantity="1">
                                                                 <button class="btn btn-link px-2"
                                                                         onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
                                                                     <i class="fas fa-plus"></i>

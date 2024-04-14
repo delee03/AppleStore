@@ -2203,6 +2203,11 @@ img.product-preview.slick-slide.slick-current.slick-active.slick-center {
     float: none;
     margin-top: 10px;
   }
+
+    .heading-top{
+        width:100%;
+        padding: 0 20px;
+    }
 }
 
 .btn-action {

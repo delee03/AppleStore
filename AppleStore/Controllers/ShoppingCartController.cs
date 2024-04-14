@@ -27,8 +27,6 @@ namespace AppleStore.Controllers
 			return View(cart);
 		}
 
-
-
 		public async Task<IActionResult> AddToCart(int productId, int quantity)
 		{
 			// Giả sử bạn có phương thức lấy thông tin sản phẩm từ productId
@@ -74,7 +72,7 @@ namespace AppleStore.Controllers
             return RedirectToAction("Index"); // Assuming you have an "Index" action to display the updated cart
         }
 
-        public IActionResult UpdateDesQuantity(int productId, int quantity)
+        public IActionResult UpdateInsQuantity(int productId, int quantity)
 		{
 			var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart();
 

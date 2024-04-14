@@ -48,13 +48,13 @@
 	<header>
 		<!-- TOP HEADER -->
 		<div id="top-header">
-			<div style="display:flex; align-items:center; justify-content:space-between;padding: 0 120px;">
+			<div class="heading-top" >
 				<ul class="header-links pull-left">
 					<li><a href="tel:+840931034852" rel="noopener" target="_blank"><i class="fa fa-phone"></i> (+84)0931034852</a></li>
 					<li><a href="#" rel="noopener" target="_blank"><i class="fa fa-map-marker"></i> HUTECH,  TPHCM, VIET NAM</a></li>
 				</ul>
 				<ul class="header-links pull-right" style="display:flex; align-items:center; justify-content:center; gap:10px;">
-					<li> <partial name="_LoginPartial"/> </li>
+					<li> <partial class="loginPartial" name="_LoginPartial"/> </li>
 					@* <li><a href="#"><i class="fa fa-user-o"></i> My Account</a></li> *@
 				</ul>
 			</div>
@@ -108,9 +108,9 @@
 
 							<!-- Cart -->
 							<div class="dropdown">
-								<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+								<a  asp-controller="Shoppingcart" asp-action="Index" aria-expanded="true">
 									<i class="fa fa-shopping-cart"></i>
-									<span>Your Cart</span>
+									<span>Your Cart</span>	
 									<div class="qty">3</div>
 								</a>
 								<div class="cart-dropdown">
@@ -607,5 +607,35 @@
 			opacity: 0.6;
 		}
 
+
+	@@media only screen and (max-width: 480px) {
+		.heading-top {
+			width: 100%;
+			padding: 0 20px;
+		}
+
+		#top-header div {
+			width: 100%;
+			padding: 0 5px;
+			justify-content: center;
+			gap: 10px;
+		}
+
+		.header-links {
+			width: 220px;
+		}
+
+		.loginPartial {
+			display: flex;
+		}
+	}
+
+	.heading-top {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 120px;
+		width: 100%;
+	}
 </style>
 
