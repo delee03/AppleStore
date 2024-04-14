@@ -260,6 +260,7 @@ D:\Web_VS\AppleStore\AppleStore\bin\Debug\net8.0\Microsoft.Extensions.Options.dl
 D:\Web_VS\AppleStore\AppleStore\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.UI.dll
 D:\Web_VS\AppleStore\AppleStore\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Embedded.dll
 D:\Web_VS\AppleStore\AppleStore\obj\Debug\net8.0\AppleStore.MvcApplicationPartsAssemblyInfo.cs
+D:\Web_VS\AppleStore\AppleStore\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.Google.dll
 D:\Web_VS\AppleStore\AppleStore\bin\Debug\net8.0\Microsoft.Data.Sqlite.dll
 D:\Web_VS\AppleStore\AppleStore\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Sqlite.dll
 D:\Web_VS\AppleStore\AppleStore\bin\Debug\net8.0\SQLitePCLRaw.batteries_v2.dll

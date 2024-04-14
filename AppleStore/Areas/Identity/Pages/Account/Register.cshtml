@@ -1,10 +1,12 @@
 ﻿@page
 @model RegisterModel
+
 @{
-    ViewData["Title"] = "Register";
+    ViewBag.Title = "Đăng Ký";
+    Layout = "~/Views/Shared/_LayoutSign.cshtml";
 }
 
-<div style="width:1200px; margin: 0 auto; margin-bottom: 50px;">
+@* <div style="width:1200px; margin: 0 auto; margin-bottom: 50px;">
 
 <h1>@ViewData["Title"]</h1>
 
@@ -38,7 +40,7 @@
                 <select asp-for="Input.Role" asp-items="@Model.Input.RoleList" class="form-control">
                     <option disabled selected> select role</option>
                 </select>
-            </div> *@
+            </div>
             <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
         </form>
     </div>
@@ -77,3 +79,51 @@
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }
+ *@
+
+<div class="login-section">
+    <div class="materialContainer">
+        <div class="box">
+            <form method="post" action="">
+                <div class="login-title">
+                    <h2>Đăng ký</h2>
+                </div>
+                <div class="input">
+                    <label for="name"></label>
+                    <input asp-for="Input.FullName" class="form-control" autocomplete="username" aria-required="true" placeholder="Full Name" required />
+                    <span class="spin"></span>
+                </div>
+                <div class="input">
+                    <label for="email"></label>
+                    <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" required />
+                    <span class="spin"></span>
+                </div>
+                <div class="input">
+                    <label for="pass"></label>
+                    <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" required />
+                    <span class="spin"></span>
+                </div>
+                <div class="input">
+                    <label for="compass"></label>
+                    <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="Confirm password" required />
+                    <span class="spin"></span>
+                </div>
+                <div class="button login">
+                    <button type="submit">
+                        <span>Đăng Ký</span>
+                        <i class="fa fa-check"></i>
+                    </button>
+                </div>
+                <p class="sign-category">
+                    <span>Hoặc đăng ký nhanh với</span>
+                </p>
+                <div class="row gx-md-3 gy-3">
+                    <div class="col-md-12 centerBtn">
+                        <div id="btnGoogle"></div>
+                    </div>
+                </div>
+                <p>Đã có tài khoản? <a href="/Identity/Account/Login" class="theme-color">Đăng nhập ngay</a></p>
+            </form>
+        </div>
+    </div>
+</div>

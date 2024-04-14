@@ -1,4 +1,4 @@
-﻿@page
+﻿@* @page
 @model LoginModel
 
 @{
@@ -83,3 +83,52 @@
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }
+ *@
+
+@page
+@model LoginModel
+
+@{
+    ViewBag.Title = "Đăng nhập";
+    Layout = "~/Views/Shared/_LayoutSign.cshtml";
+}
+
+<!-- Log In Section Start -->
+<div class="login-section">
+    <div class="materialContainer">
+        <div class="box">
+            <form method="post" action="">
+                <div class="login-title">
+                    <h2>Đăng nhập</h2>
+                </div>
+                <div class="input">
+                    <label for="email"></label>
+                    <input asp-for="Input.Email" class="form-control" autocomplete="username" placeholder="name@example.com" />
+                    <span class="spin"></span>
+                </div>
+                <div class="input">
+                    <label for="pass"></label>
+                    <input asp-for="Input.Password" class="form-control" autocomplete="current-password" placeholder="Password" />
+                    <span class="spin"></span>
+                </div>
+                <a href="#" class="pass-forgot">Quên mật khẩu?</a>
+                <div class="button login">
+                    <button type="submit">
+                        <span>Đăng Nhập</span>
+                        <i class="fa fa-check"></i>
+                    </button>
+                </div>
+                <p class="sign-category">
+                    <span>Hoặc đăng nhập nhanh với</span>
+                </p>
+                <div class="row gx-md-3 gy-3">
+                    <div class="col-md-12 centerBtn">
+                        <div id="btnGoogle"></div>
+                    </div>
+                </div>
+                <p>Chưa có tài khoản? <a href="/Identity/Account/Register" class="theme-color">Đăng ký ngay</a></p>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Log In Section End -->

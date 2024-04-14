@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using AppleStore.Models;
+using Newtonsoft.Json;
 
 namespace AppleStore.Areas.Admin.Controllers
 {
@@ -27,20 +28,17 @@ namespace AppleStore.Areas.Admin.Controllers
         }
 
         // GET: Customer/Details/5
-        public async Task<IActionResult> Details(string id)
+        public async Task<IActionResult> Detail(string id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
             var customer = await _userManager.FindByIdAsync(id);
             if (customer == null)
             {
-                return NotFound();
+                return RedirectToAction("Index");
             }
 
-            return View(customer);
+            ViewBag.Customer = customer;
+
+            return View();
         }
 
         // GET: Customer/Delete/5

@@ -3,8 +3,11 @@ using AppleStore.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using AppleStore.Models;
+using System.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
+var configuration = builder.Configuration;
 
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
@@ -14,9 +17,9 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
 {
-	options.IdleTimeout = TimeSpan.FromMinutes(30);
-	options.Cookie.HttpOnly = true;
-	options.Cookie.IsEssential = true;
+    options.IdleTimeout = TimeSpan.FromMinutes(30);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
 });
 
 
@@ -38,6 +41,19 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true;
 });
 builder.Services.AddHttpContextAccessor();
+
+builder.Services.AddAuthentication().AddGoogle(googleOptions =>
+{
+    // Đọc thông tin Authentication:Google từ appsettings.json
+    //IConfigurationSection googleAuthNSection = builder.Configuration.GetSection("Authentication:Google");
+
+    // Thiết lập ClientID và ClientSecret để truy cập API google
+    googleOptions.ClientId = configuration["Authentication:Google:ClientId"];
+    googleOptions.ClientSecret = configuration["Authentication:Google:ClientSecret"];
+    // Cấu hình Url callback lại từ Google (không thiết lập thì mặc định là /signin-google)
+    //googleOptions.CallbackPath = "/signin-google";
+
+});
 
 var app = builder.Build();
 

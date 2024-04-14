@@ -266,25 +266,25 @@
 						<ul class="hot-deal-countdown">
 							<li>
 								<div>
-									<h3>02</h3>
+									<h3 id ="days1""></h3>
 									<span>Days</span>
 								</div>
 							</li>
 							<li>
 								<div>
-									<h3>10</h3>
+									<h3 id="hours1"></h3>
 									<span>Hours</span>
 								</div>
 							</li>
 							<li>
 								<div>
-									<h3>34</h3>
+									<h3 id="minutes1"></h3>
 									<span>Mins</span>
 								</div>
 							</li>
 							<li>
 								<div>
-									<h3>60</h3>
+									<h3 id="seconds1"></h3>
 									<span>Secs</span>
 								</div>
 							</li>
@@ -765,3 +765,26 @@
 	</div>
 	<!-- /SECTION -->
 	
+<script>
+	var second = 1000,
+		minute = second * 60,
+		hour = minute * 60,
+		day = hour * 24;
+
+	var countDown = new Date("Apr 20, 2024 00:00:00").getTime(),
+		x = setInterval(function () {
+			var now = new Date().getTime(),
+				distance = countDown - now;
+
+			(document.getElementById("days1").innerText = Math.floor(distance / day)),
+				(document.getElementById("hours1").innerText = Math.floor(
+					(distance % day) / hour
+				)),
+				(document.getElementById("minutes1").innerText = Math.floor(
+					(distance % hour) / minute
+				)),
+				(document.getElementById("seconds1").innerText = Math.floor(
+					(distance % minute) / second
+				));
+		}, second);
+</script>

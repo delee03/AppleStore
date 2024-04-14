@@ -129,6 +129,27 @@ namespace AppleStore.Areas.Admin.Controllers
             return View(product);
         }
 
+        public async Task<IActionResult> Delete(int id)
+        {
+            var product = await _productRepository.GetByIdAsync(id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+            var categories = await _categoryRepository.GetAllAsync();
+            ViewBag.Categories = categories.ToList();
+            ViewBag.Product = product;
+            ViewBag.dsImage = _context.ProductImages.Where(x => x.ProductId == id).ToList();
+            return View(product);
+        }
+
+        [HttpPost, ActionName("Delete")]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            await _productRepository.DeleteAsync(id);
+            return RedirectToAction(nameof(Index));
+        }
+
         private async Task UpdateProductImages(int productId, List<IFormFile> newImages)
         {
             var product = await _productRepository.GetByIdAsync(productId);

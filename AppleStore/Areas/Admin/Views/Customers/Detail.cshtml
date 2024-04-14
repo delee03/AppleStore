@@ -2,8 +2,10 @@
     ViewBag.Title = "Detail";
     Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
     // users u = (users)ViewData["user"];
+    // var users = ViewBag.CustomerInfoList;
+    var user = ViewBag.Customer;
 }
-
+@ViewBag.test
 <div class="row">
     <div class="col-12">
         <div class="row">
@@ -18,13 +20,6 @@
                                     Tài khoản
                                 </button>
                             </li>
-                            @*<li class="nav-item" role="presentation">
-                            <button class="nav-link" id="pills-profile-tab"
-                            data-bs-toggle="pill" data-bs-target="#pills-profile"
-                            type="button">
-                            Pernission
-                            </button>
-                            </li>*@
                         </ul>
 
                         <div class="tab-content" id="pills-tabContent">
@@ -38,197 +33,38 @@
                                         <div class="mb-4 row align-items-center">
                                             <label class="form-label-title col-lg-2 col-md-3 mb-0">Họ tên</label>
                                             <div class="col-md-9 col-lg-10">
-                                                <input class="form-control" type="text" value="" disabled />
+                                                <input class="form-control" type="text" value="@user.FullName" disabled />
                                             </div>
                                         </div>
 
                                         <div class="mb-4 row align-items-center">
                                             <label class="col-lg-2 col-md-3 col-form-label form-label-title">Email</label>
                                             <div class="col-md-9 col-lg-10">
-                                                <input class="form-control" type="email" value="" disabled />
+                                                <input class="form-control" type="email" value="@user.Email" disabled />
                                             </div>
                                         </div>
 
                                         <div class="mb-4 row align-items-center">
                                             <label class="col-lg-2 col-md-3 col-form-label form-label-title">Số điện thoại</label>
                                             <div class="col-md-9 col-lg-10">
-                                                <input class="form-control" type="tel" value="" disabled />
+                                                <input class="form-control" type="tel" value="@user.PhoneNumber" disabled />
                                             </div>
                                         </div>
 
                                         <div class="row align-items-center">
                                             <label class="col-lg-2 col-md-3 col-form-label form-label-title">Địa chỉ</label>
                                             <div class="col-md-9 col-lg-10">
-                                                <input class="form-control" type="text" value="" disabled />
+                                                <input class="form-control" type="text" value="@user.Address" disabled />
                                             </div>
                                         </div>
                                     </div>
                                 </form>
                             </div>
-
-                            @*<div class="tab-pane fade" id="pills-profile" role="tabpanel">
-                            <div class="card-header-1">
-                            <h5>Product Related Permition</h5>
-                            </div>
-                            <div class="mb-4 row align-items-center">
-                            <label class="col-md-2 mb-0">Add Product</label>
-                            <div class="col-md-9">
-                            <form class="radio-section">
-                            <label>
-                            <input type="radio" name="opinion" checked>
-                            <i></i>
-                            <span>Allow</span>
-                            </label>
-
-                            <label>
-                            <input type="radio" name="opinion" />
-                            <i></i>
-                            <span>Deny</span>
-                            </label>
-                            </form>
-                            </div>
-                            </div>
-
-                            <div class="mb-4 row align-items-center">
-                            <label class="col-md-2 mb-0">Update Product</label>
-                            <div class="col-md-9">
-                            <form class="radio-section">
-                            <label>
-                            <input type="radio" name="opinion" />
-                            <i></i>
-                            <span>Allow</span>
-                            </label>
-
-                            <label>
-                            <input type="radio" name="opinion" checked>
-                            <i></i>
-                            <span>Deny</span>
-                            </label>
-                            </form>
-                            </div>
-                            </div>
-
-                            <div class="mb-4 row align-items-center">
-                            <label class="col-md-2 mb-0">Delete Product</label>
-                            <div class="col-md-9">
-                            <form class="radio-section">
-                            <label>
-                            <input type="radio" name="opinion" checked>
-                            <i></i>
-                            <span>Allow</span>
-                            </label>
-
-                            <label>
-                            <input type="radio" name="opinion" />
-                            <i></i>
-                            <span>Deny</span>
-                            </label>
-                            </form>
-                            </div>
-                            </div>
-
-                            <div class="mb-4 row align-items-center">
-                            <label class="col-md-2 mb-0">Apply Discount</label>
-                            <div class="col-md-9">
-                            <form class="radio-section">
-                            <label>
-                            <input type="radio" name="opinion" />
-                            <i></i>
-                            <span>Allow</span>
-                            </label>
-
-                            <label>
-                            <input type="radio" name="opinion" checked>
-                            <i></i>
-                            <span>Deny</span>
-                            </label>
-                            </form>
-                            </div>
-                            </div>
-
-                            <div class="card-header-1">
-                            <h5>Category Related Permition</h5>
-                            </div>
-                            <div class="mb-4 row align-items-center">
-                            <label class="col-md-2 mb-0">Add Product</label>
-                            <div class="col-md-9">
-                            <form class="radio-section">
-                            <label>
-                            <input type="radio" name="opinion" checked>
-                            <i></i>
-                            <span>Allow</span>
-                            </label>
-
-                            <label>
-                            <input type="radio" name="opinion" />
-                            <i></i>
-                            <span>Deny</span>
-                            </label>
-                            </form>
-                            </div>
-                            </div>
-
-                            <div class="mb-4 row align-items-center">
-                            <label class="col-md-2 mb-0">Update Product</label>
-                            <div class="col-md-9">
-                            <form class="radio-section">
-                            <label>
-                            <input type="radio" name="opinion" />
-                            <i></i>
-                            <span>Allow</span>
-                            </label>
-
-                            <label>
-                            <input type="radio" name="opinion" checked>
-                            <i></i>
-                            <span>Deny</span>
-                            </label>
-                            </form>
-                            </div>
-                            </div>
-
-                            <div class="mb-4 row align-items-center">
-                            <label class="col-md-2 mb-0">Delete Product</label>
-                            <div class="col-md-9">
-                            <form class="radio-section">
-                            <label>
-                            <input type="radio" name="opinion" />
-                            <i></i>
-                            <span>Allow</span>
-                            </label>
-
-                            <label>
-                            <input type="radio" name="opinion" checked>
-                            <i></i>
-                            <span>Deny</span>
-                            </label>
-                            </form>
-                            </div>
-                            </div>
-
-                            <div class="mb-4 row align-items-center">
-                            <label class="col-md-2 mb-0">Apply Discount</label>
-                            <div class="col-md-9">
-                            <form class="radio-section">
-                            <label>
-                            <input type="radio" name="opinion" checked>
-                            <i></i>
-                            <span>Allow</span>
-                            </label>
-
-                            <label>
-                            <input type="radio" name="opinion" />
-                            <i></i>
-                            <span>Deny</span>
-                            </label>
-                            </form>
-                            </div>
-                            </div>
-                            </div>*@
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 </div>

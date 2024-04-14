@@ -16,7 +16,7 @@
             <div class="card-body">
                 <div>
                     <div class="table-responsive table-desi">
-                        <table class="user-table table table-striped">
+                        <table class="user-table vendor-table table table-striped">
                             <thead>
                                 <tr>
                                     <th>Name</th>
@@ -44,6 +44,11 @@
                                                     <li>
                                                         <a href="@Url.Action("Detail", "Customers", new { Id = item.Id })" title="Xem chi tiết">
                                                             <span class="lnr lnr-eye"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="@Url.Action("Detail", "Customers", new { Id = item.Id })" title="Xóa">
+                                                            <span class="lnr lnr-trash"></span>
                                                         </a>
                                                     </li>
                                                 </ul>
