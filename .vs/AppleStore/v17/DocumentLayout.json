@@ -335,9 +335,9 @@
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\Web_Vs\\AppleStore\\AppleStore\\Areas\\Admin\\Views\\Category\\Delete.cshtml",
               "RelativeDocumentMoniker": "AppleStore\\Areas\\Admin\\Views\\Category\\Delete.cshtml",
-              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Areas\\Admin\\Views\\Category\\Delete.cshtml*",
-              "RelativeToolTip": "AppleStore\\Areas\\Admin\\Views\\Category\\Delete.cshtml*",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABUAAABgAAAA",
+              "ToolTip": "D:\\Web_Vs\\AppleStore\\AppleStore\\Areas\\Admin\\Views\\Category\\Delete.cshtml",
+              "RelativeToolTip": "AppleStore\\Areas\\Admin\\Views\\Category\\Delete.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAgAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-14T18:26:47.055Z",
               "EditorCaption": ""
@@ -876,6 +876,10 @@
             {
               "$type": "Bookmark",
               "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             }
           ]
         },
