@@ -17,10 +17,10 @@
                                 <tr>
                                     <th>Mã hoá đơn</th>
                                     <th>Mã khách hàng</th>
-                                    <th>Tên người nhận</th>
+                                    <th>Họ và Tên</th>
                                     <th>Số điện thoại</th>
-                                    <th>Tổng đơn</th>
-                                    <th>Trạng thái</th>
+                                    <th>Tổng giá</th>
+                                    @* <th>Trạng thái</th> *@
                                     <th>Ngày đặt</th>
                                     <th>Thanh toán</th>
                                     <th>Options</th>
@@ -28,10 +28,10 @@
                             </thead>
 
                             <tbody>
-                                @* @foreach (var item in listInv)
+                                @foreach (var item in ViewBag.invoices)
                                 {
                                     string status = "";
-                                    switch (item.invoice_status_id)
+                                    switch (item.UserId)
                                     {
                                         case 1:
                                             status = "success";
@@ -44,34 +44,29 @@
                                             break;
                                     }
                                     <tr>
-                                        <td>@item.invoice_id</td>
-                                        <td><a href="@Url.Action("Detail", "Customers", new { user_id = item.user_id })">@item.user_id</a></td>
-                                        <td>@item.invoice_user_fullname</td>
-                                        <td>@item.invoice_user_phone_number</td>
-                                        <td>@f.NumberToStr(item.invoice_subtotal) đ</td>
-                                        <td class="order-@status">
+                                        <td>@item.Id</td>
+                                        <td>@item.UserId</td>
+                                        <td>@item.FullName_Order</td>
+                                        <td>@item.PhoneNumber_Order</td>
+                                        <td>@item.TotalPrice$</td>
+                                        <td>@item.OrderDate</td>
+
+                                        @*<td class="order-@status">
                                             <span>@item.invoice_status.invoice_status_name</span>
-                                        </td>
-                                        <td>@item.invoice_created_at.ToString()</td>
-                                        @if(item.invoice_prepaid == 0)
-                                        {
-                                            <td>COD</td>
-                                        }
-                                        else
-                                        {
-                                            <td>VN PAY</td>
-                                        }
+                                        </td> *@
+                                        @* <td>@item.OderDate.ToString()</td> *@
+                                        <td>@item.Vnpay_transaction</td>
                                         <td>
                                             <ul>
                                                 <li>
-                                                    <a href="@Url.Action("Detail", "Invoices", new { invoice_id = item.invoice_id })" title="Xem chi tiết">
+                                                    <a href="@Url.Action("Print", "Invoices", new { Id = item.Id })" title="Xem chi tiết">
                                                         <span class="lnr lnr-eye"></span>
                                                     </a>
                                                 </li>
                                             </ul>
                                         </td>
                                     </tr>
-                                } *@
+                                }
                             </tbody>
                         </table>
                     </div>

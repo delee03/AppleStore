@@ -342,6 +342,8 @@ UserManager<ApplicationUser> userManager, IProductRepository productRepository, 
             }
             TempData["Message"] = $"Thanh toán VNPAY thành công: {response.VnPayResponseCode}";
 
+            TempData["OderId"] = response.OrderId;
+
             return View("SucessfulOrder");
 
             /*   // Bắt đầu giao dịch

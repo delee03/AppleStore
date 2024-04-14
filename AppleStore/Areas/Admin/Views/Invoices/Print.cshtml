@@ -1,9 +1,10 @@
 ﻿
 @{
-    Layout = null;
-    // Func f = new Func();
-    // var inv = (invoices)ViewData["invoice"];
-    // var listProducts = (List<invoice_details>)ViewData["listProducts"];
+	Layout = null;
+	// Func f = new Func();
+	// var inv = (invoices)ViewData["invoice"];
+	// var listProducts = (List<invoice_details>)ViewData["listProducts"];
+	var item = ViewBag.invoices;
 }
 
 
@@ -131,12 +132,12 @@
                     <table>
                         <tr>
                             <td class="title">
-                                @*<img src="./images/logo.png" alt="Company logo" style="width: 100%; max-width: 300px" />*@
+                                <img src="~/img/AppleLogo.png" alt="Company logo" style="width: 100%; max-width: 300px" />
                             </td>
 
                             <td>
-                                Mã đơn: 0123<br />
-                                Ngày đặt: 12/12
+								Mã đơn: @item.Id<br />
+								Ngày đặt: @item.OrderDate
                             </td>
                         </tr>
                     </table>
@@ -149,7 +150,7 @@
                         <tr>
                             <td>
 								<b>Gửi từ:</b><br />
-                                KeyMax Shop<br />
+                                Apple Store<br />
                                 0777.xxx<br />
                                 Quận 9, khu CNC, Tp. HCM
                             </td>
@@ -166,27 +167,27 @@
             </tr>
 
             <tr class="heading">
-                <td>Sản phẩm</td>
-                <td>Số lượng</td>
-                <td>Đơn giá</td>
-                <td>Số tiền</td>
+                <td>Mã khách hàng</td>
+                <td>Số điện thoại</td>
+                <td>Email</td>
+                <td>Hình thức thanh toán</td>
             </tr>
 
-            @* @foreach (var item in listProducts)
+			@foreach (var items in ViewBag.invoices)
             {
                 <tr class="item">
-                    <td>@item.product.product_name</td>
-                    <td>@item.invd_product_quantity</td>
-                    <td>@f.NumberToStr(item.invd_product_price)</td>
-                    <td>@f.NumberToStr((int)item.invd_product_quantity * item.invd_product_price)đ</td>
+                    <td>@items.UserId</td>
+					<td>@items.PhoneNumber_Order</td>
+					<td>@items.Email_Order</td>
+                    <td>@items.Vnpay_Transaction $</td>
                 </tr>
-            } *@
+            }
 
             <tr class="total">
                 <td></td>
                 <td></td>
                 <td><b>Tổng cộng:</b></td>
-                <td><b>999.999 đ</b></td>
+                <td><b>@item.TotalPrice $</b></td>
             </tr>
         </table>
     </div>
