@@ -1,10 +1,6 @@
 ﻿
 @{
 	Layout = null;
-	// Func f = new Func();
-	// var inv = (invoices)ViewData["invoice"];
-	// var listProducts = (List<invoice_details>)ViewData["listProducts"];
-	var item = ViewBag.invoices;
 }
 
 
@@ -132,12 +128,12 @@
                     <table>
                         <tr>
                             <td class="title">
-                                <img src="~/img/AppleLogo.png" alt="Company logo" style="width: 100%; max-width: 300px" />
+                                <img src="~/img/appleprint.png" alt="Company logo" style="width: 100%; max-width: 300px" />
                             </td>
 
                             <td>
-								Mã đơn: @item.Id<br />
-								Ngày đặt: @item.OrderDate
+								Mã đơn: @ViewBag.invoices.Id<br />
+								Ngày đặt: @ViewBag.invoices.OrderDate
                             </td>
                         </tr>
                     </table>
@@ -173,21 +169,19 @@
                 <td>Hình thức thanh toán</td>
             </tr>
 
-			@foreach (var items in ViewBag.invoices)
-            {
+			
                 <tr class="item">
-                    <td>@items.UserId</td>
-					<td>@items.PhoneNumber_Order</td>
-					<td>@items.Email_Order</td>
-                    <td>@items.Vnpay_Transaction $</td>
+					<td>@ViewBag.invoices.UserId</td>
+					<td>@ViewBag.invoices.PhoneNumber_Order</td>
+					<td>@ViewBag.invoices.Email_Order</td>
+					<td>@ViewBag.invoices.Vnpay_transaction</td>
                 </tr>
-            }
 
             <tr class="total">
                 <td></td>
                 <td></td>
                 <td><b>Tổng cộng:</b></td>
-                <td><b>@item.TotalPrice $</b></td>
+				<td><b>@ViewBag.invoices.TotalPrice $</b></td>
             </tr>
         </table>
     </div>
