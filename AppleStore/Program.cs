@@ -76,15 +76,11 @@ using AppleStore.Repository;
 using AppleStore.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Identity;
-using AppleStore.Models;
 using System.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
-
-builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
@@ -106,24 +102,9 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
  .AddDefaultUI()
  .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddRazorPages();
-// Add services to the container.
-builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<IProductRepository, EFProductRepository>();
 builder.Services.AddScoped<ICategoryRepository, EFCategoryRepository>();
-
-builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
- .AddDefaultTokenProviders()
- .AddDefaultUI()
- .AddEntityFrameworkStores<ApplicationDbContext>();
-builder.Services.AddRazorPages();
-
-builder.Services.AddSession(options =>
-{
-    options.IdleTimeout = TimeSpan.FromMinutes(15);
-    options.Cookie.HttpOnly = true;
-    options.Cookie.IsEssential = true;
-});
 builder.Services.AddHttpContextAccessor();
 
 builder.Services.AddAuthentication().AddGoogle(googleOptions =>
@@ -169,16 +150,14 @@ app.UseAuthorization();
 //        pattern: "{controller=Home}/{action=Index}/{id?}");
 //});
 app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.MapControllerRoute(
     name: "admin",
     pattern: "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}"
 );
 // Các middleware khác...
-app.UseEndpoints(endpoints =>
-{
-    _ = endpoints.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
-});
 
 app.MapRazorPages();
 

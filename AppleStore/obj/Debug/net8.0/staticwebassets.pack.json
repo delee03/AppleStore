@@ -1281,56 +1281,16 @@
       "PackagePath": "staticwebassets\\img\\Iphone15_1.png"
     },
     {
-      "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ap0 - Copy - Copy.png",
-      "PackagePath": "staticwebassets\\img\\ap0 - Copy - Copy.png"
-    },
-    {
-      "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ap0 - Copy.png",
-      "PackagePath": "staticwebassets\\img\\ap0 - Copy.png"
-    },
-    {
       "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ap0.png",
       "PackagePath": "staticwebassets\\img\\ap0.png"
-    },
-    {
-      "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ap00 - Copy.png",
-      "PackagePath": "staticwebassets\\img\\ap00 - Copy.png"
     },
     {
       "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ap00.png",
       "PackagePath": "staticwebassets\\img\\ap00.png"
     },
     {
-      "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ap1 - Copy.webp",
-      "PackagePath": "staticwebassets\\img\\ap1 - Copy.webp"
-    },
-    {
-      "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ap1-1 - Copy (2) - Copy.webp",
-      "PackagePath": "staticwebassets\\img\\ap1-1 - Copy (2) - Copy.webp"
-    },
-    {
-      "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ap1-1 - Copy (2).webp",
-      "PackagePath": "staticwebassets\\img\\ap1-1 - Copy (2).webp"
-    },
-    {
-      "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ap1-1 - Copy - Copy - Copy.webp",
-      "PackagePath": "staticwebassets\\img\\ap1-1 - Copy - Copy - Copy.webp"
-    },
-    {
-      "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ap1-1 - Copy - Copy.webp",
-      "PackagePath": "staticwebassets\\img\\ap1-1 - Copy - Copy.webp"
-    },
-    {
-      "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ap1-1 - Copy.webp",
-      "PackagePath": "staticwebassets\\img\\ap1-1 - Copy.webp"
-    },
-    {
       "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ap1-1.webp",
       "PackagePath": "staticwebassets\\img\\ap1-1.webp"
-    },
-    {
-      "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ap1-2 - Copy.webp",
-      "PackagePath": "staticwebassets\\img\\ap1-2 - Copy.webp"
     },
     {
       "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ap1-2.webp",
@@ -1345,15 +1305,15 @@
       "PackagePath": "staticwebassets\\img\\ap1.webp"
     },
     {
-      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\applestore.avif",
+      "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\applestore.avif",
       "PackagePath": "staticwebassets\\img\\applestore.avif"
     },
     {
-      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\arrow-left-solid.svg",
+      "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\arrow-left-solid.svg",
       "PackagePath": "staticwebassets\\img\\arrow-left-solid.svg"
     },
     {
-      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\awbac1.webp",
+      "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\awbac1.webp",
       "PackagePath": "staticwebassets\\img\\awbac1.webp"
     },
     {
@@ -1369,29 +1329,20 @@
       "PackagePath": "staticwebassets\\img\\awtrang1.webp"
     },
     {
+      "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\empty_cart.jpg",
+      "PackagePath": "staticwebassets\\img\\empty_cart.jpg"
+    },
+    {
       "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\favicon.png",
       "PackagePath": "staticwebassets\\img\\favicon.png"
     },
     {
       "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\hotdeal1.png",
-      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\empty_cart.jpg",
-      "PackagePath": "staticwebassets\\img\\empty_cart.jpg"
-    },
-    {
-      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\hotdeal1.png",
       "PackagePath": "staticwebassets\\img\\hotdeal1.png"
     },
     {
       "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\iPadAir.png",
       "PackagePath": "staticwebassets\\img\\iPadAir.png"
-    },
-    {
-      "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\imac1 - Copy.webp",
-      "PackagePath": "staticwebassets\\img\\imac1 - Copy.webp"
-    },
-    {
-      "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\imac1-1 - Copy.webp",
-      "PackagePath": "staticwebassets\\img\\imac1-1 - Copy.webp"
     },
     {
       "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\imac1-1.webp",
@@ -1542,15 +1493,15 @@
       "PackagePath": "staticwebassets\\img\\ip14full3.webp"
     },
     {
-      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip14tim.jpg",
+      "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip14tim.jpg",
       "PackagePath": "staticwebassets\\img\\ip14tim.jpg"
     },
     {
-      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip14timmain.webp",
+      "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip14timmain.webp",
       "PackagePath": "staticwebassets\\img\\ip14timmain.webp"
     },
     {
-      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\ip15-1.webp",
+      "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\ip15-1.webp",
       "PackagePath": "staticwebassets\\img\\ip15-1.webp"
     },
     {
@@ -1646,11 +1597,11 @@
       "PackagePath": "staticwebassets\\img\\macair2.webp"
     },
     {
-      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\macair3 - Copy.webp",
+      "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\macair3 - Copy.webp",
       "PackagePath": "staticwebassets\\img\\macair3 - Copy.webp"
     },
     {
-      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\macair3.webp",
+      "Id": "D:\\Web_VS\\AppleStore\\AppleStore\\wwwroot\\img\\macair3.webp",
       "PackagePath": "staticwebassets\\img\\macair3.webp"
     },
     {
