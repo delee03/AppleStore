@@ -1,0 +1,43 @@
+﻿@model AppleStore.Models.Category
+
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";  
+
+    var category = ViewBag.category;
+
+}
+
+<div class="row">
+    <div class="col-12">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-header-2">
+                            <h5>Sửa loại sản phẩm</h5>
+                        </div>
+
+                        <form asp-action="Edit" class="theme-form theme-form-2 mega-form" method="post" action="" enctype="multipart/form-data">
+                            <div class="row">
+                                <input type="hidden" asp-for="Id" />
+                                <div class="mb-4 row align-items-center">
+                                    <label asp-for="Name" class="form-label-title col-sm-2 mb-0">Tên loại sản phẩm</label>
+                                    <div class="col-sm-10">
+                                        <input asp-for="Name" class="form-control" type="text" value="@category.Name" name="Name" required />
+                                    </div>
+                                </div>
+                                                     
+                                <div class="card-footer text-end border-0 pt-0">
+                                    <input class="form-control" type="number" value="<product_id o day nếu cập nhật>" name="category_id" hidden />
+                                    <button class="btn btn-primary me-3" type="submit">Cập nhật</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

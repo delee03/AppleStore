@@ -125,9 +125,9 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
-    app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
+	app.UseExceptionHandler("/Home/Error");
+	// The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+	app.UseHsts();
 }
 
 app.UseHttpsRedirection();
@@ -137,6 +137,7 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+app.UseSession();
 //app.UseEndpoints(endpoints =>
 //{
 //    _ = endpoints.MapControllerRoute(
@@ -144,21 +145,18 @@ app.UseAuthorization();
 //        pattern: "Admin/{controller=Dashboard}/{action=Index}/{id?}"
 //    );
 
-
-
-app.UseSession();
 //    _ = endpoints.MapControllerRoute(
 //        name: "default",
 //        pattern: "{controller=Home}/{action=Index}/{id?}");
 //});
 app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+	name: "admin",
+	pattern: "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}"
+);
 
 app.MapControllerRoute(
-    name: "admin",
-    pattern: "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}"
-);
+	name: "default",
+	pattern: "{controller=Home}/{action=Index}/{id?}");
 // Các middleware khác...
 
 app.MapRazorPages();

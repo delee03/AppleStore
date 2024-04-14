@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    var category = ViewBag.category;
+}
+
+<div class="row">
+    <div class="col-12">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-header-2">
+                            <h5>Xóa loại sản phẩm</h5>
+                        </div>
+
+                        <form asp-action="Delete" class="theme-form theme-form-2 mega-form" method="post" action="" enctype="multipart/form-data">
+                            <div class="row">
+                                <div class="mb-4 row align-items-center">
+                                    <label class="form-label-title col-sm-2 mb-0">Tên sản phẩm</label>
+                                    <div class="col-sm-10">
+                                        <input class="form-control" type="text" value="@category.Name" name="Name" disabled />
+                                    </div>
+                                </div>                               
+
+                                <div class="card-footer text-end border-0 pt-0">
+                                    <input class="form-control" type="number" value="" name="" hidden />
+                                    <button class="btn btn-primary me-3" type="submit">Xóa sản phẩm</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

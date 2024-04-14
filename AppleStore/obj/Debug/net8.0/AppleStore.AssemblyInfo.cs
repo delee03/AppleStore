@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AppleStore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c446ee2fe6be33439037bdefb8e01c2111f2d369")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3990e318dc380eb29a71dfc39139384948cf0289")]
 [assembly: System.Reflection.AssemblyProductAttribute("AppleStore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AppleStore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
