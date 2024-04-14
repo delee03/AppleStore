@@ -186,7 +186,7 @@ UserManager<ApplicationUser> userManager, IProductRepository productRepository, 
         }
 
 
-        [Authorize]
+       
 
         [HttpPost]
         public async Task<IActionResult> Checkout(Order order, string payment = "COD")
@@ -237,6 +237,7 @@ UserManager<ApplicationUser> userManager, IProductRepository productRepository, 
                     await transaction.CommitAsync();
 
                     HttpContext.Session.Remove("Cart");
+
                 }
                 return Redirect(_vnPayService.CreatePaymentUrl(HttpContext, vnPayModel));
 
@@ -340,8 +341,11 @@ UserManager<ApplicationUser> userManager, IProductRepository productRepository, 
                 TempData["Message"] = $"Lỗi thanh toán VNPay: {response.VnPayResponseCode}";
                 return RedirectToAction("PaymentFail");
             }
-            TempData["Message"] = $"Thanh toán VNPAY thành công: {response.VnPayResponseCode}";
-
+            TempData["MessageSucess"] = $"Thanh toán VNPAY thành công: {response.VnPayResponseCode}";
+            //  TempData["Message"] = $"Thanh toán VNPAY thành công: {response.VnPayResponseCode}";
+          
+            TempData["OrderId"] = response.OrderId;
+          
             return View("SucessfulOrder");
 
             /*   // Bắt đầu giao dịch
