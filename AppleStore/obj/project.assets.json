@@ -652,7 +652,9 @@
             "related": ".xml"
           }
         },
-        "frameworkReferences": ["Microsoft.AspNetCore.App"]
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "Microsoft.AspNetCore.Cryptography.Internal/8.0.4": {
         "type": "package",
@@ -716,7 +718,9 @@
             "related": ".xml"
           }
         },
-        "frameworkReferences": ["Microsoft.AspNetCore.App"],
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ],
         "build": {
           "build/Microsoft.AspNetCore.Identity.UI.props": {},
           "buildTransitive/Microsoft.AspNetCore.Identity.UI.targets": {}
@@ -8596,25 +8600,29 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bhvie\\.nuget\\packages\\": {}
+    "C:\\Users\\MSI GAMING\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Web_VS\\AppleStore\\AppleStore\\AppleStore.csproj",
+      "projectUniqueName": "D:\\Web_Vs\\AppleStore\\AppleStore\\AppleStore.csproj",
       "projectName": "AppleStore",
-      "projectPath": "D:\\Web_VS\\AppleStore\\AppleStore\\AppleStore.csproj",
-      "packagesPath": "C:\\Users\\bhvie\\.nuget\\packages\\",
-      "outputPath": "D:\\Web_VS\\AppleStore\\AppleStore\\obj\\",
+      "projectPath": "D:\\Web_Vs\\AppleStore\\AppleStore\\AppleStore.csproj",
+      "packagesPath": "C:\\Users\\MSI GAMING\\.nuget\\packages\\",
+      "outputPath": "D:\\Web_Vs\\AppleStore\\AppleStore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\bhvie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\MSI GAMING\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
-      "originalTargetFrameworks": ["net8.0"],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
@@ -8626,7 +8634,9 @@
         }
       },
       "warningProperties": {
-        "warnAsError": ["NU1605"]
+        "warnAsError": [
+          "NU1605"
+        ]
       },
       "restoreAuditProperties": {
         "enableAudit": "true",
@@ -8661,10 +8671,6 @@
           "Microsoft.EntityFrameworkCore.Sqlite": {
             "target": "Package",
             "version": "[8.0.4, )"
-          },
-          "Microsoft.EntityFrameworkCore.Sqlite": {
-            "target": "Package",
-            "version": "[8.0.3, )"
           },
           "Microsoft.EntityFrameworkCore.Tools": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",

@@ -1,6 +1,4 @@
-﻿
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
@@ -16,7 +14,7 @@
 	<!-- Bootstrap -->
 	<link type="text/css" rel="stylesheet" href="~/css/bootstrap.min.css" />
 
-	
+
 	<!-- Bootstrap icons-->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
 		  rel="stylesheet" />
@@ -48,13 +46,13 @@
 	<header>
 		<!-- TOP HEADER -->
 		<div id="top-header">
-			<div class="heading-top" >
+			<div class="heading-top">
 				<ul class="header-links pull-left">
 					<li><a href="tel:+840931034852" rel="noopener" target="_blank"><i class="fa fa-phone"></i> (+84)0931034852</a></li>
 					<li><a href="#" rel="noopener" target="_blank"><i class="fa fa-map-marker"></i> HUTECH,  TPHCM, VIET NAM</a></li>
 				</ul>
 				<ul class="header-links pull-right" style="display:flex; align-items:center; justify-content:center; gap:10px;">
-					<li> <partial class="loginPartial" name="_LoginPartial"/> </li>
+					<li> <partial class="loginPartial" name="_LoginPartial" /> </li>
 					@* <li><a href="#"><i class="fa fa-user-o"></i> My Account</a></li> *@
 				</ul>
 			</div>
@@ -81,17 +79,11 @@
 							<form>
 								<select class="input-select">
 									<option value="0">All Categories</option>
-									<option value="1">Iphone</option>
-									<option value="2">Macbook</option>
-									<option value="3">Accessories</option>
+									<option value="1">Category 01</option>
+									<option value="1">Category 02</option>
 								</select>
-				
-								<input type="text" class="input" placeholder="Search here">
-								<button class="search-btn"><a asp-action="Index" asp-controller="Product" style="color: white" >Search</a></button>
-								
-								@* <button class="search-btn"><a asp-action="Index" asp-controller="Product"></a>Tìm kiếm</button> *@
-								@* <button  asp-action="Index" asp-controller="Product" class="search-btn">Search</button> *@
-								@* <button class="search-btn">Search</button> *@
+								<input class="input" placeholder="Search here">
+								<button class="search-btn">Search</button>
 							</form>
 						</div>
 					</div>
@@ -108,64 +100,60 @@
 								</a>
 							</div>
 							<!-- /Wishlist -->
-								
-							 
-							
-
 							<!-- Cart -->
 							<div class="dropdown">
-								<a  asp-controller="Shoppingcart" asp-action="Index" aria-expanded="true">
+								<a asp-controller="Shoppingcart" asp-action="Index" aria-expanded="true">
 									<i class="fa fa-shopping-cart"></i>
-									<span>Your Cart</span>	
+									<span>Your Cart</span>
 									<div class="qty">3</div>
 								</a>
 								<div class="cart-dropdown">
 									<div class="cart-list">
 										@* @if(cart.Items != null)
 										{
-											@foreach (var item in cart.Items)
-											{
-												<div class="product-widget">
-													<div class="product-img">
-														<img src="@item.ImageUrl" alt="">
-													</div>
-													<div class="product-body">
-														<h3 class="product-name"><a href="#">@item.Name</a></h3>
-														<h4 class="product-price"><span class="qty">1x</span>$ @item.Price</h4>
-													</div>
-													<button class="delete"><i class="fa fa-close"></i></button>
-												</div>
-											}
+										@foreach (var item in cart.Items)
+										{
+										<div class="product-widget">
+										<div class="product-img">
+										<img src="@item.ImageUrl" alt="">
+										</div>
+										<div class="product-body">
+										<h3 class="product-name"><a href="#">@item.Name</a></h3>
+										<h4 class="product-price"><span class="qty">1x</span>$ @item.Price</h4>
+										</div>
+										<button class="delete"><i class="fa fa-close"></i></button>
+										</div>
+										}
 										}
 										else
 										{
-											<div class="product-widget">
-												<h3>No item!</h3>
-											</div>
+										<div class="product-widget">
+										<h3>No item!</h3>
+										</div>
 										} *@
 
 
 
 										@* <div class="product-widget">
-											<div class="product-img">
-												<img src="~/img/product01.png" alt="">
-											</div>
-											<div class="product-body">
-												<h3 class="product-name"><a href="#">product name goes here</a></h3>
-												<h4 class="product-price"><span class="qty">1x</span>$980.00</h4>
-											</div>
-											<button class="delete"><i class="fa fa-close"></i></button>
+										<div class="product-img">
+										<img src="~/img/product01.png" alt="">
+										</div>
+										<div class="product-body">
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
+										<h4 class="product-price"><span class="qty">1x</span>$980.00</h4>
+										</div>
+										<button class="delete"><i class="fa fa-close"></i></button>
 										</div>
 
 										<div class="product-widget">
-											<div class="product-img">
-												<img src="~/img/product02.png" alt="">
-											</div>
-											<div class="product-body">
-												<h3 class="product-name"><a href="#">product name goes here</a></h3>
-												<h4 class="product-price"><span class="qty">3x</span>$980.00</h4>
-											</div>
-											<button class="delete"><i class="fa fa-close"></i></button>
+										<div class="product-img">
+										<img src="~/img/product02.png" alt="">
+										</div>
+										<div class="product-body">
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
+										<h4 class="product-price"><span class="qty">3x</span>$980.00</h4>
+										</div>
+										<button class="delete"><i class="fa fa-close"></i></button>
 										</div> *@
 									</div>
 
@@ -210,14 +198,14 @@
 			<div id="responsive-nav">
 				<!-- NAV -->
 				<ul class="main-nav nav navbar-nav" style="display: block">
-					<li class="active"><a asp-action="Index" asp-controller="Home">Home</a></li>
-					<li><a asp-action="Index" asp-controller="Product">All Products</a></li>
-					<li><a asp-action="ShowIphone" asp-controller="Product">Iphone</a></li>
-					<li><a asp-action="ShowMacbook" asp-controller="Product">Macbook</a></li>
-					<li><a asp-action="ShowAccessories" asp-controller="Product">Accessories</a></li>
+					<li class="active"><a href="/home">Home</a></li>
+					<li><a href="/Product">Product</a></li>
+					<li><a href="#">Iphone</a></li>
+					<li><a href="#">Macbook</a></li>
+					<li><a href="#">Headphone</a></li>
 					<li><a href="/checkout">Checkout</a></li>
-					<li><a asp-action="ShowCategories" asp-controller="Product">Filter</a></li>
-					<li><a href="/product">About</a></li>
+					<li><a href="#">Service</a></li>
+					<li><a href="#">About</a></li>
 					<li><a href="#">Contact</a></li>
 				</ul>
 				<!-- /NAV -->
@@ -227,7 +215,7 @@
 		<!-- /container -->
 	</nav>
 	<!-- /NAVIGATION -->
-	@* <!-- BREADCRUMB -->
+	<!-- BREADCRUMB -->
 	<div id="breadcrumb" class="section">
 		<!-- container -->
 		<div class="container">
@@ -235,7 +223,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<ul class="breadcrumb-tree">
-						<li class="active"><a href=" /home">Home</a></li>						
+						<li class="active"><a href=" /home">Home</a></li>
 					</ul>
 				</div>
 			</div>
@@ -243,16 +231,16 @@
 		</div>
 		<!-- /container -->
 	</div>
-	<!-- /BREADCRUMB --> *@
+	<!-- /BREADCRUMB -->
 
-	
-<div ">
-		
+
+	<div ">
+
 	@RenderBody()
-		
-</div>
-	
-  
+
+	</div>
+
+
 
 
 	<!-- FOOTER -->
@@ -337,7 +325,7 @@
 						</ul>
 						<span class="copyright">
 							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-							Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">TAM THỂ</a>
+							Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 						</span>
 					</div>
@@ -357,9 +345,9 @@
 	<script src="~/js/jquery.zoom.min.js"></script>
 	<script src="~/js/main.js"></script>
 	<script src="~/js/site.js" asp-append-version="true"></script>
-	
 
-    @await RenderSectionAsync("Scripts", required: false)
+
+	@await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
 
@@ -401,17 +389,17 @@
 			toast.style.animation = `slideInLeft ease .3s, fadeOut linear 1s 3s forwards`;
 
 			toast.innerHTML = `
-										<div class="toast__icon">
-											<i class="${icon}"></i>
-										</div>
-										<div class="toast__body">
-											<h3 class="toast__title">${title}</h3>
-											<p class="toast__msg">${message}</p>
-										</div>
-										<div class="toast__close">
-											<i class="fa-solid fa-xmark"></i>
-										</div>
-									`;
+											<div class="toast__icon">
+												<i class="${icon}"></i>
+											</div>
+											<div class="toast__body">
+												<h3 class="toast__title">${title}</h3>
+												<p class="toast__msg">${message}</p>
+											</div>
+											<div class="toast__close">
+												<i class="fa-solid fa-xmark"></i>
+											</div>
+										`;
 			main.appendChild(toast);
 		}
 	}
@@ -453,18 +441,18 @@
 
 	/* Block */
 	/* .btn {
-			  display: inline-block;
-			  text-decoration: none;
-			  background-color: transparent;
-			  border: none;
-			  outline: none;
-			  color: #fff;
-			  padding: 12px 48px;
-			  border-radius: 50px;
-			  cursor: pointer;
-			  min-width: 120px;
-			  transition: opacity 0.2s ease;
-			} */
+				  display: inline-block;
+				  text-decoration: none;
+				  background-color: transparent;
+				  border: none;
+				  outline: none;
+				  color: #fff;
+				  padding: 12px 48px;
+				  border-radius: 50px;
+				  cursor: pointer;
+				  min-width: 120px;
+				  transition: opacity 0.2s ease;
+				} */
 
 	/* Modifier */
 	.btn--size-l {
@@ -644,4 +632,3 @@
 		width: 100%;
 	}
 </style>
-

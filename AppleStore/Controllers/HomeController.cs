@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using AppleStore.Models;
+using AppleStore.Repository;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 

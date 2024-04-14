@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Areas",
+    "\\Areas\\Admin",
+    "\\Areas\\Admin\\Controllers"
   ],
+  "SelectedNode": "\\Properties",
   "PreviewInSolutionExplorer": false
 }
