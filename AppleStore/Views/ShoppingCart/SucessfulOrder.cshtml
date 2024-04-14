@@ -4,8 +4,15 @@
 
 }
 <style>
-    section {
-        min-height: 500px;
+    .sucess-section {
+        min-height: 800px;
+        margin: auto;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        overflow: auto;
+        background-image: url(https://images.unsplash.com/photo-1562581870-5b61efe35190?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        animation: gradient 15s ease infinite;
+        background-size: 150% 150%;
+        /*   background-attachment: fixed; */
     }
     .cart--container {
         display: flex;
@@ -39,6 +46,24 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+
+    @@keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    img {
+        border-radius: 50%;
+    }
 </style>
 
 <!-- BREADCRUMB -->
@@ -68,16 +93,16 @@
     <div class="container">
         <div class="row">
             <div class="section-title text-center">
-                <h2 style="margin: 20px 0 30px" class="title-gradient-h">Sucessful Order</h2>
+                <h2 style="margin: 20px 0 30px; color:white" >Sucessful Order</h2>
 
             </div>
    
 	       
             <div class="cart--container">
-                <h2 class="text-danger">@TempData["MessageSucess"]</h2>
+                <h2 style="color:white">@TempData["MessageSucess"]</h2>
                
-                <pre style="max-width: 800px" class="title-gradient"> Đơn hàng có ID: @TempData["OrderId"]
-                                                                 đã thanh toán thành công</pre>                                          
+                <pre style="max-width: 900px" class="title-gradient"> Mã đơn hàng: @TempData["OrderId"]  đã thanh toán thành công  </pre>
+                <p class="title-gradient"><strong>Vui lòng enjoy ngày mới của bạn và chờ đơn hàng được giao tới nhé ^^</strong></p>
                 <img src="https://png.pngtree.com/png-clipart/20230926/original/pngtree-online-payment-using-smartphone-app-successful-transfer-technology-transfer-purchase-vector-png-image_12880289.png" width="auto" height="300px" />
                 <div class="item--cart">
                     <a asp-action="Index" asp-controller="product">

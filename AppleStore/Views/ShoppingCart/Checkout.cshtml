@@ -46,7 +46,7 @@
         .btn-action-checkout:hover {
             color: white;
             border: 3px solid #e90000;
-            background-image: linear-gradient(160deg, #e90000 0%, #d08080 100%);
+            background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
             transition: ease 0.7s;
         }
     
@@ -59,6 +59,13 @@
 
     .col-md-7 {
         margin-top: -7px;
+    }
+
+    .primary-btn:hover {
+        color: white;
+        border: 3px solid #D10024;
+        background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+        transition: ease 0.7s;
     }
      
 </style>
@@ -144,7 +151,7 @@
 
             <!-- Order Details -->
 
-            <div class="col-md-5 order-details" style="margin-top: 86px;">
+            <div class="col-md-5 order-details" style="margin-top: 86px; min-width: 460px">
                 <div class="section-title text-center">
                     <h3 class="title-gradient">Your Order</h3>
                 </div>
@@ -190,7 +197,7 @@
                         <input type="radio" name="payment" id="payment-1" />
                         <label for="payment-1">
                             <span></span>
-                            Payment upon successful delivery
+                            Chú ý
                         </label>
                         <div class="caption">
                             <p>
@@ -203,12 +210,13 @@
                         <input type="radio"  name="payment" id="payment-2" />
                         <label for="payment-2">
                             <span></span>
-                            VN PAY
+                            Thông tin và điều khoản
                         </label>
                         <div class="caption">
                             <p>
-                                Vui lòng kiểm tra kĩ trước khi nhấn nút đặt hàng. Nhớ review
-                                cho chúng tôi biết về sự hài lòng của bạn! Cám ơn!
+                                Chính sách của chúng tôi là miễn phí hoàn toàn bảo hành 
+                                trong 12 tháng vui lòng xem thêm chi tiết ở đây:
+                                <a href="#!"><strong> Chính sách bảo hành </strong></a>
                             </p>
                         </div>
                     </div>
@@ -226,10 +234,10 @@
                         </div>
                     </div> *@
                 </div>
-                <div style="display: flex; align-items: flex-end; justify-content: space-around">
+                <div style="display: flex; align-items: flex-end; justify-content: space-between">
 
-                    <input type="submit" name="payment" class="primary-btn order-submit" value="đặt hàng cod"/>
-                    <input type="submit" name="payment" class="primary-btn order-submit" value="thanh toán vnpay" />
+                    <input type="submit" name="payment" class="primary-btn order-submit" value="đặt hàng cod" />
+                    <input type="submit" name="payment" class="primary-btn order-submit"  value="thanh toán vnpay" />
                    @*  <button type="submit" name="payment" class="primary-btn order-submit">
                         Place order
                     </button>

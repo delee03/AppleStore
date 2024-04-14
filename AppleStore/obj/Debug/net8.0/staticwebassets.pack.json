@@ -1305,6 +1305,10 @@
       "PackagePath": "staticwebassets\\img\\ap1.webp"
     },
     {
+      "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\appleprint.png",
+      "PackagePath": "staticwebassets\\img\\appleprint.png"
+    },
+    {
       "Id": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\applestore.avif",
       "PackagePath": "staticwebassets\\img\\applestore.avif"
     },

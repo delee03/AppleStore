@@ -1,4 +1,4 @@
-﻿@if (string.IsNullOrEmpty(Context.Session.GetString("admin")))
+﻿﻿@if (string.IsNullOrEmpty(Context.Session.GetString("admin")))
 {
     @*<script>window.location.href = "/Admin/Login";</script>*@
     Context.Response.Redirect(Url.Action("Index", "Login")!);
@@ -16,6 +16,7 @@
           content="admin template, Voxo admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="pixelstrap">
     <link rel="icon" href="~/img/favicon.png" type="image/x-icon">
+   
     <link rel="shortcut icon" href="~/img/favicon.png" type="image/x-icon">
     <title>Apple Store - Trang quản trị</title>
 
@@ -60,6 +61,7 @@
 
     <!-- Select2 css -->
     <link rel="stylesheet" type="text/css" href="/admin/assets/css/select2.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
@@ -185,9 +187,23 @@
                                 </li>
 
                                 <li class="sidebar-list">
+                                    <a class="sidebar-link sidebar-title link-nav" href="~/Admin/Category/Add">
+                                        <i data-feather="box"></i>
+                                        <span>Thêm danh mục</span>
+                                    </a>
+                                </li>
+
+                                <li class="sidebar-list">
                                     <a class="sidebar-link sidebar-title link-nav" href="~/Admin/Products/Index">
                                         <i data-feather="box"></i>
                                         <span>Sản phẩm</span>
+                                    </a>
+                                </li>
+
+                                <li class="sidebar-list">
+                                    <a class="sidebar-link sidebar-title link-nav" href="~/Admin/Category/Index">
+                                        <i data-feather="box"></i>
+                                        <span>Loại sản phẩm</span>
                                     </a>
                                 </li>
 
@@ -206,7 +222,7 @@
                                 </li>
 
                                 <li class="sidebar-list">
-                                    <a class="sidebar-link sidebar-title link-nav" href="~/Admin/Reports">
+                                    <a class="sidebar-link sidebar-title link-nav" href="#!">
                                         <i data-feather="file-text"></i>
                                         <span>Báo cáo - Góp ý - Liên hệ</span>
                                     </a>

@@ -8,6 +8,15 @@
 	.img-top {
 		oject-fit: cover;
 	}
+
+	.title-gradient {
+		font-size: 26px;
+		background-color: #00DBDE;
+		background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	
 </style>
 
 <!-- BREADCRUMB -->
@@ -349,9 +358,9 @@
 								</div>
 							</li>
 						</ul>
-						<h2 class="text-uppercase">hot deal this week</h2>
+						<h2 class="text-uppercase title-gradient" >shock hot deal this week</h2>
 						<p>New Collection Up to 50% OFF</p>
-						<a class="primary-btn cta-btn" asp-controller="Product" asp-action="Index" >Shop now</a>
+						<a  href="/product" class="primary-btn cta-btn" >Shop now</a>
 					</div>
 				</div>
 			</div>

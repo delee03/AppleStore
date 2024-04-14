@@ -8,80 +8,80 @@ using Newtonsoft.Json;
 
 namespace AppleStore.Areas.Admin.Controllers
 {
-    [Area("Admin")]
-    public class CustomersController : Controller
-    {
-        private readonly UserManager<ApplicationUser> _userManager;
+	[Area("Admin")]
+	public class CustomersController : Controller
+	{
+		private readonly UserManager<ApplicationUser> _userManager;
 
-        public CustomersController(UserManager<ApplicationUser> userManager)
-        {
-            _userManager = userManager;
-        }
+		public CustomersController(UserManager<ApplicationUser> userManager)
+		{
+			_userManager = userManager;
+		}
 
-        // GET: Customer
-        public async Task<IActionResult> Index()
-        {
-            // Get a list of all customers
-            var Customers = await _userManager.GetUsersInRoleAsync("Customer");
-            ViewBag.Customers = Customers;
-            return View();
-        }
+		// GET: Customer
+		public async Task<IActionResult> Index()
+		{
+			// Get a list of all customers
+			var Customers = await _userManager.GetUsersInRoleAsync("Customer");
+			ViewBag.Customers = Customers;
+			return View();
+		}
 
-        // GET: Customer/Details/5
-        public async Task<IActionResult> Detail(string id)
-        {
-            var customer = await _userManager.FindByIdAsync(id);
-            if (customer == null)
-            {
-                return RedirectToAction("Index");
-            }
+		// GET: Customer/Details/5
+		public async Task<IActionResult> Detail(string id)
+		{
+			var customer = await _userManager.FindByIdAsync(id);
+			if (customer == null)
+			{
+				return RedirectToAction("Index");
+			}
 
-            ViewBag.Customer = customer;
+			ViewBag.Customer = customer;
 
-            return View();
-        }
+			return View();
+		}
 
-        // GET: Customer/Delete/5
-        public async Task<IActionResult> Delete(string id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
+		// GET: Customer/Delete/5
+		public async Task<IActionResult> Delete(string id)
+		{
+			if (id == null)
+			{
+				return NotFound();
+			}
 
-            var customer = await _userManager.FindByIdAsync(id);
-            if (customer == null)
-            {
-                return NotFound();
-            }
+			var customer = await _userManager.FindByIdAsync(id);
+			if (customer == null)
+			{
+				return NotFound();
+			}
 
-            return View(customer);
-        }
+			return View(customer);
+		}
 
-        // POST: Customer/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(string id)
-        {
-            var customer = await _userManager.FindByIdAsync(id);
-            if (customer == null)
-            {
-                return NotFound();
-            }
+		// POST: Customer/Delete/5
+		[HttpPost, ActionName("Delete")]
+		[ValidateAntiForgeryToken]
+		public async Task<IActionResult> DeleteConfirmed(string id)
+		{
+			var customer = await _userManager.FindByIdAsync(id);
+			if (customer == null)
+			{
+				return NotFound();
+			}
 
-            // Delete the customer
-            var result = await _userManager.DeleteAsync(customer);
-            if (result.Succeeded)
-            {
-                return RedirectToAction(nameof(Index));
-            }
+			// Delete the customer
+			var result = await _userManager.DeleteAsync(customer);
+			if (result.Succeeded)
+			{
+				return RedirectToAction(nameof(Index));
+			}
 
-            foreach (var error in result.Errors)
-            {
-                ModelState.AddModelError(string.Empty, error.Description);
-            }
+			foreach (var error in result.Errors)
+			{
+				ModelState.AddModelError(string.Empty, error.Description);
+			}
 
-            return View(customer);
-        }
-    }
+			return View(customer);
+		}
+	}
 }

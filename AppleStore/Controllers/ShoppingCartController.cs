@@ -243,8 +243,6 @@ UserManager<ApplicationUser> userManager, IProductRepository productRepository, 
 
             }
 
-
-
             //thanh toan COD
             TempData["MessageCOD"] = payment;
 

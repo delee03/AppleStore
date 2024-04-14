@@ -1,4 +1,4 @@
-﻿@{
+﻿﻿@{
     ViewBag.Title = "Detail";
     Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
     // Func f = new Func();
@@ -27,34 +27,33 @@
                                     </thead>
 
                                     <tbody>
-                                        <!-- table gi do -->
                                     </tbody>
 
                                     <tfoot>
-                                        @*<tr class="table-order">
-                                        <td colspan="3">
-                                        <h5>Tổng cộng </h5>
-                                        </td>
-                                        <td>
-                                        <h4>$55.00</h4>
-                                        </td>
+                                        <tr class="table-order">
+                                            <td colspan="3">
+                                                <h5>Tổng cộng </h5>
+                                            </td>
+                                            <td>
+                                                <h4>$55.00</h4>
+                                            </td>
                                         </tr>
                                         <tr class="table-order">
-                                        <td colspan="3">
-                                        <h5>Shipping :</h5>
-                                        </td>
-                                        <td>
-                                        <h4>$12.00</h4>
-                                        </td>
+                                            <td colspan="3">
+                                                <h5>Shipping :</h5>
+                                            </td>
+                                            <td>
+                                                <h4>$12.00</h4>
+                                            </td>
                                         </tr>
                                         <tr class="table-order">
-                                        <td colspan="3">
-                                        <h5>Tax(GST) :</h5>
-                                        </td>
-                                        <td>
-                                        <h4>$10.00</h4>
-                                        </td>
-                                        </tr>*@
+                                            <td colspan="3">
+                                                <h5>Tax(GST) :</h5>
+                                            </td>
+                                            <td>
+                                                <h4>$10.00</h4>
+                                            </td>
+                                        </tr>
                                         <tr class="table-order">
                                             <td colspan="4">
                                                 <h4 class="theme-color fw-bold">Tổng cộng:</h4>
@@ -88,7 +87,7 @@
 
                                     @* <h4>Trạng thái đơn hàng</h4>
                                     <ul class="order-details">
-                                        <li>PENDING</li>
+                                    <li>PENDING</li>
                                     </ul> *@
 
                                     <div class="payment-mode">
@@ -110,14 +109,14 @@
                                         <a href="javascript:" onclick="w=window.open('@Url.Action("Print", new { invoice_id = 1111 })'); w.print();">In hoá đơn</a>
                                     </div>
                                     @* <div class="delivery-sec">
-                                        <h3>Đổi trạng thái đơn hàng</h3>
-                                        @foreach (var item in listINVS)
-                                        {
-                                            if (item.invoice_status_id != inv.invoice_status_id)
-                                            {
-                                                <a href="@Url.Action("Update", new { invoice_id = inv.invoice_id, invoice_status_id = item.invoice_status_id })">@item.invoice_status_name</a>
-                                            }
-                                        }
+                                    <h3>Đổi trạng thái đơn hàng</h3>
+                                    @foreach (var item in listINVS)
+                                    {
+                                    if (item.invoice_status_id != inv.invoice_status_id)
+                                    {
+                                    <a href="@Url.Action("Update", new { invoice_id = inv.invoice_id, invoice_status_id = item.invoice_status_id })">@item.invoice_status_name</a>
+                                    }
+                                    }
                                     </div> *@
                                 </div>
                             </div>

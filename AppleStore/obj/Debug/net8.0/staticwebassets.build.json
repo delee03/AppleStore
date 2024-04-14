@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5ZIeGRxuxgpY5u51riIw6HVjzNloEdaUHW4hiTqjQZM=",
+  "Hash": "w5+WuutFgn/OtdhX0hHYX97vGpeOL9QQhdbwuaeFoDM=",
   "Source": "AppleStore",
   "BasePath": "_content/AppleStore",
   "Mode": "Default",
@@ -7349,6 +7349,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\AppleLogo.png"
+    },
+    {
+      "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\appleprint.png",
+      "SourceId": "AppleStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\",
+      "BasePath": "_content/AppleStore",
+      "RelativePath": "img/appleprint.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\appleprint.png"
     },
     {
       "Identity": "D:\\Web_Vs\\AppleStore\\AppleStore\\wwwroot\\img\\applestore.avif",

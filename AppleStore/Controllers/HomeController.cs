@@ -23,6 +23,14 @@ namespace AppleStore.Controllers
             return View(products);
         }
 
+        public IActionResult Contact()
+        {
+            return View();
+        }
+        public IActionResult About()
+        {
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();

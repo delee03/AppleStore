@@ -48,3 +48,52 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.than {
+    font-family: "Montserrat", sans-serif;
+    color: white !important;
+    margin-bottom: 60px;
+    background: linear-gradient(-45deg, #23a6d5, #23d5ab);
+    background-size: 200% 200%;
+    animation: gradient--bgr 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+
+
+
+    @keyframes wave {
+        {
+            transform: translateX(1);
+        }
+
+        25% {
+            transform: translateX(-25%);
+        }
+
+        50% {
+            transform: translateX(-50%);
+        }
+
+        75% {
+            transform: translateX(-25%);
+        }
+
+        100% {
+            transform: translateX(1);
+        }
+
+
+}
