@@ -134,10 +134,10 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
 
-app.UseSession();
 
 app.UseAuthorization();
 
+app.UseSession();
 //app.UseEndpoints(endpoints =>
 //{
 //    _ = endpoints.MapControllerRoute(
