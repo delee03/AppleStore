@@ -88,7 +88,7 @@ UserManager<ApplicationUser> userManager, IProductRepository productRepository, 
             HttpContext.Session.SetObjectAsJson("Cart", cart);
             return RedirectToAction("Index"); // Assuming you have an "Index" action to display the updated cart
         }
-
+        [Authorize]
         public async Task<IActionResult> AddToCart(int productId, int quantity)
 		{
 			// Giả sử bạn có phương thức lấy thông tin sản phẩm từ productId
@@ -107,7 +107,8 @@ UserManager<ApplicationUser> userManager, IProductRepository productRepository, 
 			cart.AddItem(cartItem);
 
 			HttpContext.Session.SetObjectAsJson("Cart", cart);
-			return RedirectToAction("Index");
+			/*return RedirectToAction("Index");*/
+			return Json(new { success = true });
 		}
 
 		// Các actions khác...
@@ -185,15 +186,16 @@ UserManager<ApplicationUser> userManager, IProductRepository productRepository, 
         }
 
 
-
+        [Authorize]
 
         [HttpPost]
         public async Task<IActionResult> Checkout(Order order, string payment = "COD")
         {
             var cart =
                HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
-            
-             if (payment == "thanh toán vnpay")
+            var user = await _userManager.GetUserAsync(User);
+            //Thanh toan 
+            if (payment == "thanh toán vnpay")
             {
                 var vnPayModel = new VnPaymentRequestModel
                 {
@@ -203,18 +205,54 @@ UserManager<ApplicationUser> userManager, IProductRepository productRepository, 
                     FullName = order.FullName_Order,
                     OrderId = new Random().Next(1000, 10000)
                 };
-                return Redirect(_vnPayService.CreatePaymentUrl(HttpContext, vnPayModel));
+                // Bắt đầu giao dịch
+                using (var transaction = await _context.Database.BeginTransactionAsync())
+                {
+
+                    // Mã logic hiện có để điền các thuộc tính đơn hàng
+                   
+                    order.UserId = user.Id;
+                   /* order.PhoneNumber_Order = user.PhoneNumber;
+                    order.FullName_Order = user.FullName;
+                    order.ShippingAddress = user.Address;
+                    order.Email_Order = user.Email;*/
+                    order.OrderDate = DateTime.Now;
+                    order.Vnpay_transaction = "VNPay";
+                    order.TotalPrice = cart.Items.Sum(i => i.Price * i.Quantity);
+                    order.OrderDetails = cart.Items.Select(i => new OrderDetail
+                    {
+                        ProductId = i.ProductId,
+                        Quantity = i.Quantity,
+                        Price = i.Price
+                    }).ToList();
+
+                    // Thêm đơn hàng và chi tiết đơn hàng vào context
+                    _context.Orders.Add(order);
+
+                    // Lưu thay đổi vào cơ sở dữ liệu
+
+                    await _context.SaveChangesAsync();
+
+                    // Commit giao dịch
+                    await transaction.CommitAsync();
+
+                    HttpContext.Session.Remove("Cart");
+                }
+                 return Redirect(_vnPayService.CreatePaymentUrl(HttpContext, vnPayModel));
 
             }
+            
+
+
+             //thanh toan COD
             TempData["MessageCOD"] = payment;
 
             if (cart == null || !cart.Items.Any())
             {
                 // Xử lý giỏ hàng trống...
                 return RedirectToAction("/Product");
-            }
-            var user = await _userManager.GetUserAsync(User);          
-            ViewBag.Info = order;
+            }                  
+            
             order.UserId = user.Id;
             order.OrderDate = DateTime.Now;
             /* order.PhoneNumber_Order = users.PhoneNumber;
@@ -238,58 +276,123 @@ UserManager<ApplicationUser> userManager, IProductRepository productRepository, 
 
             return View("SucessfulOrderCOD", order.OrderDate);
         }
+
+
         [Authorize]
         public IActionResult PaymentFail()
         {
             return View();
         }
         //hàm trả về sucessfulOrer VNPay và lưu vào database
-        [HttpPost]
-        [Authorize]
-        public async Task<IActionResult> PaymentCallBack(Order order)
-        {
-            var cart =
-             HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
+        /*     [HttpPost]
+             [Authorize]
+             public async Task<IActionResult> PaymentCallBack(Order order)
+             {
+                 var cart =
+                  HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
 
+
+                 var response = _vnPayService.PaymentExecute(Request.Query);
+                 if (response == null || response.VnPayResponseCode != "00")
+                 {
+                     TempData["Message"] = $"Lỗi thanh toán VNPay: {response.VnPayResponseCode}";
+                     return RedirectToAction("PaymentFail");
+                 }
+                 //Lưu đơn hàng vào database tự code
+                 var user = await _userManager.GetUserAsync(User);
+                 ViewBag.Info = order;
+                 order.UserId = user.Id;
+                 order.OrderDate = DateTime.Now;
+                 order.PhoneNumber_Order = user.PhoneNumber;
+                 order.FullName_Order = user.FullName;
+                 order.ShippingAddress = user.Address;
+                 order.Email_Order = user.Email;
+                 order.Vnpay_transaction = "COD";
+                 order.TotalPrice = cart.Items.Sum(i => i.Price * i.Quantity);
+                 order.OrderDetails = cart.Items.Select(i => new OrderDetail
+                 {
+                     ProductId = i.ProductId,
+                     Quantity = i.Quantity,
+                     Price = i.Price
+                 }).ToList();
+
+                 _context.Orders.Add(order);
+
+                 await _context.SaveChangesAsync();
+                 HttpContext.Session.Remove("Cart");
+                 TempData["Message"] = $"Thanh toán VNPAY thành công: {response.VnPayResponseCode}";
+                 TempData["OrderId"] = response.OrderId;
+                 TempData["Desc"] = response.OrderDescription;
+
+
+                 return View("SucessfulOrder");
+             }*/
+
+        
+        public async Task<IActionResult> PaymentCallBack()
+        {
+            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
 
             var response = _vnPayService.PaymentExecute(Request.Query);
             if (response == null || response.VnPayResponseCode != "00")
+
             {
                 TempData["Message"] = $"Lỗi thanh toán VNPay: {response.VnPayResponseCode}";
                 return RedirectToAction("PaymentFail");
             }
-            //Lưu đơn hàng vào database tự code
-            var user = await _userManager.GetUserAsync(User);
-            ViewBag.Info = order;
-            order.UserId = user.Id;
-            order.OrderDate = DateTime.Now;
-            /* order.PhoneNumber_Order = users.PhoneNumber;
-             order.FullName_Order = users.FullName;
-             order.ShippingAddress = users.Address;
-             order.Email_Order = users.Email;*/
-            order.Vnpay_transaction = "COD";
-            order.TotalPrice = cart.Items.Sum(i => i.Price * i.Quantity);
-            order.OrderDetails = cart.Items.Select(i => new OrderDetail
-            {
-                ProductId = i.ProductId,
-                Quantity = i.Quantity,
-                Price = i.Price
-            }).ToList();
-
-            _context.Orders.Add(order);
-
-            await _context.SaveChangesAsync();
-            HttpContext.Session.Remove("Cart");
             TempData["Message"] = $"Thanh toán VNPAY thành công: {response.VnPayResponseCode}";
-            TempData["OrderId"] = response.OrderId;
-            TempData["Desc"] = response.OrderDescription;           
 
-          
             return View("SucessfulOrder");
 
+            /*   // Bắt đầu giao dịch
+               using (var transaction = await _context.Database.BeginTransactionAsync())
+               {
+                   try
+                   {
+                       // Mã logic hiện có để điền các thuộc tính đơn hàng
+                       var user = await _userManager.GetUserAsync(User);
+                       order.UserId = user.Id;
+                       order.PhoneNumber_Order = user.PhoneNumber;
+                       order.FullName_Order = user.FullName;
+                       order.ShippingAddress = user.Address;
+                       order.Email_Order = user.Email;
+                       order.OrderDate = DateTime.Now;
+                       order.Vnpay_transaction = "COD";
+                       order.TotalPrice = cart.Items.Sum(i => i.Price * i.Quantity);
+                       order.OrderDetails = cart.Items.Select(i => new OrderDetail
+                       {
+                           ProductId = i.ProductId,
+                           Quantity = i.Quantity,
+                           Price = i.Price
+                       }).ToList();
+
+                       // Thêm đơn hàng và chi tiết đơn hàng vào context
+                       _context.Orders.Add(order);
+
+                       // Lưu thay đổi vào cơ sở dữ liệu
+
+                       await _context.SaveChangesAsync();
+
+                       // Commit giao dịch
+                       await transaction.CommitAsync();
+
+                       HttpContext.Session.Remove("Cart");
+                       TempData["Message"] = $"Thanh toán VNPAY thành công: {response.VnPayResponseCode}";
+
+                       return View("SucessfulOrder");
+                   }
+                   catch (Exception ex)
+                   {
+                       // Xử lý các exception (ví dụ: ghi log lỗi)
+                       TempData["Message"] = $"Lỗi khi lưu đơn hàng: {ex.Message}";
+                       await transaction.RollbackAsync(); // Quay lại giao dịch
+                       return RedirectToAction("PaymentFail");
+                   }*/
+        }
         }
 
 
 
+
     }
-}
+

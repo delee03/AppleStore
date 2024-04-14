@@ -1,4 +1,5 @@
-﻿
+﻿@model DateTime
+
 @{
     decimal Total = 0;
 
@@ -7,6 +8,7 @@
     section {
         min-height: 500px;
     }
+
     .cart--container {
         display: flex;
         justify-content: space-evenly;
@@ -14,14 +16,16 @@
         flex-flow: column;
         align-items: center;
     }
-    .cart--container:first-child {
-        width: 300px;
-    }
 
-    .cart--container .item--cart {
-        /* align-self: flex-end */
-        margin: 0px 0 50px 90px;
-    }
+        .cart--container:first-child {
+            width: 300px;
+        }
+
+        .cart--container .item--cart {
+            /* align-self: flex-end */
+            margin: 0px 0 50px 90px;
+        }
+
     .title-gradient-h {
         font-size: 26px;
         text-transform: uppercase;
@@ -29,7 +33,8 @@
         background-image: linear-gradient(90deg, #f00 0%, #122125 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        .title-gradient
+        
+
     }
 
     .title-gradient {
@@ -62,7 +67,6 @@
     <!-- /container -->
 </div>
 <!-- /BREADCRUMB -->
-
 @* body *@
 <section class="sucess-section section-b-space">
     <div class="container">
@@ -71,13 +75,11 @@
                 <h2 style="margin: 20px 0 30px" class="title-gradient-h">Sucessful Order</h2>
 
             </div>
-   
-	       
+
+
             <div class="cart--container">
-                <h2 class="text-danger">@TempData["Message"]</h2>
-               
-                <pre style="max-width: 800px" class="title-gradient"> Đơn hàng có ID: @TempData["OrderId"]
-                                                                thông tin User: @TempData:["Desc"]  đã thanh toán thành công</pre>                                          
+                <h2 class="text-danger">Mã đơn hàng: @TempData["MessageCOD"]</h2>
+                <h3 style="max-width: 800px" class="title-gradient"> Đơn hàng có ngày đặt @Model  đã thanh toán thành công</h3>
                 <img src="https://png.pngtree.com/png-clipart/20230926/original/pngtree-online-payment-using-smartphone-app-successful-transfer-technology-transfer-purchase-vector-png-image_12880289.png" width="auto" height="300px" />
                 <div class="item--cart">
                     <a asp-action="Index" asp-controller="product">
@@ -89,39 +91,39 @@
                 </div>
 
             </div>
-          
+
             @* <div class="col-md-5 order-details" style="margin-top: 86px;">
-                <div class="section-title text-center">
-                    <h3 class="title-gradient">Your Order</h3>
-                </div>
-                <div class="order-summary">
-                    <div class="order-col">
-                        <div><strong>PRODUCT</strong></div>
-                        <div><strong>SUB TOTAL</strong></div>
-                    </div>
-                    @foreach (var item in ViewBag.CartOrder)
-                    {
-                        decimal subtotal = (int)item.Quantity * item.Price;
-                        Total += subtotal;
-                        <div class="order-products">
+            <div class="section-title text-center">
+            <h3 class="title-gradient">Your Order</h3>
+            </div>
+            <div class="order-summary">
+            <div class="order-col">
+            <div><strong>PRODUCT</strong></div>
+            <div><strong>SUB TOTAL</strong></div>
+            </div>
+            @foreach (var item in ViewBag.CartOrder)
+            {
+            decimal subtotal = (int)item.Quantity * item.Price;
+            Total += subtotal;
+            <div class="order-products">
 
 
-                            <div class="order-col">
-                                <div>x1 @item.Name</div>
-                                <div>$@subtotal</div>
-                            </div>
+            <div class="order-col">
+            <div>x1 @item.Name</div>
+            <div>$@subtotal</div>
+            </div>
 
 
-                        </div>
-                    }
-                    <div class="order-col">
-                        <div>Shiping</div>
-                        <div><strong>FREE</strong></div>
-                    </div>
-                    <div class="order-col">
-                        <div><strong>TOTAL</strong></div>
-                        <div><strong class="order-total">$@Total</strong></div>
-                    </div>
-                </div>
+            </div>
+            }
+            <div class="order-col">
+            <div>Shiping</div>
+            <div><strong>FREE</strong></div>
+            </div>
+            <div class="order-col">
+            <div><strong>TOTAL</strong></div>
+            <div><strong class="order-total">$@Total</strong></div>
+            </div>
+            </div>
             </div> *@
 </section>
