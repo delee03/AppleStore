@@ -1,90 +1,25 @@
-//using AppleStore.DataAcess;
-//using AppleStore.Models;
-//using AppleStore.Repository;
-//using Microsoft.AspNetCore.Identity;
-//using Microsoft.EntityFrameworkCore;
-
-//var builder = WebApplication.CreateBuilder(args);
-
-//builder.Services.AddDbContext<ApplicationDbContext>(options =>
-//options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-
-
-//builder.Services.AddDistributedMemoryCache();
-
-
-//builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
-//.AddDefaultTokenProviders()
-//.AddDefaultUI()
-//.AddEntityFrameworkStores<ApplicationDbContext>();
-//builder.Services.AddRazorPages();
-
-//builder.Services.AddSession(options =>
-//{
-//	options.IdleTimeout = TimeSpan.FromMinutes(15);
-//	options.Cookie.HttpOnly = true;
-//	options.Cookie.IsEssential = true;
-//});
-//builder.Services.AddHttpContextAccessor();
-
-
-//// Add services to the container.
-//builder.Services.AddControllersWithViews();
-
-//builder.Services.AddScoped<IProductRepository, EFProductRepository>();
-//builder.Services.AddScoped<ICategoryRepository, EFCategoryRepository>();
-
-
-//var app = builder.Build();
-//// Configure the HTTP request pipeline.
-//if (!app.Environment.IsDevelopment())
-//{
-//    app.UseExceptionHandler("/Home/Error");
-//}
-//app.UseStaticFiles();
-
-
-//// Đặt trước UseRouting
-//app.UseSession();
-
-
-//app.UseRouting();
-
-
-//app.UseAuthentication(); 
-
-
-//app.UseAuthorization();
-
-//app.MapRazorPages();
-
-
-//app.UseEndpoints(endpoints =>
-//{
-//	_ = endpoints.MapControllerRoute(
-//	name: "default",
-//	pattern: "{controller=Home}/{action=Index}/{id?}");
-//});
-
-
-//app.Run();
-
-
 using AppleStore.DataAcess;
-using AppleStore.Models;
 using AppleStore.Repository;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-
+using Microsoft.AspNetCore.Identity;
+using AppleStore.Models;
+using System.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
+var configuration = builder.Configuration;
 
+builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// Add services to the container.
+
+// Đặt trước AddControllersWithViews();
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
 {
-	options.IdleTimeout = TimeSpan.FromMinutes(30);
-	options.Cookie.HttpOnly = true;
-	options.Cookie.IsEssential = true;
+    options.IdleTimeout = TimeSpan.FromMinutes(30);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
 });
 builder.Services.AddControllersWithViews();
 
@@ -104,6 +39,33 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IProductRepository, EFProductRepository>();
 builder.Services.AddScoped<ICategoryRepository, EFCategoryRepository>();
 
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
+ .AddDefaultTokenProviders()
+ .AddDefaultUI()
+ .AddEntityFrameworkStores<ApplicationDbContext>();
+builder.Services.AddRazorPages();
+
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(15);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
+builder.Services.AddHttpContextAccessor();
+
+builder.Services.AddAuthentication().AddGoogle(googleOptions =>
+{
+    // Đọc thông tin Authentication:Google từ appsettings.json
+    //IConfigurationSection googleAuthNSection = builder.Configuration.GetSection("Authentication:Google");
+
+    // Thiết lập ClientID và ClientSecret để truy cập API google
+    googleOptions.ClientId = configuration["Authentication:Google:ClientId"];
+    googleOptions.ClientSecret = configuration["Authentication:Google:ClientSecret"];
+    // Cấu hình Url callback lại từ Google (không thiết lập thì mặc định là /signin-google)
+    //googleOptions.CallbackPath = "/signin-google";
+
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -118,19 +80,30 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
 
+app.UseSession();
+
 app.UseAuthorization();
 
+//app.UseEndpoints(endpoints =>
+//{
+//    _ = endpoints.MapControllerRoute(
+//        name: "Admin",
+//        pattern: "Admin/{controller=Dashboard}/{action=Index}/{id?}"
+//    );
 
-app.UseSession();
-// Các middleware khác...
-app.UseEndpoints(endpoints =>
-{
-	_ = endpoints.MapControllerRoute(
-	name: "default",
-	pattern: "{controller=Home}/{action=Index}/{id?}");
-});
+//    _ = endpoints.MapControllerRoute(
+//        name: "default",
+//        pattern: "{controller=Home}/{action=Index}/{id?}");
+//});
+app.MapControllerRoute(
+    name: "admin",
+    pattern: "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}"
+);
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.MapRazorPages();
-
 
 app.Run();

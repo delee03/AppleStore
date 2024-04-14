@@ -1,0 +1,87 @@
+﻿@model AppleStore.Models.Product
+@{
+    ViewBag.Title = "Add";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+
+    //var listPT = (List<product_types>)ViewData["listPT"];
+    var listPT = ViewBag.Categories;
+}
+
+<div class="row">
+    <div class="col-12">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-header-2">
+                            <h5>Thêm sản phẩm</h5>
+                        </div>
+
+                        <form class="theme-form theme-form-2 mega-form" method="post" action="" enctype="multipart/form-data">
+                            <div class="row">
+                                <div class="mb-4 row align-items-center">
+                                    <label class="form-label-title col-sm-2 mb-0">Tên sản phẩm</label>
+                                    <div class="col-sm-10">
+                                        <input class="form-control" type="text" placeholder="Product Name" name="Name" required />
+                                    </div>
+                                </div>
+
+                                <div class="mb-4 row align-items-center">
+                                    <label class="col-sm-2 col-form-label form-label-title" name="CategoryId">Loại sản phẩm</label>
+                                    <div class="col-sm-10">
+                                        <select class="js-example-basic-single w-100" name="CategoryId">
+                                            @foreach (var item in listPT)
+                                            {
+                                                <option value="@item.Id">@item.Name</option>
+                                            }
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="mb-4 row align-items-center">
+                                    <label class="form-label-title col-sm-2 mb-0">Giá</label>
+                                    <div class="col-sm-10">
+                                        <input class="form-control" name="Price" required />
+                                    </div>
+                                </div>
+
+                                <div class="mb-4 row align-items-center">
+                                    <label class="form-label-title col-sm-2 mb-0">Ảnh</label>
+                                    <div class="col-sm-10">
+                                        <input class="form-control" type="file" name="ImageUrl" required />
+                                    </div>
+                                </div>
+
+                                <div class="mb-4 row align-items-center">
+                                    <label class="form-label-title col-sm-2 mb-0">Ảnh Chi tiết</label>
+                                    <div class="col-sm-10">
+                                        <input class="form-control" type="file" name="ImageUrls" multiple />
+                                    </div>
+                                </div>
+
+                                @* <div class="mb-4 row align-items-center">
+                                <label class="form-label-title col-sm-2 mb-0">Số lượng</label>
+                                <div class="col-sm-10">
+                                <input class="form-control" type="number" min="0" name="product_quantity" required />
+                                </div>
+                                </div> *@
+
+                                <div class="mb-4 row align-items-center">
+                                    <label class="form-label-title col-sm-2 mb-0">Mô tả</label>
+                                    <div class="col-sm-10">
+                                        <textarea class="form-control" name="Description"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="card-footer text-end border-0 pt-0">
+                                    <button class="btn btn-primary me-3" type="submit">Thêm</button>
+                                    <button class="btn btn-outline-primary" type="reset">Reset</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

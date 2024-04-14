@@ -81,11 +81,17 @@
 							<form>
 								<select class="input-select">
 									<option value="0">All Categories</option>
-									<option value="1">Category 01</option>
-									<option value="1">Category 02</option>
+									<option value="1">Iphone</option>
+									<option value="2">Macbook</option>
+									<option value="3">Accessories</option>
 								</select>
-								<input class="input" placeholder="Search here">
-								<button class="search-btn">Search</button>
+				
+								<input type="text" class="input" placeholder="Search here">
+								<button class="search-btn"><a asp-action="Index" asp-controller="Product" style="color: white" >Search</a></button>
+								
+								@* <button class="search-btn"><a asp-action="Index" asp-controller="Product"></a>Tìm kiếm</button> *@
+								@* <button  asp-action="Index" asp-controller="Product" class="search-btn">Search</button> *@
+								@* <button class="search-btn">Search</button> *@
 							</form>
 						</div>
 					</div>
@@ -204,14 +210,14 @@
 			<div id="responsive-nav">
 				<!-- NAV -->
 				<ul class="main-nav nav navbar-nav" style="display: block">
-					<li class="active"><a href="/home">Home</a></li>
-					<li><a href="/Product">Product</a></li>
-					<li><a href="#">Iphone</a></li>
-					<li><a href="#">Macbook</a></li>
-					<li><a href="#">Headphone</a></li>
+					<li class="active"><a asp-action="Index" asp-controller="Home">Home</a></li>
+					<li><a asp-action="Index" asp-controller="Product">All Products</a></li>
+					<li><a asp-action="ShowIphone" asp-controller="Product">Iphone</a></li>
+					<li><a asp-action="ShowMacbook" asp-controller="Product">Macbook</a></li>
+					<li><a asp-action="ShowAccessories" asp-controller="Product">Accessories</a></li>
 					<li><a href="/checkout">Checkout</a></li>
-					<li><a href="#">Service</a></li>
-					<li><a href="#">About</a></li>
+					<li><a asp-action="ShowCategories" asp-controller="Product">Filter</a></li>
+					<li><a href="/product">About</a></li>
 					<li><a href="#">Contact</a></li>
 				</ul>
 				<!-- /NAV -->
@@ -221,7 +227,7 @@
 		<!-- /container -->
 	</nav>
 	<!-- /NAVIGATION -->
-	<!-- BREADCRUMB -->
+	@* <!-- BREADCRUMB -->
 	<div id="breadcrumb" class="section">
 		<!-- container -->
 		<div class="container">
@@ -237,7 +243,7 @@
 		</div>
 		<!-- /container -->
 	</div>
-	<!-- /BREADCRUMB -->
+	<!-- /BREADCRUMB --> *@
 
 	
 <div ">
@@ -331,7 +337,7 @@
 						</ul>
 						<span class="copyright">
 							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-							Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+							Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">TAM THỂ</a>
 							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 						</span>
 					</div>

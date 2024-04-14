@@ -1,0 +1,89 @@
+﻿@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    var listPT = ViewBag.Categories;
+    var product = ViewBag.Product;
+}
+
+<div class="row">
+    <div class="col-12">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-header-2">
+                            <h5>Xóa sản phẩm</h5>
+                        </div>
+
+                        <form class="theme-form theme-form-2 mega-form" method="post" action="" enctype="multipart/form-data">
+                            <div class="row">
+                                <div class="mb-4 row align-items-center">
+                                    <label class="form-label-title col-sm-2 mb-0">Tên sản phẩm</label>
+                                    <div class="col-sm-10">
+                                        <input class="form-control" type="text" value="@product.Name" name="Name" disabled />
+                                    </div>
+                                </div>
+
+                                <div class="mb-4 row align-items-center">
+                                    <label class="col-sm-2 col-form-label form-label-title">Loại sản phẩm</label>
+                                    <div class="col-sm-10">
+                                        <select class="js-example-basic-single w-100" name="CategoryId" disabled>
+                                            @foreach (var item in listPT)
+                                            {
+                                                string isSelected = "";
+                                                if (item.Id == product.CategoryId)
+                                                {
+                                                    isSelected = "selected";
+                                                }
+                                                <option value="@item.Id" @isSelected>@item.Name</option>
+                                            }
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="mb-4 row align-items-center">
+                                    <label class="form-label-title col-sm-2 mb-0">Giá</label>
+                                    <div class="col-sm-10">
+                                        <input class="form-control" value="@product.Price" name="Price" disabled />
+                                    </div>
+                                </div>
+
+                                <div class="mb-4 row align-items-center">
+                                    <label class="form-label-title col-sm-2 mb-0">Ảnh</label>
+                                    <div class="col-sm-10">
+                                        <img src="@Model.ImageUrl" alt="ProductImage" style="max-width:200px" id="previewImage" />
+                                    </div>
+                                </div>
+
+                                <div class="mb-4 row align-items-center">
+                                    <label class="form-label-title col-sm-2 mb-0">Ảnh chi tiết</label>
+                                    <div class="col-sm-10" id="previewImages">
+                                        @if (ViewBag.dsImage != null)
+                                        {
+                                            foreach (var img in ViewBag.dsImage)
+                                            {
+                                                <img class="product-preview" src="@img.Url" alt="Product Images" style="max-width:225px" />
+                                            }
+                                        }
+                                    </div>
+                                </div>
+
+                                <div class="mb-4 row align-items-center">
+                                    <label class="form-label-title col-sm-2 mb-0">Mô tả</label>
+                                    <div class="col-sm-10">
+                                        <input class="form-control" type="text" value="@product.Description" name="Description" disabled></input>
+                                    </div>
+                                </div>
+
+                                <div class="card-footer text-end border-0 pt-0">
+                                    <input class="form-control" type="number" value="" name="" hidden />
+                                    <button class="btn btn-primary me-3" type="submit">Xóa sản phẩm</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

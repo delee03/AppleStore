@@ -4,7 +4,28 @@
 	ViewData["Title"] = "Detail";
 }
 
+<!-- BREADCRUMB -->
+<div id="breadcrumb" class="section">
+	<!-- container -->
+	<div class="container">
+		<!-- row -->
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="breadcrumb-tree">
+					<li><a href=" /home">Home</a></li>
+					<li><a asp-action="Index" asp-controller="Product">All Product</a></li>
+					<li><a href="/product">Product</a></li>
+					@* <li><a asp-action="ShowAccessories" asp-controller="Product">Accessories</a></li>
 
+					<li class="active"><a asp-action="ShowAccessories" asp-controller="Product">Product Display</a></li> *@
+				</ul>
+			</div>
+		</div>
+		<!-- /row -->
+	</div>
+	<!-- /container -->
+</div>
+<!-- /BREADCRUMB -->
 
 <!-- SECTION -->
 <div class="section">
@@ -15,32 +36,34 @@
 			<!-- Product main img -->
 			<div class="col-md-5 col-md-push-2">
 				<div id="product-main-img">
-					@* @if (ViewBag.dsImage != null)
-					{
-						foreach (var img in ViewBag.dsImage)
-						{
-							<img class="m-1 product-preview" src="@img.Url" width="80" ; height="100px" />
-						}
-					} *@
+					
 
 					<div class="product-preview">
 						<img src="@Html.DisplayFor(model => model.ImageUrl)" alt="">
 					</div>
-					<div class="product-preview">
-						<img src="~/img/product01.png" alt="">
+
+					@if (ViewBag.dsImage != null)
+					{
+					foreach (var img in ViewBag.dsImage)
+					{
+					<img class="m-1 product-preview" src="@img.Url" width="80" ; height="100px" />
+					}
+					}
+				@* 	<div class="product-preview">
+						<img src="~/img/iPadAir.png" alt="">
 					</div>
 
 					<div class="product-preview">
-						<img src="~/img/product03.png" alt="">
+						<img src="~/img/iphone15_2.png" alt="">
 					</div>
 
 					<div class="product-preview">
-						<img src="~/img/product06.png" alt="">
-					</div>
+						<img src="~/img/iphone11.png" alt="">
+					</div> *@
 
-					<div class="product-preview">
+					@* <div class="product-preview">
 						<img src="~/img/product08.png" alt="">
-					</div>
+					</div> *@
 				</div>
 			</div>
 			<!-- /Product main img -->
@@ -54,21 +77,21 @@
 							<img class="product-preview" src="@img.Url" width="80" ; height="100px" />
 						}
 					} 
-					<div class="product-preview">
-						<img src="" alt="">
+				@* 	<div class="product-preview">
+						<img src="~/img/Iphone15_1.png" alt="">
 					</div>
 
 					<div class="product-preview">
-						<img src="~/img/product03.png" alt="">
+						<img src="~/img/iphone15_2.png" alt="">
 					</div>
 
 					<div class="product-preview">
-						<img src="~/img/product06.png" alt="">
+						<img src="~/img/iPadAir.png" alt="">
 					</div>
 
 					<div class="product-preview">
-						<img src="~/img/product08.png" alt="">
-					</div>
+						<img src="~/img/iphone11.png" alt="">
+					</div> *@
 				</div>
 			</div>
 			<!-- /Product thumb imgs -->
@@ -104,6 +127,7 @@
 							Color
 							<select class="input-select">
 								<option value="0">Red</option>
+								<option value="1">Black</option>
 							</select>
 						</label>
 					</div>
@@ -118,8 +142,9 @@
 							</div>
 						</div>
 						<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
-						<a asp-action="Update" asp-route-id="@Model.Id">Edit</a> |
-						<a asp-action="Index">Back to List</a>
+						<br />
+						<a asp-action="Update" asp-route-id="@Model.Id" class="btn-action">Edit</a> |
+						<a asp-action="Index" class="btn-action">Back to List</a>
 					</div>
 
 					<ul class="product-btns">

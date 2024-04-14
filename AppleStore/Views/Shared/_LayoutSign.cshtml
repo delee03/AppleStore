@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="~/img/favicon.png type="image/x-icon" />
+    <title>@ViewBag.Title - Apple Store</title>
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- bootstrap css -->
+    <link id="rtl-link" rel="stylesheet" type="text/css" href="~/admin/assets/css/vendors/bootstrap.css">
+
+    <!-- font-awesome css -->
+    <link rel="stylesheet" type="text/css" href="~/admin/assets/css/vendors/font-awesome.css">
+
+    <!-- feather icon css -->
+    <link rel="stylesheet" type="text/css" href="~/admin/assets/css/vendors/feather-icon.css">
+
+    <!-- animation css -->
+    <link rel="stylesheet" type="text/css" href="~/admin/assets/css/vendors/animate.css">
+
+    <!-- slick css -->
+    <link rel="stylesheet" type="text/css" href="~/admin/css/vendors/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="~/admin/css/vendors/slick/slick-theme.css">
+
+    <!-- Theme css -->
+    <link id="color-link" rel="stylesheet" type="text/css" href="~/admin/css/demo2.css">
+
+    <style>
+        .centerBtn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body class="theme-color2 light ltr">
+    <!-- Load thư viện Facebook API -->
+    @* <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js"></script> *@
+    <!-- Load thư viện Google API -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script>
+        function redirectPage(token, from) {
+            var url = new URL(window.location.href);
+            url.searchParams.set('access_token', token);
+            url.searchParams.set('from', from);
+            window.location.href = url.href;
+        }
+
+        // // FB
+        // function checkLoginState() {
+        //     FB.getLoginStatus(function (response) {      // Lấy trạng thái đăng nhập
+        //         console.log(response);                   // In thông tin ra màn hình console
+        //         if (response.status === 'connected') {   // Kiểm tra đã từng đăng nhập app này chưa
+        //             console.log('Welcome from FB! Fetching your information...'); // Nếu rồi thì sẽ lấy thông tin của người dùng
+        //             redirectPage(FB.getAuthResponse()['accessToken'], 'facebook');
+        //         }
+        //     });
+        // }
+        // // Khởi tạo API
+        // window.fbAsyncInit = function () {
+        //     FB.init({
+        //         appId: "IDClientFacebook", // ID ứng dụng
+        //         cookie: true, xfbml: true, version: 'v13.0'
+        //     });
+        // };
+
+        // GG
+        window.onload = function () {
+            // Khởi tạo API
+            google.accounts.id.initialize({
+                client_id: "@Function.IDClientGoogle",
+                callback: function (response) {
+                    console.log('Welcome from GG! Fetching your information...'); // Nếu rồi thì sẽ lấy thông tin của người dùng
+                    redirectPage(response.credential, 'google');
+                }
+            });
+            // Thiết lập nút đăng nhập
+            google.accounts.id.renderButton(
+                document.getElementById("btnGoogle"),
+                { theme: "outline", size: "large", text: "continue_with", width: "400" }  // tuỳ chỉnh nút
+            );
+            // google.accounts.id.prompt(); // khung đăng nhập nhanh ở phía trên bên phải
+        }
+    </script>
+
+    @if (!string.IsNullOrEmpty((string)ViewData["msg"]))
+    {
+        <script>alert(`@Html.Raw(ViewData["msg"])`);</script>
+    }
+    @RenderBody()
+
+    <div class="bg-overlay"></div>
+
+    <!-- latest jquery-->
+    <script src="~/admin/js/jquery-3.5.1.min.js"></script>
+
+    <!-- Bootstrap js-->
+    <script src="~/admin/js/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <!-- feather icon js-->
+    <script src="~/admin/js/feather/feather.min.js"></script>
+
+    <!-- lazyload js-->
+    <script src="~/admin/js/lazysizes.min.js"></script>
+
+    <!-- Slick js-->
+    <script src="~/admin/js/slick/slick.js"></script>
+    <script src="~/admin/js/slick/slick-animation.min.js"></script>
+    <script src="~/admin/js/slick/custom_slick.js"></script>
+
+    <!-- Notify js-->
+    <script src="~/admin/js/bootstrap/bootstrap-notify.min.js"></script>
+
+    <!-- script js -->
+    <script src="~/admin/js/script.js"></script>
+    <script src="~/admin/js/home-script.js"></script>
+
+</body>
+
+</html>

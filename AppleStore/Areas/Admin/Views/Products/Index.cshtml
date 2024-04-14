@@ -1,0 +1,107 @@
+﻿@model IEnumerable<AppleStore.Models.Product>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+
+    // Func f = new Func();
+    var listProducts = ViewBag.Products;
+}
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="card">
+            <div class="card-body">
+                <div>
+                    <div class="table-responsive table-desi table-product">
+                        <table class="table table-1d all-package">
+                            <thead>
+                                <tr>
+                                    <th>Ảnh</th>
+                                    <th>Tên sản phẩm</th>
+                                    <th>Loại</th>
+                                    @* <th>Số lượng</th> *@
+                                    <th>Giá</th>
+                                    <th>Hành động</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                @foreach (var item in listProducts)
+                                {
+                                    <tr>
+                                        <td>
+                                            <img src="@item.ImageUrl" class="img-fluid" alt="" />
+                                        </td>
+                                        <td>
+                                            <a href="~/Shop/Detail/@item.Id" target="_blank">@item.Name</a>
+                                        </td>
+                                        <td>
+                                            <a href="javascript:void(0)">@item.Category.Name</a>
+                                        </td>
+                                        @* <td>@item.product_quantity</td> *@
+                                        <td class="td-price">@item.Price$</td>
+                                        @* @if(item.product_published == 1)
+                                        {
+                                            <td class="td-check">
+                                                <span class="lnr lnr-checkmark-circle"></span>
+                                            </td>
+                                        }
+                                        else
+                                        {
+                                            <td class="td-cross">
+                                                <span class="lnr lnr-cross-circle"></span>
+                                            </td>
+                                        } *@
+                                        <td>
+                                            <ul>
+                                                <li>
+                                                    <a href="~/Product/Detail/@item.Id" target="_blank" title="Xem chi tiết">
+                                                        <span class="lnr lnr-eye"></span>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="~/Admin/Products/Edit/@item.Id" title="Chỉnh sửa">
+                                                        <span class="lnr lnr-pencil"></span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="~/Admin/Products/Delete/@item.Id" title="Xóa">
+                                                        <span class="lnr lnr-trash"></span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            @*<div class="pagination-box">
+                <nav class="ms-auto me-auto " aria-label="...">
+                    <ul class="pagination pagination-primary">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="javascript:void(0)"
+                               tabindex="-1">Previous</a>
+                        </li>
+                        <li class="page-item active">
+                            <a class="page-link" href="javascript:void(0)">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="javascript:void(0)">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="javascript:void(0)">3</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="javascript:void(0)">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>*@
+        </div>
+    </div>
+</div>

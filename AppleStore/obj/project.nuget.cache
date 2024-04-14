@@ -2,7 +2,7 @@
   "version": 2,
   "dgSpecHash": "ol/BlU8IfG09lg6tqHV+Q5NyMkFFehIXODHljrM6EK8ZVXlWfBSUxE2b2cd6FBA1HJ5Ob91mQeb+tqhg1/ZV+g==",
   "success": true,
-  "projectFilePath": "D:\\Web_Vs\\AppleStore\\AppleStore\\AppleStore.csproj",
+  "projectFilePath": "D:\\Web_VS\\AppleStore\\AppleStore\\AppleStore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MSI GAMING\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\MSI GAMING\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

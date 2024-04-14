@@ -1,0 +1,126 @@
+﻿@model IEnumerable<AppleStore.Models.Product>
+
+@{
+	ViewData["Title"] = "ShowIphone";
+}
+
+<!-- BREADCRUMB -->
+<div id="breadcrumb" class="section">
+	<!-- container -->
+	<div class="container">
+		<!-- row -->
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="breadcrumb-tree">
+					<li><a href=" /home">Home</a></li>
+					<li><a asp-action="Index" asp-controller="Product">All Product</a></li>
+					<li><a asp-action="ShowIphone" asp-controller="Product">Iphone</a></li>
+					<li><a href="/product">Product</a></li>
+					<li class="active"><a asp-action="ShowIphone" asp-controller="Product">Product Display</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- /row -->
+	</div>
+	<!-- /container -->
+</div>
+<!-- /BREADCRUMB -->
+
+<!-- Section -->
+<div class="section">
+
+	<!-- container -->
+	<div class="container">
+		<!-- row -->
+		<div class="row">
+			<!--Title-->
+			<div class="col-md-12">
+				<div class="section-title text-center">
+					<h3 class="title">Our Iphone</h3>
+				</div>
+			</div>
+			<!--/Title-->
+			<form asp-action="ShowIphone" method="get" class="form-check-inline" style="margin-bottom: 50px">
+				<!-- ASIDE -->
+				<div id="aside" class="col-md-3">
+
+					<div class="aside">
+
+						<!-- aside title -->
+						<label class="aside-title">Product Name</label>
+						<input type="text" class="input" name="name" value="" />
+						<!--- /aside title -->
+						<!-- aside Widget -->
+						<label class="aside-title">Price</label>
+						<div class="price-filter">
+							<div id="price-slider"></div>
+							<div class="input-number price-min">
+								<input id="price-min" type="number" name="Priceto" placeholder="1">
+								<span class="qty-up">+</span>
+								<span class="qty-down">-</span>
+							</div>
+							<span> - </span>
+							<div class="input-number price-max">
+								<input id="price-max" type="number" name="Pricefrom" placeholder="9999">
+								<span class="qty-up">+</span>
+								<span class="qty-down">-</span>
+							</div>
+						</div>
+					</div>
+					<!-- /aside Widget -->
+					<!--btn action-->
+					<br />
+					<button class="primary-btn">Search</button>
+				</div>
+			</form>
+			<!--/ ASIDE -->
+			<p style="text-align: right">
+				<a asp-action="Add" class="primary-btn"><i class="fa-solid fa-file-circle-plus"></i> Thêm sản phẩm</a>
+			</p>
+			@foreach (var item in Model)
+			{
+				<!-- product -->
+				<div style="margin-bottom:150px" class="col-md-3 col-xs-6">
+					<div class="product">
+						<div class="product-img">
+							<img src="@item.ImageUrl" alt="productImage">
+							<div class="product-label">
+								<span class="sale">-30%</span>
+							</div>
+						</div>
+						<div class="product-body">
+							<p class="product-category">@item.Category.Name</p>
+							<h3 class="product-name"><a asp-action="Detail" asp-route-id="@item.Id">@item.Name</a></h3>
+							<h4 class="product-price">@item.Price<del class="product-old-price">$980.00</del></h4>
+							<div class="product-rating">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+
+							
+							</div>
+							<div class="product-btns">
+								<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
+								<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
+								<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+							</div>
+						</div>
+						<div class="add-to-cart">
+							<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+
+							<a asp-action="Update" asp-route-id="@item.Id" class="btn-action">Edit</a>
+							<a asp-action="Detail" asp-route-id="@item.Id" class="btn-action">Details</a>
+							<a asp-action="Delete" asp-route-id="@item.Id" class="btn-action">Delete</a>
+						</div>
+					</div>
+				</div>
+				<!-- /product -->
+			}
+		</div>
+		<!-- /row -->
+	</div>
+	<!-- /container -->
+</div>
+<!-- /Section -->
