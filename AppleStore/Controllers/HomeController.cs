@@ -1,7 +1,7 @@
 using System.Diagnostics;
 using AppleStore.Models;
-using AppleStore.Repository;
 using Microsoft.AspNetCore.Authorization;
+using AppleStore.Repository;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AppleStore.Controllers
@@ -10,6 +10,7 @@ namespace AppleStore.Controllers
     public class HomeController : Controller
     {
         private readonly IProductRepository _productRepository;
+
 
         public HomeController(IProductRepository productRepository)
         {

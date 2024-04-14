@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
@@ -25,9 +25,10 @@
 
 	<!-- nouislider -->
 	<link type="text/css" rel="stylesheet" href="~/css/nouislider.min.css" />
-
 	<!-- Font Awesome Icon -->
-	<link rel="stylesheet" href="~/css/font-awesome.min.css">
+	<link type="text/css" rel="stylesheet" href="~/css/font-awesome.min.css" />
+	<!-- Font Awesome Icon -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 	<!-- Custom stlylesheet -->
 	<link type="text/css" rel="stylesheet" href="~/css/style.css" />
@@ -52,14 +53,19 @@
 					<li><a href="#" rel="noopener" target="_blank"><i class="fa fa-map-marker"></i> HUTECH,  TPHCM, VIET NAM</a></li>
 				</ul>
 				<ul class="header-links pull-right" style="display:flex; align-items:center; justify-content:center; gap:10px;">
-					<li> <partial class="loginPartial" name="_LoginPartial" /> </li>
-					@* <li><a href="#"><i class="fa fa-user-o"></i> My Account</a></li> *@
+					 
+					<li>
+						<a href="#"></i> 
+							<partial name="_LoginPartial"></partial>
+						</a>
+					</li>
 				</ul>
 			</div>
 		</div>
 		<!-- /TOP HEADER -->
 		<!-- MAIN HEADER -->
 		<div id="header">
+
 			<!-- container -->
 			<div class="container">
 				<!-- row -->
@@ -76,14 +82,22 @@
 					<!-- SEARCH BAR -->
 					<div class="col-md-6">
 						<div class="header-search">
-							<form>
+							<form asp-action="Index" asp-controller="Product" method="get">
 								<select class="input-select">
 									<option value="0">All Categories</option>
 									<option value="1">Category 01</option>
 									<option value="1">Category 02</option>
 								</select>
-								<input class="input" placeholder="Search here">
-								<button class="search-btn">Search</button>
+				
+								<input type="text" class="input" name="name" placeholder="Search here">
+								<button class="search-btn" type="submit">
+									Search
+									@* <a asp-action="Index" asp-controller="Product" style="color: white" >Search</a> *@
+								</button>
+								
+								@* <button class="search-btn"><a asp-action="Index" asp-controller="Product"></a>Tìm kiếm</button> *@
+								@* <button  asp-action="Index" asp-controller="Product" class="search-btn">Search</button> *@
+								@* <button class="search-btn">Search</button> *@
 							</form>
 						</div>
 					</div>
@@ -94,81 +108,20 @@
 							<!-- Wishlist -->
 							<div>
 								<a href="#">
-									<i class="fa fa-heart-o"></i>
+									<i class="fa-regular fa-heart"></i>
 									<span>Your Wishlist</span>
-									<div class="qty">2</div>
+									@* <div class="qty">2</div> *@
 								</a>
 							</div>
 							<!-- /Wishlist -->
 							<!-- Cart -->
-							<div class="dropdown">
-								<a asp-controller="Shoppingcart" asp-action="Index" aria-expanded="true">
-									<i class="fa fa-shopping-cart"></i>
+							<div class="dropdown">							
+								<a asp-controller="ShoppingCart" asp-action="Index" >
+									<i class="fa-solid fa-cart-shopping"></i>
 									<span>Your Cart</span>
-									<div class="qty">3</div>
+								
 								</a>
-								<div class="cart-dropdown">
-									<div class="cart-list">
-										@* @if(cart.Items != null)
-										{
-										@foreach (var item in cart.Items)
-										{
-										<div class="product-widget">
-										<div class="product-img">
-										<img src="@item.ImageUrl" alt="">
-										</div>
-										<div class="product-body">
-										<h3 class="product-name"><a href="#">@item.Name</a></h3>
-										<h4 class="product-price"><span class="qty">1x</span>$ @item.Price</h4>
-										</div>
-										<button class="delete"><i class="fa fa-close"></i></button>
-										</div>
-										}
-										}
-										else
-										{
-										<div class="product-widget">
-										<h3>No item!</h3>
-										</div>
-										} *@
-
-
-
-										@* <div class="product-widget">
-										<div class="product-img">
-										<img src="~/img/product01.png" alt="">
-										</div>
-										<div class="product-body">
-										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price"><span class="qty">1x</span>$980.00</h4>
-										</div>
-										<button class="delete"><i class="fa fa-close"></i></button>
-										</div>
-
-										<div class="product-widget">
-										<div class="product-img">
-										<img src="~/img/product02.png" alt="">
-										</div>
-										<div class="product-body">
-										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price"><span class="qty">3x</span>$980.00</h4>
-										</div>
-										<button class="delete"><i class="fa fa-close"></i></button>
-										</div> *@
-									</div>
-
-
-									<div class="cart-summary">
-										<small>3 Item(s) selected</small>
-										<h5>SUBTOTAL: $2940.00</h5>
-									</div>
-									<div class="cart-btns">
-										<a aria-expanded="true" style="color:white;" asp-controller="ShoppingCart" asp-action="Index">
-											View Cart
-										</a>
-										<a asp-controller="ShoppingCart" asp-action="CheckOut">Checkout  <i class="fa fa-arrow-circle-right"></i></a>
-									</div>
-								</div>
+							
 							</div>
 							<!-- /Cart -->
 							<!-- Menu Toogle -->
@@ -198,14 +151,12 @@
 			<div id="responsive-nav">
 				<!-- NAV -->
 				<ul class="main-nav nav navbar-nav" style="display: block">
-					<li class="active"><a href="/home">Home</a></li>
-					<li><a href="/Product">Product</a></li>
-					<li><a href="#">Iphone</a></li>
-					<li><a href="#">Macbook</a></li>
-					<li><a href="#">Headphone</a></li>
-					<li><a href="/checkout">Checkout</a></li>
-					<li><a href="#">Service</a></li>
-					<li><a href="#">About</a></li>
+					<li class="active"><a asp-action="Index" asp-controller="Home">Home</a></li>
+					<li><a asp-action="Index" asp-controller="Product">Products</a></li>
+					<li><a asp-action="ShowIphone" asp-controller="Product">Iphone</a></li>
+					<li><a asp-action="ShowMacbook" asp-controller="Product">Macbook</a></li>
+					<li><a asp-action="ShowAccessories" asp-controller="Product">Accessories</a></li>										
+					<li><a href="/product">About</a></li>
 					<li><a href="#">Contact</a></li>
 				</ul>
 				<!-- /NAV -->
@@ -257,7 +208,7 @@
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
 							<ul class="footer-links">
 								<li><a href="tel:+840931034852" rel="noopener" target="_blank"><i class="fa fa-phone"></i> (+84)0931034852</a></li>
-								<li><a href="mailto:phamphat20033vn@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope-o"></i> phamphat20033vn@gmail.com</a></li>
+								<li><a href="mailto:phamphat20033vn@gmail.com" rel="noopener" target="_blank"><i class="fa-solid fa-envelope"></i> phamphat20033vn@gmail.com</a></li>
 								<li><a href="#" rel="noopener" target="_blank"><i class="fa fa-map-marker"></i> HUTECH,  TPHCM, VIET NAM</a></li>
 							</ul>
 						</div>
@@ -316,12 +267,12 @@
 				<div class="row">
 					<div class="col-md-12 text-center">
 						<ul class="footer-payments">
-							<li><a href="#"><i class="fa fa-cc-visa"></i></a></li>
-							<li><a href="#"><i class="fa fa-credit-card"></i></a></li>
-							<li><a href="#"><i class="fa fa-cc-paypal"></i></a></li>
-							<li><a href="#"><i class="fa fa-cc-mastercard"></i></a></li>
-							<li><a href="#"><i class="fa fa-cc-discover"></i></a></li>
-							<li><a href="#"><i class="fa fa-cc-amex"></i></a></li>
+							<li><a href="#"><i class="fa-brands fa-cc-visa"></i></a></li>
+							<li><a href="#"><i class="fa-solid fa-credit-card"></i></a></li>
+							<li><a href="#"><i class="fa-brands fa-cc-paypal"></i></a></li>
+							<li><a href="#"><i class="fa-brands fa-cc-mastercard"></i></a></li>
+							<li><a href="#"><i class="fa-brands fa-cc-discover"></i></a></li>
+							<li><a href="#"><i class="fa-brands fa-cc-amex"></i></a></li>
 						</ul>
 						<span class="copyright">
 							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
@@ -389,17 +340,17 @@
 			toast.style.animation = `slideInLeft ease .3s, fadeOut linear 1s 3s forwards`;
 
 			toast.innerHTML = `
-											<div class="toast__icon">
-												<i class="${icon}"></i>
-											</div>
-											<div class="toast__body">
-												<h3 class="toast__title">${title}</h3>
-												<p class="toast__msg">${message}</p>
-											</div>
-											<div class="toast__close">
-												<i class="fa-solid fa-xmark"></i>
-											</div>
-										`;
+						<div class="toast__icon">
+							<i class="${icon}"></i>
+						</div>
+						<div class="toast__body">
+							<h3 class="toast__title">${title}</h3>
+							<p class="toast__msg">${message}</p>
+						</div>
+						<div class="toast__close">
+							<i class="fa-solid fa-xmark"></i>
+						</div>
+					`;
 			main.appendChild(toast);
 		}
 	}
@@ -417,7 +368,7 @@
 			title: "Thành Công!",
 			message: "Thêm sản phẩm thành công",
 			type: "success",
-			duration: 5000,
+			duration: 3000,
 		});
 	}
 
@@ -432,175 +383,151 @@
 </script>
 
 <style>
+			* Modifier */
+.btn--size-l {
+  padding: 16px 56px;
+}
 
+.btn--size-s {
+  padding: 8px 32px;
+}
 
+.btn:hover {
+  opacity: 0.8;
+}
 
+.btn + .btn {
+  margin-left: 16px;
+}
 
+.btn--success {
+  background-color: #71be34;
+}
 
-	/* ======= Buttons ======== */
+.btn--warn {
+  background-color: #ffb702;
+}
 
-	/* Block */
-	/* .btn {
-				  display: inline-block;
-				  text-decoration: none;
-				  background-color: transparent;
-				  border: none;
-				  outline: none;
-				  color: #fff;
-				  padding: 12px 48px;
-				  border-radius: 50px;
-				  cursor: pointer;
-				  min-width: 120px;
-				  transition: opacity 0.2s ease;
-				} */
+.btn--danger {
+  background-color: #ff623d;
+}
 
-	/* Modifier */
-	.btn--size-l {
-		padding: 16px 56px;
-	}
+.btn--disabled {
+  opacity: 0.5 !important;
+  cursor: default;
+}
 
-	.btn--size-s {
-		padding: 8px 32px;
-	}
+/* ======= Toast message ======== */
 
-	.btn:hover {
-		opacity: 0.8;
-	}
+#toast {
+  position: fixed;
+  top: 32px;
+  right: 32px;
+  z-index: 99999;
+}
 
-	.btn + .btn {
-		margin-left: 16px;
-	}
+.toast {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-left: 4px solid;
+  padding: 20px 0;
+  min-width: 400;
+  min-width: 450;
+  border-radius: 2px;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
+  /* animation: slideInLeft ease 0.3s, fadeOut linear 1s 3s forwards; */
+  transition: all linear 0.3s;
+}
 
-	.btn--success {
-		background-color: #71be34;
-	}
+@@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(calc(100% + 32px));
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
-	.btn--warn {
-		background-color: #ffb702;
-	}
+@@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
 
-	.btn--danger {
-		background-color: #ff623d;
-	}
+.toast--success {
+  border-color: #47d864;
+}
 
-	.btn--disabled {
-		opacity: 0.5 !important;
-		cursor: default;
-	}
+.toast--success .toast__icon {
+  color: #47d864;
+}
 
-	/* ======= Toast message ======== */
+.toast--info {
+  border-color: #2f86eb;
+}
 
-	#toast {
-		position: fixed;
-		top: 32px;
-		right: 32px;
-		z-index: 99999;
-	}
+.toast--info .toast__icon {
+  color: #2f86eb;
+}
 
-	.toast {
-		display: flex;
-		align-items: center;
-		background-color: #fff;
-		border-left: 4px solid;
-		padding: 20px 0;
-		min-width: 400;
-		min-width: 450;
-		border-radius: 2px;
-		box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
-		/* animation: slideInLeft ease 0.3s, fadeOut linear 1s 3s forwards; */
-		transition: all linear 0.3s;
-	}
+.toast--warning {
+  border-color: #ffc021;
+}
 
-	@@keyframes slideInLeft {
-		from {
-			opacity: 0;
-			transform: translateX(calc(100% + 32px));
-		}
+.toast--warning .toast__icon {
+  color: #ffc021;
+}
 
-		to {
-			opacity: 1;
-			transform: translateX(0);
-		}
-	}
+.toast--error {
+  border-color: #ff623d;
+}
 
-	@@keyframes fadeOut {
-		to {
-			opacity: 0;
-		}
-	}
+.toast--error .toast__icon {
+  color: #ff623d;
+}
 
-	.toast--success {
-		border-color: #47d864;
-	}
+.toast + .toast {
+  margin-top: 24px;
+}
 
-		.toast--success .toast__icon {
-			color: #47d864;
-		}
+.toast__icon {
+  font-size: 24px;
+}
 
-	.toast--info {
-		border-color: #2f86eb;
-	}
+.toast__icon,
+.toast__close {
+  padding: 0 16px;
+}
 
-		.toast--info .toast__icon {
-			color: #2f86eb;
-		}
+.toast__body {
+  flex-grow: 1;
+}
 
-	.toast--warning {
-		border-color: #ffc021;
-	}
+.toast__title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
 
-		.toast--warning .toast__icon {
-			color: #ffc021;
-		}
+.toast__msg {
+  font-size: 14px;
+  color: #888;
+  margin-top: 6px;
+  line-height: 1.5;
+}
 
-	.toast--error {
-		border-color: #ff623d;
-	}
+.toast__close {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
 
-		.toast--error .toast__icon {
-			color: #ff623d;
-		}
-
-	.toast + .toast {
-		margin-top: 24px;
-	}
-
-	.toast__icon {
-		font-size: 24px;
-	}
-
-	.toast__icon,
-	.toast__close {
-		padding: 0 16px;
-	}
-
-	.toast__body {
-		flex-grow: 1;
-	}
-
-	.toast__title {
-		font-size: 16px;
-		font-weight: 600;
-		color: #333;
-	}
-
-	.toast__msg {
-		font-size: 14px;
-		color: #888;
-		margin-top: 6px;
-		line-height: 1.5;
-	}
-
-	.toast__close {
-		font-size: 20px;
-		color: rgba(0, 0, 0, 0.5);
-		cursor: pointer;
-	}
-
-		.toast__close:hover {
-			opacity: 0.6;
-		}
-
+.toast__close:hover {
+  opacity: 0.6;
+}
 
 	@@media only screen and (max-width: 480px) {
 		.heading-top {
@@ -631,4 +558,4 @@
 		padding: 0 120px;
 		width: 100%;
 	}
-</style>
+		</style>

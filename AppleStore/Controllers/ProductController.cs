@@ -2,12 +2,15 @@
 using AppleStore.DataAcess;
 using AppleStore.Models;
 using AppleStore.Repository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 namespace AppleStore.Controllers
 {
-    public class ProductController : Controller
+	
+	public class ProductController : Controller
     {
         private readonly IProductRepository _productRepository;
         private readonly ICategoryRepository _categoryRepository;
@@ -20,66 +23,174 @@ namespace AppleStore.Controllers
             _context = dbContext;
         }
 
-        [HttpGet]
-        public async Task<IActionResult> Index(string name, decimal? Priceto, decimal? Pricefrom )
+		//Loc du lieu va tim kiem
+		[HttpGet]
+        public async Task<IActionResult> Index(string name, decimal? Priceto, decimal? Pricefrom, int? CategoryId )
         {
             var products = await _productRepository.GetAllAsync();
-            if (!string.IsNullOrEmpty(name))
+			var categories = await _categoryRepository.GetAllAsync();
+			var listCategories = categories.ToList();
+			listCategories.Insert(0, new Category { Id = 0, Name = "Select Category" });
+			ViewBag.CategoryID = new SelectList(listCategories, "Id", "Name", CategoryId);
+			if (!string.IsNullOrEmpty(name))
             {
                 if (Priceto != null && Pricefrom != null)
                 {
-                    products = products.Where(x => x.Name.Contains(name) && x.Price >= Priceto && x.Price <= Pricefrom);
+                    if(CategoryId > 0)
+                    {
+						products = products.Where(x => x.CategoryId == CategoryId && x.Name.Contains(name) && x.Price >= Priceto && x.Price <= Pricefrom);
 
-                }
-                else
+					}
+                    else
+                    {
+						products = products.Where(x => x.Name.Contains(name) && x.Price >= Priceto && x.Price <= Pricefrom);
+
+					}
+
+				}
+                else 
                 {
                     products = products.Where(x => x.Name.Contains(name));
 
                 }
             }
             else
-            {
-                if (Priceto != null && Pricefrom != null)
-                {
-                    products = products.Where(x =>  x.Price >= Priceto && x.Price <= Pricefrom);
+			{
+				if (Priceto != null && Pricefrom != null)
+				{
+					if ( CategoryId > 0)
+					{
+						products = products.Where(x => x.CategoryId == CategoryId && x.Price >= Priceto && x.Price <= Pricefrom);
 
-                }
-            }
-            return View(products);
+					}
+					else
+					{
+						products = products.Where(x => x.Price >= Priceto && x.Price <= Pricefrom);
+					}
+				}
+				else
+				{
+					products = products.Where(x => x.CategoryId == CategoryId);
+				}				
+			
+			}
+           
+			return View(products);
         }
 
-        //Loc du lieu
-        public async Task<ActionResult> ShowCategories(int? CategoryId)
-        {
-            CategoryId = CategoryId ?? 0;
-            var categories = await _categoryRepository.GetAllAsync();
-            var listCategories = categories.ToList();
-            listCategories.Insert( 0, new Category { Id = 0, Name = "--Select Category--" });
-            ViewBag.CategoryId = new SelectList(listCategories, "Id", "Name", CategoryId);
-            var products =_context.Products.Where(x => x.CategoryId == CategoryId);
-            return View(products);
-        }
-		public async Task<ActionResult> ShowIphone()
-		{
-			//	CategoryId = CategoryId ?? 0;
-			//var categories = await _categoryRepository.GetAllAsync();
-			//  ViewBag.CategoryId = 1;
-			var product = await _productRepository.GetAllAsync();
-			 product = _context.Products.Where(x => x.CategoryId == 1);
-			return View(product);
-		}
 
-		public async Task<ActionResult> ShowMacbook()
+		/*  public async Task<ActionResult> ShowCategories(int? CategoryId)
+		  {
+			  CategoryId = CategoryId ?? 0;
+			  var categories = await _categoryRepository.GetAllAsync();
+			  var listCategories = categories.ToList();
+			  listCategories.Insert( 0, new Category { Id = 0, Name = "--Select Category--" });
+			  ViewBag.CategoryID = new SelectList(listCategories, "Id", "Name", CategoryId);
+			  var products =_context.Products.Where(x => x.CategoryId == CategoryId);
+			  return View(products);
+		  }*/
+		
+		
+		
+		public async Task<ActionResult> ShowIphone(string name, decimal? Priceto, decimal? Pricefrom)
 		{
-			var product = await _productRepository.GetAllAsync();
-			product = _context.Products.Where(x => x.CategoryId == 2);
-			return View(product);
+			
+			var products = await _productRepository.GetAllAsync();
+			
+			if (!string.IsNullOrEmpty(name))
+			{
+				if (Priceto != null && Pricefrom != null)
+				{
+					products = products.Where(x => x.CategoryId == 1 && x.Name.Contains(name) && x.Price >= Priceto && x.Price <= Pricefrom);
+
+				}
+				else
+				{
+					products = products.Where(x => x.CategoryId == 1 && x.Name.Contains(name));
+
+				}
+			}
+			else
+			{
+				if (Priceto != null && Pricefrom != null)
+				{
+					products = products.Where(x => x.CategoryId == 1 && x.Price >= Priceto && x.Price <= Pricefrom);
+
+				}
+				else
+				{
+					products = _context.Products.Where(x => x.CategoryId == 1);
+				}
+			}
+			return View(products);
+			
 		}
-		public async Task<ActionResult> ShowAccessories()
+		
+		public async Task<ActionResult> ShowMacbook(string name, decimal? Priceto, decimal? Pricefrom)
+		{
+			var products = await _productRepository.GetAllAsync();
+
+			if (!string.IsNullOrEmpty(name))
+			{
+				if (Priceto != null && Pricefrom != null)
+				{
+					products = products.Where(x => x.CategoryId == 2 && x.Name.Contains(name) && x.Price >= Priceto && x.Price <= Pricefrom);
+
+				}
+				else
+				{
+					products = products.Where(x => x.CategoryId == 2 && x.Name.Contains(name));
+
+				}
+			}
+			else
+			{
+				if (Priceto != null && Pricefrom != null)
+				{
+					products = products.Where(x => x.CategoryId == 2 && x.Price >= Priceto && x.Price <= Pricefrom);
+
+				}
+				else
+				{
+					products = _context.Products.Where(x => x.CategoryId == 2);
+				}
+			}
+			return View(products);
+
+		}
+		[HttpGet]
+		public async Task<ActionResult> ShowAccessories(string name, decimal? Priceto, decimal? Pricefrom)
 		{
 			var product = await _productRepository.GetAllAsync();
-			product = _context.Products.Where(x => x.CategoryId == 3);
-			return View(product);
+			var products = await _productRepository.GetAllAsync();
+
+			if (!string.IsNullOrEmpty(name))
+			{
+				if (Priceto != null && Pricefrom != null)
+				{
+					products = products.Where(x => x.CategoryId == 3 && x.Name.Contains(name) && x.Price >= Priceto && x.Price <= Pricefrom);
+
+				}
+				else
+				{
+					products = products.Where(x => x.CategoryId == 3 && x.Name.Contains(name));
+
+				}
+			}
+			else
+			{
+				if (Priceto != null && Pricefrom != null)
+				{
+					products = products.Where(x => x.CategoryId == 3 && x.Price >= Priceto && x.Price <= Pricefrom);
+
+				}
+				else
+				{
+					products = _context.Products.Where(x => x.CategoryId == 3);
+				}
+			}
+			return View(products);
+
 		}
 
 		//Tạo form thêm sản phẩm mới

@@ -5,48 +5,37 @@ using Microsoft.AspNetCore.Identity;
 using AppleStore.Extensions;
 using Microsoft.AspNetCore.Authorization;
 using AppleStore.DataAcess;
-using Newtonsoft.Json;
-using static AppleStore.Models.ShoppingCart;
+using AppleStore.Services;
+using AppleStore.ViewModels;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Microsoft.EntityFrameworkCore.Metadata;
+using Azure;
 
 namespace AppleStore.Controllers
 {
-	public class ShoppingCartController : Controller
-	{
-		private readonly IProductRepository _productRepository;
-		private readonly ApplicationDbContext _context;
-		private readonly UserManager<ApplicationUser> _userManager;
-		public ShoppingCartController( ApplicationDbContext context,UserManager<ApplicationUser> userManager, IProductRepository productRepository)
-		{
-			_productRepository = productRepository;
-			_context = context;
-			_userManager = userManager;
-		}	
-		public IActionResult Index()
-		{
-			var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart();
-			return View(cart);
-		}
 
-		public async Task<IActionResult> AddToCart(int productId, int quantity)
-		{
-			// Giả sử bạn có phương thức lấy thông tin sản phẩm từ productId
-			var product = await GetProductFromDatabase(productId);
-			var cartItem = new CartItem
-			{
-				ProductId = productId,
-				Name = product.Name,
-				Price = product.Price,
-				Quantity = quantity
-			};
-			var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart();
-			cart.AddItem(cartItem);
-			HttpContext.Session.SetObjectAsJson("Cart", cart);
-			//return RedirectToAction("Index");
-			return Json(new { success = true });
-		}
+    public class ShoppingCartController : Controller
+    {
+        private readonly IProductRepository _productRepository;
+        private readonly ApplicationDbContext _context;
+        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly IVnPayService _vnPayService;
 
+        public ShoppingCartController(ApplicationDbContext context,
+UserManager<ApplicationUser> userManager, IProductRepository productRepository, IVnPayService vnPayService)
+        {
+            _productRepository = productRepository;
+            _context = context;
+            _userManager = userManager;
+            _vnPayService = vnPayService;
+        }
+        public IActionResult Index()
+        {
+            ViewBag.ProductList = _context.Products.ToList();
 
-        public IActionResult UpdateQuantity(int productId, int quantity)
+            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart();
+
+        public IActionResult DescQuantity(int productId, int quantity)
         {
             var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart();
 
@@ -62,6 +51,63 @@ namespace AppleStore.Controllers
                         break;
                     }
 
+                    item.Quantity += quantity;
+                    break;
+                }
+            }
+
+            HttpContext.Session.SetObjectAsJson("Cart", cart);
+            return RedirectToAction("Index"); // Assuming you have an "Index" action to display the updated cart
+        }
+
+
+        public IActionResult AccesQuantity(int productId, int quantity)
+        {
+            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart();
+
+            // Update the quantity of the specified product in the cart
+            foreach (var item in cart.Items)
+            {
+                if (item.ProductId == productId)
+                {
+                    if (item.Quantity < 1)
+                    {
+                        cart.RemoveItem(item.ProductId);
+                        HttpContext.Session.SetObjectAsJson("Cart", cart);
+                        break;
+                    }
+
+
+                    item.Quantity += quantity;
+                    break;
+                }
+            }
+
+            HttpContext.Session.SetObjectAsJson("Cart", cart);
+            return RedirectToAction("Index"); // Assuming you have an "Index" action to display the updated cart
+        }
+        [Authorize]
+        public async Task<IActionResult> AddToCart(int productId, int quantity)
+        {
+            // Giả sử bạn có phương thức lấy thông tin sản phẩm từ productId
+            var product = await GetProductFromDatabase(productId);
+
+
+            var cartItem = new CartItem
+            {
+                if (item.ProductId == productId)
+                {
+                    if (item.Quantity == 1)
+                    {
+                        cart.RemoveItem(item.ProductId);
+                        HttpContext.Session.SetObjectAsJson("Cart", cart);
+                        break;
+                    }
+
+            HttpContext.Session.SetObjectAsJson("Cart", cart);
+            /*return RedirectToAction("Index");*/
+            return Json(new { success = true });
+        }
 
                     item.Quantity += quantity;
                     break;
@@ -133,38 +179,260 @@ namespace AppleStore.Controllers
             return RedirectToAction("Index");
         }
 
-		[Authorize]
-		public IActionResult Checkout()
-		{
-			List<CartItem> cartItems = new List<CartItem>();
-			ViewBag.CartItems = cartItems;
-			return View(new Order());
-		}
+        /*	public async Task<IActionResult> Checkout()
+            {
+                var Customers = await _userManager.GetUsersInRoleAsync("Customer");
+                ViewBag.Customers = Customers;
+                return View();
+            }*/
 
-		[HttpPost]
-		public async Task<IActionResult> Checkout(Order order)
-		{
-			var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
-			if (cart == null || !cart.Items.Any())
-			{
-				// Xử lý giỏ hàng trống...
-				return RedirectToAction("Index");
-			}
+        /*  public async Task<IActionResult> Checkout(string id)
+          {
+              var Customers = await _userManager.FindByIdAsync("Customer");
+              if(Customers == null)
+              {
+                  return RedirectToAction("Index");
+              }    
+              ViewBag.Customers = Customers;
+              return View();
+          }*/
 
-			var user = await _userManager.GetUserAsync(User);
-			order.UserId = user.Id;
-			order.OrderDate = DateTime.UtcNow;
-			order.TotalPrice = cart.Items.Sum(i => i.Price * i.Quantity);
-			order.OrderDetails = cart.Items.Select(i => new OrderDetail
-			{
-				ProductId = i.ProductId,
-				Quantity = i.Quantity,
-				Price = i.Price
-			}).ToList();
-			_context.Orders.Add(order);
-			await _context.SaveChangesAsync();
-			HttpContext.Session.Remove("Cart");
-			return View("OrderCompleted", order.Id); 
-		}
-	}
+        [Authorize]
+        public async Task<IActionResult> Checkout()
+        {
+            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
+
+            var user = await _userManager.GetUserAsync(User);
+            ViewBag.Email = user.Email;
+            ViewBag.FullName = user.FullName;
+            //	ViewBag.UserFullName = user.FullName;
+            if (cart != null)
+            {
+                List<CartItem> items = cart.Items;
+
+                foreach (var item in cart.Items)
+                {
+                    string productName = item.Name;
+                    int quantity = item.Quantity;
+                    decimal price = item.Price;
+                }
+                ViewBag.CartOrder = items;
+            }
+            return View(new Order());
+        }
+
+
+       
+
+        [HttpPost]
+        public async Task<IActionResult> Checkout(Order order, string payment = "COD")
+        {
+            var cart =
+               HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
+            var user = await _userManager.GetUserAsync(User);
+            //Thanh toan 
+            if (payment == "thanh toán vnpay")
+            {
+                var vnPayModel = new VnPaymentRequestModel
+                {
+                    Amount = (double)cart.Items.Sum(x => x.Quantity * x.Price),
+                    CreatedDate = DateTime.Now,
+                    Desc = $"{order.FullName_Order} {order.PhoneNumber_Order}",
+                    FullName = order.FullName_Order,
+                    OrderId = new Random().Next(1000, 10000)
+                };
+                // Bắt đầu giao dịch
+                using (var transaction = await _context.Database.BeginTransactionAsync())
+                {
+
+                    // Mã logic hiện có để điền các thuộc tính đơn hàng
+
+                    order.UserId = user.Id;
+                    /* order.PhoneNumber_Order = user.PhoneNumber;
+                     order.FullName_Order = user.FullName;
+                     order.ShippingAddress = user.Address;
+                     order.Email_Order = user.Email;*/
+                    order.OrderDate = DateTime.Now;
+                    order.Vnpay_transaction = "VNPay";
+                    order.TotalPrice = cart.Items.Sum(i => i.Price * i.Quantity);
+                    order.OrderDetails = cart.Items.Select(i => new OrderDetail
+                    {
+                        ProductId = i.ProductId,
+                        Quantity = i.Quantity,
+                        Price = i.Price
+                    }).ToList();
+
+                    // Thêm đơn hàng và chi tiết đơn hàng vào context
+                    _context.Orders.Add(order);
+
+                    // Lưu thay đổi vào cơ sở dữ liệu
+
+                    await _context.SaveChangesAsync();
+
+                    // Commit giao dịch
+                    await transaction.CommitAsync();
+
+                    HttpContext.Session.Remove("Cart");
+
+                }
+                return Redirect(_vnPayService.CreatePaymentUrl(HttpContext, vnPayModel));
+
+            }
+
+
+
+            //thanh toan COD
+            TempData["MessageCOD"] = payment;
+
+            if (cart == null || !cart.Items.Any())
+            {
+                // Xử lý giỏ hàng trống...
+                return RedirectToAction("/Product");
+            }
+
+            order.UserId = user.Id;
+            order.OrderDate = DateTime.Now;
+            /* order.PhoneNumber_Order = users.PhoneNumber;
+             order.FullName_Order = users.FullName;
+             order.ShippingAddress = users.Address;
+             order.Email_Order = users.Email;*/
+            order.Vnpay_transaction = "COD";
+            order.TotalPrice = cart.Items.Sum(i => i.Price * i.Quantity);
+            order.OrderDetails = cart.Items.Select(i => new OrderDetail
+            {
+                ProductId = i.ProductId,
+                Quantity = i.Quantity,
+                Price = i.Price
+            }).ToList();
+
+            _context.Orders.Add(order);
+
+            await _context.SaveChangesAsync();
+            HttpContext.Session.Remove("Cart");
+            TempData["OrderId"] = order.Id;
+
+            return View("SucessfulOrderCOD", order.OrderDate);
+        }
+
+
+        [Authorize]
+        public IActionResult PaymentFail()
+        {
+            return View();
+        }
+        //hàm trả về sucessfulOrer VNPay và lưu vào database
+        /*     [HttpPost]
+             [Authorize]
+             public async Task<IActionResult> PaymentCallBack(Order order)
+             {
+                 var cart =
+                  HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
+
+
+                 var response = _vnPayService.PaymentExecute(Request.Query);
+                 if (response == null || response.VnPayResponseCode != "00")
+                 {
+                     TempData["Message"] = $"Lỗi thanh toán VNPay: {response.VnPayResponseCode}";
+                     return RedirectToAction("PaymentFail");
+                 }
+                 //Lưu đơn hàng vào database tự code
+                 var user = await _userManager.GetUserAsync(User);
+                 ViewBag.Info = order;
+                 order.UserId = user.Id;
+                 order.OrderDate = DateTime.Now;
+                 order.PhoneNumber_Order = user.PhoneNumber;
+                 order.FullName_Order = user.FullName;
+                 order.ShippingAddress = user.Address;
+                 order.Email_Order = user.Email;
+                 order.Vnpay_transaction = "COD";
+                 order.TotalPrice = cart.Items.Sum(i => i.Price * i.Quantity);
+                 order.OrderDetails = cart.Items.Select(i => new OrderDetail
+                 {
+                     ProductId = i.ProductId,
+                     Quantity = i.Quantity,
+                     Price = i.Price
+                 }).ToList();
+
+                 _context.Orders.Add(order);
+
+                 await _context.SaveChangesAsync();
+                 HttpContext.Session.Remove("Cart");
+                 TempData["Message"] = $"Thanh toán VNPAY thành công: {response.VnPayResponseCode}";
+                 TempData["OrderId"] = response.OrderId;
+                 TempData["Desc"] = response.OrderDescription;
+
+
+                 return View("SucessfulOrder");
+             }*/
+
+
+        public async Task<IActionResult> PaymentCallBack()
+        {
+            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
+
+            var response = _vnPayService.PaymentExecute(Request.Query);
+            if (response == null || response.VnPayResponseCode != "00")
+
+            {
+                TempData["Message"] = $"Lỗi thanh toán VNPay: {response.VnPayResponseCode}";
+                return RedirectToAction("PaymentFail");
+            }
+            TempData["MessageSucess"] = $"Thanh toán VNPAY thành công: {response.VnPayResponseCode}";
+            //  TempData["Message"] = $"Thanh toán VNPAY thành công: {response.VnPayResponseCode}";
+          
+            TempData["OrderId"] = response.OrderId;
+          
+            return View("SucessfulOrder");
+
+            /*   // Bắt đầu giao dịch
+               using (var transaction = await _context.Database.BeginTransactionAsync())
+               {
+                   try
+                   {
+                       // Mã logic hiện có để điền các thuộc tính đơn hàng
+                       var user = await _userManager.GetUserAsync(User);
+                       order.UserId = user.Id;
+                       order.PhoneNumber_Order = user.PhoneNumber;
+                       order.FullName_Order = user.FullName;
+                       order.ShippingAddress = user.Address;
+                       order.Email_Order = user.Email;
+                       order.OrderDate = DateTime.Now;
+                       order.Vnpay_transaction = "COD";
+                       order.TotalPrice = cart.Items.Sum(i => i.Price * i.Quantity);
+                       order.OrderDetails = cart.Items.Select(i => new OrderDetail
+                       {
+                           ProductId = i.ProductId,
+                           Quantity = i.Quantity,
+                           Price = i.Price
+                       }).ToList();
+
+                       // Thêm đơn hàng và chi tiết đơn hàng vào context
+                       _context.Orders.Add(order);
+
+                       // Lưu thay đổi vào cơ sở dữ liệu
+
+                       await _context.SaveChangesAsync();
+
+                       // Commit giao dịch
+                       await transaction.CommitAsync();
+
+                       HttpContext.Session.Remove("Cart");
+                       TempData["Message"] = $"Thanh toán VNPAY thành công: {response.VnPayResponseCode}";
+
+                       return View("SucessfulOrder");
+                   }
+                   catch (Exception ex)
+                   {
+                       // Xử lý các exception (ví dụ: ghi log lỗi)
+                       TempData["Message"] = $"Lỗi khi lưu đơn hàng: {ex.Message}";
+                       await transaction.RollbackAsync(); // Quay lại giao dịch
+                       return RedirectToAction("PaymentFail");
+                   }*/
+        }
+    }
+
+
+
+
 }
+

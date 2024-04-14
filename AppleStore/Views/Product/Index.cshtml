@@ -2,8 +2,22 @@
 
 @{
 	ViewData["Title"] = "Index";
+	int numOfQuanity = 1;
 }
+<style>
+	.title-gradient {
+		font-size: 26px;
+		text-transform: uppercase;
+		background-color: #de0004;
+		background-image: linear-gradient(90deg, #f00 0%, #122125 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		.title-gradient
 
+	}
+		
+	
+</style>
 <!-- BREADCRUMB -->
 <div id="breadcrumb" class="section">
 	<!-- container -->
@@ -32,19 +46,27 @@
 		<div class="container">
 			<!-- row -->
 			<div class="row">
-
+			
 				<div class="col-md-12">
 					<div class="section-title text-center">
-						<h3 class="title">Our Products</h3>
+						<h3 class="title-gradient">Our Products</h3>
 					</div>
 				</div>
 
-				<form asp-action="Index" method="get" class="form-check-inline" style="margin-bottom: 50px">
-					<!-- ASIDE -->
-					<div id="aside" class="col-md-3">
-
+				<!-- ASIDE -->									
+				<div id="aside" class="col-md-3">
+					@* <form asp-action="ShowCategories" method="get" class="form-check-input" style="margin-bottom: 50px">
+					<select asp-items="@ViewBag.CategoryId" name="CategoryId" onchange="forms[2].submit()"></select>
+					</form> *@
+					<h3 class="aside-title">ATTRIBUTE</h3>
+					<form asp-action="Index" method="get" class="form-check-inline" style="margin-bottom: 50px">
 						<div class="aside">
-
+							<!-- aside category -->
+							<label class="aside-title">Filter Categories</label>
+							<select style="height: 40px;
+											width: 260px;border: 2px solid #ddd;"
+								asp-items="@ViewBag.CategoryId" name="CategoryId" onchange="forms[2].submit()">
+							</select>
 							<!-- aside title -->
 							<label class="aside-title">Product Name</label>
 							<input type="text" class="input" name="name" value="" />
@@ -65,63 +87,219 @@
 									<span class="qty-down">-</span>
 								</div>
 							</div>
+							<!--btn action-->
+							<br />
+							<button class="primary-btn">Search</button>
+							<br />
 						</div>
-						<!-- /aside Widget -->
-						<!--btn action-->
-						<br />
-						<button class="primary-btn">Search</button>
+					</form>
+					<!-- /aside Widget -->
+
+				
+
+					<h3 class="aside-title">Categories</h3>
+					
+					<div class="checkbox-filter">
+
+						<div class="input-checkbox">
+							<input type="checkbox" id="category-1">
+							<label for="category-1">
+								<span></span>
+								Laptops
+								<small>(120)</small>
+							</label>
+						</div>
+
+						<div class="input-checkbox">
+							<input type="checkbox" id="category-2">
+							<label for="category-2">
+								<span></span>
+								Smartphones
+								<small>(740)</small>
+							</label>
+						</div>
+
+						<div class="input-checkbox">
+							<input type="checkbox" id="category-3">
+							<label for="category-3">
+								<span></span>
+								Cameras
+								<small>(1450)</small>
+							</label>
+						</div>
+
+						<div class="input-checkbox">
+							<input type="checkbox" id="category-4">
+							<label for="category-4">
+								<span></span>
+								Accessories
+								<small>(578)</small>
+							</label>
+						</div>
+
+						<div class="input-checkbox">
+							<input type="checkbox" id="category-5">
+							<label for="category-5">
+								<span></span>
+								Laptops
+								<small>(120)</small>
+							</label>
+						</div>
+
+						<div class="input-checkbox">
+							<input type="checkbox" id="category-6">
+							<label for="category-6">
+								<span></span>
+								Smartphones
+								<small>(740)</small>
+							</label>
+						</div>
 					</div>
-				</form>
+
+					<!-- aside Widget -->
+					<div class="aside">
+						<h3 class="aside-title">Top selling</h3>
+						<div class="product-widget">
+							<div class="product-img">
+								<img src="~/img/ip15-1.webp" alt="">
+							</div>
+							<div class="product-body">
+								<p class="product-category">Iphone</p>
+								<h3 class="product-name"><a href="#">Iphone15ProMax Titan</a></h3>
+								<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+							</div>
+						</div>
+
+						<div class="product-widget">
+							<div class="product-img">
+								<img src="~/img/macpro4.webp" alt="">
+							</div>
+							<div class="product-body">
+								<p class="product-category">Macbook</p>
+								<h3 class="product-name"><a href="#">MacbookPro M2 2024</a></h3>
+								<h4 class="product-price">$9880.00 <del class="product-old-price">$9999.00</del></h4>
+							</div>
+						</div>
+
+						<div class="product-widget">
+							<div class="product-img">
+								<img src="~/img/ap00.png" alt="">
+							</div>
+							<div class="product-body">
+								<p class="product-category">Accessories</p>
+								<h3 class="product-name"><a href="#">Headphone Plus 2024</a></h3>
+								<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+							</div>
+						</div>
+					</div>
+					<!-- /aside Widget -->
+				</div>
+
+				
 				<!--/ ASIDE -->
 				<p style="text-align: right">
 					<a asp-action="Add" class="primary-btn"><i class="fa-solid fa-file-circle-plus"></i> Thêm sản phẩm</a>
 				</p>
-				@foreach(var item in Model)
-				{
-					<!-- product -->
-					<div style="margin-bottom:150px" class="col-md-3 col-xs-6">
-						<div class="product">
-							<div class="product-img">
-								<img src="@item.ImageUrl" alt="productImage">
-								<div class="product-label">
-									<span class="sale">-30%</span>
-								</div>
-							</div>
-							<div class="product-body">
-								<p class="product-category">@item.Category.Name</p>
-							<h3 class="product-name"><a asp-action="Detail" asp-route-id="@item.Id">@item.Name</a></h3>
-								<h4 class="product-price">@item.Price<del class="product-old-price">$980.00</del></h4>
-								<div class="product-rating">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
+		
+				
+		
 
-								</div>
+				<!-- STORE -->
+				<div id="store" class="col-md-9">
+				
+					<!-- store products -->
+					<!-- store products -->
+					<div class="row">
+						<!-- product -->
+						@* col-md-3 col-xs-6 *@
+							@foreach (var item in Model)
+							{
+								<div style="margin-bottom:150px" class=" col-md-4 col-xs-6">
+										<div class="product">
+											<div class="product-img">
+												<img src="@item.ImageUrl" alt="productImage">
+												<div class="product-label">
+													<span class="sale">-30%</span>
+												</div>
+											</div>
+											<div class="product-body">
+												<p class="product-category">@item.Category.Name</p>
+											<h3 class="product-name"><a asp-action="Detail" asp-route-id="@item.Id">@item.Name</a></h3>
+												<h4 class="product-price">@item.Price<del class="product-old-price">$9999.00</del></h4>
+												<div class="product-rating">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+
+												</div>
 								
-								<div class="product-btns">
-									<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
-									<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
-								<button class="quick-view"><a asp-action="Detail" asp-route-id="@item.Id"><i class="fa fa-eye"></i></a><span class="tooltipp">quick view</span></button>
-								</div>
-							</div>
-							<div class="add-to-cart">
-								<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
-								
-								<a asp-action="Update" asp-route-id="@item.Id" class="btn-action">Edit</a>
-								<a asp-action="Detail" asp-route-id="@item.Id" class="btn-action">Details</a>
-								<a asp-action="Delete" asp-route-id="@item.Id" class="btn-action">Delete</a>
-							</div>
-						</div>
+												<div class="product-btns">
+												<button class="add-to-wishlist"><i class="fa-regular fa-heart"></i><span class="tooltipp">add to wishlist</span></button>
+													<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
+													<button class="quick-view"><a asp-action="Detail" asp-route-id="@item.Id"><i class="fa fa-eye"></i></a><span class="tooltipp">quick view</span></button>
+												</div>
+											</div>
+											<div class="add-to-cart">
+												@* <a asp-controller="ShoppingCart" asp-action="AddToCart" asp-route-productId="@item.Id" asp-route-quantity="@numOfQuanity">
+													<button class="add-to-cart-btn">
+														<i class="fa fa-shopping-cart"></i> add to cart
+													</button>
+												</a> *@
+									<button onclick="showSuccessToast();" class="add-to-cart-btn addToCartBtn btn--success" data-productId="@item.Id"><i class="fa fa-shopping-cart"></i> add to cart</button>
+														
+												@* <a asp-action="Update" asp-route-id="@item.Id" class="btn-action">Edit</a> *@
+												<a asp-action="Detail" asp-route-id="@item.Id" class="btn-action">Details</a>
+												<a asp-action="Delete" asp-route-id="@item.Id" class="btn-action">Delete</a>
+											</div>
+										</div>
+									</div>
+								<!-- /product -->
+								}
+				
 					</div>
-					<!-- /product -->
-				}				
+					<!--row-->			
+					<!-- store bottom filter -->
+					<div class="store-filter clearfix">
+						<span class="store-qty">Showing 20-100 products</span>
+						<ul class="store-pagination">
+							<li class="active">1</li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+						</ul>
+					</div>
+					<!-- /store bottom filter -->
+				<!-- /store -->
 			</div>
-			<!-- /row -->
+			<!--row-->
 		</div>
 		<!-- /container -->
 	</div>
 	<!-- /Section -->
 	
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('.addToCartBtn').click(function () {
+				var productId = $(this).data('productid');
+				var quantity = 1; // Hoặc lấy số lượng từ ô nhập liệu tùy theo cấu trúc của trang của bạn
 
+				$.ajax({
+					url: '/ShoppingCart/AddToCart', // Đảm bảo URL đúng
+					type: 'POST',
+					data: { productId: productId, quantity: quantity },
+					success: function (response) {
+						// Xử lý kết quả ở đây nếu cần
+						console.log('Sản phẩm đã được thêm vào giỏ hàng');
+					},
+					error: function (xhr, status, error) {
+						// Xử lý lỗi ở đây nếu cần
+						console.error('Lỗi khi thêm sản phẩm vào giỏ hàng:', error);
+					}
+				});
+			});
+		});
+	</script>
