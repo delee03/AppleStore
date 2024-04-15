@@ -58,6 +58,11 @@
                                         <td>@item.Vnpay_transaction</td>
                                         <td>
                                             <ul>
+                                               @*  <li>
+                                                    <a href="@Url.Action("Detail", "Invoices", new { Id = item.Id })" title="Xem chi tiết">
+                                                        <i class="fa-solid fa-eye"></i>
+                                                    </a>
+                                                </li> *@
                                                 <li>
                                                     <a href="@Url.Action("Print", "Invoices", new { Id = item.Id })" title="In hóa đơn">
                                                         <i class="fa-solid fa-print"></i>

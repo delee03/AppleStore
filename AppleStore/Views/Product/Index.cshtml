@@ -197,13 +197,13 @@
 
 				
 				<!--/ ASIDE -->
-			<p style="text-align: right">
+			@* <p style="text-align: right">
 				<a asp-action="Add" class="primary-btn"><i class="fa-solid fa-file-circle-plus"></i> Thêm sản phẩm</a>
 				<form asp-action="Index" method="get" class="form-check-inline" style="margin-bottom: 50px">
 					<p style="text-align: right">
 					<button type="submit" class="primary-btn"><i class="fa-solid fa-file-circle-plus"></i> Xem sản phẩm</button>
 				</p>
-				</form>
+				</form> *@
 		
 
 				<!-- STORE -->
@@ -253,7 +253,7 @@
 														
 												@* <a asp-action="Update" asp-route-id="@item.Id" class="btn-action">Edit</a> *@
 												<a asp-action="Detail" asp-route-id="@item.Id" class="btn-action">Details</a>
-												<a asp-action="Delete" asp-route-id="@item.Id" class="btn-action">Delete</a>
+											@* 	<a asp-action="Delete" asp-route-id="@item.Id" class="btn-action">Delete</a> *@
 											</div>
 										</div>
 									</div>
