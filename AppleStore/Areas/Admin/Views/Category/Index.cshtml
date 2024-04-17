@@ -1,0 +1,59 @@
+﻿ @model IEnumerable<AppleStore.Models.Category>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+
+    // Func f = new Func();
+    var listCategory = ViewBag.categories;
+}
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="card">
+            <div class="card-body">
+                <div>
+                    <div class="table-responsive table-desi table-product">
+                        <table class="table table-1d all-package">
+                            <thead>
+                                <tr>                                  
+                                    <th>Tên sản phẩm</th>
+                                    <th>Options</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                @foreach (var item in listCategory)
+                                {
+                                    <tr>
+                                        
+                                        <td>
+                                            <a href="~/Shop/Detail/@item.Id" target="_blank">@item.Name</a>
+                                        </td>                                       
+                                        
+                                
+                                        <td>
+                                            <ul>
+                                               
+                                                <li>
+                                                    <a href="~/Admin/Category/Edit/@item.Id" title="Chỉnh sửa">
+                                                        <span class="lnr lnr-pencil"></span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="~/Admin/Category/Delete/@item.Id" title="Xóa">
+                                                        <span class="lnr lnr-trash"></span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>       
+        </div>
+    </div>
+</div>
